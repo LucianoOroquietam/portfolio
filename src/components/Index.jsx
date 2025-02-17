@@ -6,10 +6,10 @@ import './index.css';
 import Skills from './Skills';
 import lulo from '../assets/lulo.jpg';
 import techLogos from '../assets/icons/techLogos';
-import { useLanguage } from '../context/LanguageContext'; // Usamos el contexto
+import { useLanguage } from '../context/LanguageContext'; 
 
 const Index = () => {
-  const { language, changeLanguage, translate } = useLanguage(); // Obtenemos el idioma y la función de cambio de idioma
+  const { language, changeLanguage, translate } = useLanguage(); 
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,6 @@ const Index = () => {
 
   return (
     <div className={`home ${isVisible ? 'visible' : ''}`}>
-      {/* Selector de idioma solo aquí */}
       <div className="language-selector">
         <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
           <option value="es">Español</option>
