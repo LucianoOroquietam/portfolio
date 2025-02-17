@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1A1A;
+    color: rgb(236, 238, 240);
+    line-height: 1.6;
+}
+
+.curriculum {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header-cv {
+    text-align: center;
+    border-bottom: 2px solid rgb(236, 238, 240);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header-cv h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-cv h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #A8A8A8;
+    margin: 5px 0 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: rgb(236, 238, 240);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: orange;
+}
+
+/* Section */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(236, 238, 240);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.content .date {
+    font-size: 0.9rem;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.download-cv-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.download-cv {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn {
+    background-color: #D4A373;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .header-cv h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-cv h2 {
+        font-size: 1rem;
+    }
+
+    .section h3 {
+        font-size: 1.2rem;
+    }
+
+    .content h4 {
+        font-size: 1rem;
+    }
+
+    .content .date {
+        font-size: 0.8rem;
+    }
+}

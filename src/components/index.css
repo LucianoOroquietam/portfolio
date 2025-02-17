@@ -1,0 +1,429 @@
+/*Presentacion*/
+
+.presentation-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    min-height: 600px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: rgb(236, 238, 240);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 2rem;
+    color: #f4a261;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.education {
+    font-size: 1.2rem;
+    color: #8d99ae;
+    font-weight: 400;
+    display: block;
+}
+
+.work-details {
+    font-size: 1.2rem;
+    color: rgb(236, 238, 240);
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 500px;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f4a261;
+}
+
+/*Cards*/
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.work-card {
+    position: relative;
+    background: #1E1E1E;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+.work-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.work-card h2 {
+    color: #EDEDED;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+p strong {
+    color: #F4A261;
+}
+
+.work-card p
+
+/*.work-card a*/
+    {
+    color: #BDBDBD;
+    font-size: .95rem;
+}
+
+.work-card a {
+    display: inline-block;
+    background: #F4A261;
+    color: #262626;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.work-card a:hover {
+    background: #D57A40;
+    transform: scale(1.1);
+}
+
+
+.work-card h5 {
+    font-size: 1rem;
+    color: rgb(236, 238, 240);
+    overflow-wrap: break-word;
+}
+
+/*img cards*/
+
+/* Imagen del proyecto */
+.card-image {
+    width: 100%;
+    height: 200px;
+    background: #2A2A2A;
+    overflow: hidden;
+}
+
+.img-portfolio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenedor del contenido */
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo de la tecnología */
+.tech-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del título */
+h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Estilo del texto */
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Botón */
+.learn-more {
+    display: inline-block;
+    background: #D57A40;
+    color: #FFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #A5552B;
+    transform: scale(1.05);
+}
+
+/*home*/
+.home h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 35px;
+
+}
+
+.home a {
+    background-color: #FF8C42;
+    color: rgb(236, 238, 240);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.home a:hover {
+    background: #D65A31;
+    color: rgb(236, 238, 240);
+
+}
+
+.heading,
+.page .heading,
+.home .heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(236, 238, 240);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    margin-bottom: 0;
+}
+
+.page .heading {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/*animacion entrada al portfolio*/
+.home {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.home.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work-card {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.home.visible .work-card {
+    opacity: 1;
+    transform: scale(1);
+}
+
+h2.heading {
+    text-align: center;
+}
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D4A373, transparent);
+    margin: 20px auto;
+}
+
+.last-works {
+    margin-top: 117px;
+    background-color: #242424;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.language-selector {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 0 20px;
+    position: relative;
+}
+
+.language-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #D4A373; /* Ajuste del color de borde */
+    border-radius: 8px;
+    background-color: #333; /* Fondo oscuro para combinar con el fondo general */
+    color: #fff; /* Texto blanco para contraste */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-selector select:hover {
+    border-color: #D4A373; /* Borde dorado al pasar el mouse */
+    background-color: #D4A373; /* Cambio a color dorado al hover */
+    color: #333; /* Texto oscuro cuando el fondo es dorado */
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #D4A373; /* Borde dorado cuando está en foco */
+    background-color: #333; /* Fondo oscuro al estar en foco */
+    color: #fff; /* Texto blanco cuando está en foco */
+}
+
+.language-selector option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333; /* Fondo oscuro para opciones */
+    color: #fff; /* Texto blanco en las opciones */
+}
+
+
+@media (max-width: 768px) {
+
+    .language-selector {
+        justify-content: center; /* Centra el selector en pantallas pequeñas */
+        padding: 0 10px; /* Ajuste de padding */
+    }
+
+    .language-selector select {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: auto; /* Evita que el select ocupe todo el ancho en pantallas más pequeñas */
+        max-width: 160px; /* Limita aún más el ancho */
+    }
+    .home h1 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .presentation-container {
+        padding: 20px 10px;
+        min-height: auto;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+        border-width: 3px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .education,
+    .work-details {
+        font-size: 0.85rem;
+    }
+
+    .works {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .work-card {
+        padding: 10px;
+    }
+
+    .work-card h2 {
+        font-size: 1rem;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .work-card {
+        width: 90%;
+        max-width: 320px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .work-card h2 {
+        font-size: 1rem;
+    }
+
+    .work-card p {
+        font-size: 0.85rem;
+    }
+
+    .work-card a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .card-image {
+        height: 140px;
+    }
+
+    .tech-logo {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+
+    .last-works {
+        margin-top: 40px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .works {
+        gap: 25px;
+    }
+
+    .work-card {
+        margin-bottom: 25px;
+    }
+}

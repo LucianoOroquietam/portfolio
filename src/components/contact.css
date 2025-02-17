@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(30, 26, 26);
+    font-size: 16px;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    color: rgb(236, 238, 240);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 100px auto;
+    position: relative;
+    /* Para que el selector se posicione relativo a este contenedor */
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgb(40, 36, 36);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: rgb(236, 238, 240);
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(50, 46, 46);
+    color: rgb(236, 238, 240);
+}
+
+.services {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: rgb(50, 46, 46);
+    color: rgb(236, 238, 240);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 300ms;
+}
+
+button:hover {
+    background: #D57A40;
+}
+
+.send {
+    background-color: #F4A261;
+    color: rgb(236, 238, 240);
+    width: 100px;
+    font-weight: bold;
+}
+
+.send:hover {
+    background-color: #D57A40;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background: rgb(40, 36, 36);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar p a {
+    color: rgb(236, 238, 240);
+    text-decoration: none;
+}
+
+.sidebar p a:hover {
+    color: #F4A261;
+
+}
+
+
+.info-btn,
+.awards-btn,
+.social-btn {
+    background: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 300ms, border-color 300ms;
+}
+
+.info-btn:hover,
+.awards-btn:hover,
+.social-btn:hover {
+    color: rgb(236, 238, 240);
+    border-color: rgb(236, 238, 240);
+}
+
+
+
+.services button {
+    background-color: #F4A261;
+    border: 1px solid #222;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(236, 238, 240);
+}
+
+.services button:hover {
+    background-color: #D57A40;
+
+}
+
+.services button.active {
+    background-color: #D57A40;
+    color: rgb(236, 238, 240);
+    border-color: #222;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #D4A373;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.popup h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.popup button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.popup button:hover {
+    background-color: #D4A373;
+    color: #333;
+}
+
+.popup.error .popup-content {
+    background-color: #D4A373;
+    color: #333;
+}
+
+.popup.success .popup-content {
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup h2 {
+        font-size: 1rem;
+    }
+
+    .popup p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin-left: -8px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
