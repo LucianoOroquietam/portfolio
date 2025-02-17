@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "destination": "/index.html"
+        }
+    ]
+}
+
+/*testear  scualquier ruta que no sea un archivo estático (por ejemplo, /home, /contact) que sea dirigido a index.html, y ahi React Router gestionaria la navegacion.*/
