@@ -31,6 +31,14 @@ const Curriculum = () => {
               <li>Guío a los estudiantes en la creación de APIs RESTful y la integración con Postman para realizar pruebas de endpoints.</li>
             </ul>
           </div>
+          <div className="content-exp">
+            <h4>M360isec</h4>
+            <p className="date">Marzo 2025 - Actualidad | Tandil, Argentina</p>
+            <ul>
+              <li>Desarrollar interfaces intuitivas y optimizadas para agentes de ciberseguridad.</li>
+              <li>Conectar el backend con figma.</li>
+            </ul>
+          </div>
         </section>
 
         <section className="section">
@@ -66,13 +74,13 @@ const Curriculum = () => {
 
       <div className="download-cv-container">
         <div className="download-cv">
-          <a href="/cv-luciano-orquieta.pdf" download="CV_Luciano_Oroquieta.pdf">
+          <a href="/CV_Luciano_Oroquieta.pdf" download="CV_Luciano_Oroquieta.pdf">
             <button className="download-btn">Descargar CV (Español)</button>
           </a>
         </div>
 
         <div className="download-cv">
-          <a href="/cv-luciano-orquieta.pdf" download="CV_Luciano_Oroquieta_ingles.pdf">
+          <a href="/CV_Luciano_Oroquieta_ingles.pdf" download="CV_Luciano_Oroquieta_ingles.pdf">
             <button className="download-btn">Download CV (English)</button>
           </a>
         </div>
