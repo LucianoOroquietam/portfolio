@@ -1,12 +1,12 @@
 import ReactLogo from './react.svg';
-import AngularLogo from './angular.svg';
+import AngularLogo from './angularwhite.svg';
 import SpringBootLogo from './spring.svg';
 import DockerLogo from './docker.svg';
 import JavaLogo from './java.svg';
-import PhpLogo from './php.svg';
+import PhpLogo from './phpwhite.svg';
 import MySqlLogo from './mysql.svg';
-import HtmlLogo from './html.svg';
-import JavaScriptLogo from './js.svg';
+import HtmlLogo from './htmlwhite.svg';
+import JavaScriptLogo from './js-white.svg';
 import CssLogo from './css.svg';
 
 const techLogos = {
