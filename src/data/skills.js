@@ -15,6 +15,8 @@ import junitIcon from "../assets/icons/junit.svg";
 import SwaggerIcon from "../assets/icons/swagger.svg";
 import postmanIcon from "../assets/icons/postman.svg";
 import TypeScriptIcon from "../assets/icons/typescript.svg";
+import MongoDbIcon from "../assets/icons/mongodb.svg";
+
 
 
 
@@ -24,7 +26,9 @@ export const skills = {
         { name: "SpringBoot", icon: springIcon },
         { name: "PHP", icon: phpIcon},
         { name: "MySQL", icon: MySQLIcon },
-        { name: "PostgreSQL", icon: PostgreSQLIcon }
+        { name: "PostgreSQL", icon: PostgreSQLIcon },
+        { name: "MongoDb", icon: MongoDbIcon }
+
         
     ],
     frontend: [
