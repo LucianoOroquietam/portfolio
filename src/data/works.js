@@ -40,7 +40,7 @@ export const works = [
         'id': 5,
         'nombre': 'Pagina de Coca Cola',
         'url': 'https://cocapresentacion.netlify.app/',
-        'urlRepo': 'https://github.com/LucianoOroquietam/Buscador-Peliculas',
+        'urlRepo': "",
         'tecnologias': ['Html'],
         'categorias': ['Frontend'],
         'descripcion': 'Este proyecto orientado a una maquetacion de la página web de Coca-Cola, transmitiendo toda la frescura, energía y esencia icónica de la marca.'
@@ -62,7 +62,6 @@ export const works = [
         'url': 'https://bautismo.netlify.app/',
         'urlRepo': "",
         'tecnologias': ['Html'],
-        
         'categorias': ['Frontend'],
         'descripcion': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo. '
     }
