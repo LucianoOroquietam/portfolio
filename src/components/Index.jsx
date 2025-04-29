@@ -6,10 +6,11 @@ import './index.css';
 import Skills from './Skills';
 import lulo from '../assets/lulo.jpg';
 import techLogos from '../assets/icons/techLogos';
-import { useLanguage } from '../context/LanguageContext'; 
+import { useLanguage } from '../context/LanguageContext';
+import { FiExternalLink } from "react-icons/fi";
 
 const Index = () => {
-  const { language, changeLanguage, translate } = useLanguage(); 
+  const { language, changeLanguage, translate } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -64,15 +65,32 @@ const Index = () => {
                   alt={i.tecnologias?.[0] || 'Sin tecnología'} />
                 <h2>{translate(`${i.nombre}_name`)}</h2>
                 <p>{translate(`${i.nombre}_description`)}</p>
+
                 <motion.a
                   href={i.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="learn-more"
+                  className="learn-more repo-link"
                   whileHover={{ scale: 1.05 }}
                 >
+                  <FiExternalLink className="icon" /> 
                   {translate('verProyecto')}
-                </motion.a>
+                  </motion.a>
+
+                  <motion.a
+                    href={i.urlRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="learn-more repo-link"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <img src={techLogos.github} 
+                    alt="GitHub"
+                    className='github-icon'
+                    />
+                    {translate('verRepositorio')}
+                  </motion.a>
+
               </div>
             </motion.article>
           ))}

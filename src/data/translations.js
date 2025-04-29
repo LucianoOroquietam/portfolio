@@ -26,7 +26,8 @@ export const translations = {
         'Buscador de peliculas_description': 'Esta aplicación permite a los usuarios agregar, eliminar, buscar y filtrar películas en una lista. Utilizando React y localStorage, los datos se mantienen incluso al recargar la página.',
         'Diseño pagina bautismo_name': 'Diseño página bautismo',
         'Diseño pagina bautismo_description': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo.',
-        verProyecto: "Ver proyecto"
+        verProyecto: "Ver proyecto",
+        verRepositorio: "Ver repositorio"
     },
     en: {
         greeting: "Hello! I'm Luciano Oroquieta",
@@ -55,7 +56,8 @@ export const translations = {
         'Buscador de peliculas_description': 'This app allows users to add, delete, search, and filter movies in a list. Using React and localStorage, data is maintained even when the page is reloaded.',
         'Diseño pagina bautismo_name': 'Baptism Page Design',
         'Diseño pagina bautismo_description': 'Website designed for a client who needed a page for a baptism. This template can be reused for any future baptism.',
-        verProyecto: "See project"
+        verProyecto: "See project",
+        verRepositorio: "View repository"
 
     },
 };

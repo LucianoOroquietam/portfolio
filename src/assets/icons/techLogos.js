@@ -8,6 +8,9 @@ import MySqlLogo from './mysql.svg';
 import HtmlLogo from './htmlwhite.svg';
 import JavaScriptLogo from './js-white.svg';
 import CssLogo from './css.svg';
+import GitHubLogo from './github.svg';
+import GitHubLogoWhite from './Github white.svg';
+
 
 const techLogos = {
     React: ReactLogo,
@@ -19,7 +22,9 @@ const techLogos = {
     MySQL: MySqlLogo,
     Html: HtmlLogo,
     JavaScript: JavaScriptLogo,
-    Css: CssLogo
+    Css: CssLogo,
+    GitHub: GitHubLogo,
+    github: GitHubLogoWhite
 };
 
 export default techLogos;

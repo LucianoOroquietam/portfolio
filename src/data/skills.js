@@ -16,6 +16,7 @@ import SwaggerIcon from "../assets/icons/swagger.svg";
 import postmanIcon from "../assets/icons/postman.svg";
 import TypeScriptIcon from "../assets/icons/typescript.svg";
 import MongoDbIcon from "../assets/icons/mongodb.svg";
+import GitHubIcon from "../assets/icons/github.svg";
 
 
 
@@ -44,6 +45,7 @@ export const skills = {
     herramientas: [
         { name: "Docker", icon: dockerIcon },
         { name: "Git", icon: gitIcon },
+        { name: "GitHub", icon: GitHubIcon },
         { name: "JUnit", icon: junitIcon },
         { name: "Swagger", icon: SwaggerIcon },
         { name: "Postman", icon: postmanIcon },

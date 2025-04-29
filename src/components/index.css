@@ -126,6 +126,8 @@ p strong {
     overflow-wrap: break-word;
 }
 
+
+
 /*img cards*/
 
 .card-image {
@@ -144,7 +146,6 @@ p strong {
 /* Contenedor del contenido */
 .card-content {
     padding: 15px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -156,13 +157,16 @@ p strong {
     top: 10px;
     left: 10px;
     width: 28px;
-    height: 28px; 
-    border: 2px solid #555555; 
-    background: #F8F8F8; 
-    border-radius: 50%; 
-    padding: 5px; 
+    height: 28px;
+    border: 2px solid #555555;
+    background: #F8F8F8;
+    border-radius: 50%;
+    padding: 5px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 /* Estilo del título */
 h2 {
@@ -177,20 +181,34 @@ p {
 }
 
 /* Botón */
+
 .learn-more {
-    display: inline-block;
-    background: #D57A40;
+    display: inline-flex;        
+    align-items: center;          
+    justify-content: center;      
     color: #FFF;
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-
-.learn-more:hover {
+    min-width: 16px;             
+    text-align: center;           
+  }
+  .learn-more:hover {
     background: #A5552B;
     transform: scale(1.05);
+  }
+  
+  .learn-more.repo-link .github-icon, .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align:text-bottom;     
+  }  
+
+.home .learn-more {
+    margin: 5px;
 }
 
 /*home*/
@@ -207,6 +225,7 @@ p {
     color: rgb(236, 238, 240);
     padding: 8px;
     border-radius: 5px;
+    margin: .5rem;
     font-weight: bolder;
     text-decoration: none;
     transition: all 300ms;
@@ -288,48 +307,49 @@ h2.heading {
 .language-selector select {
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #D4A373; 
+    border: 2px solid #D4A373;
     border-radius: 8px;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .language-selector select:hover {
-    border-color: #D4A373; 
-    background-color: #D4A373; 
-    color: #333; 
+    border-color: #D4A373;
+    background-color: #D4A373;
+    color: #333;
 }
 
 .language-selector select:focus {
     outline: none;
-    border-color: #D4A373; 
-    background-color: #333; 
-    color: #fff; 
+    border-color: #D4A373;
+    background-color: #333;
+    color: #fff;
 }
 
 .language-selector option {
     padding: 10px;
     font-size: 16px;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
 }
 
 
 @media (max-width: 768px) {
 
     .language-selector {
-        justify-content: center; 
-        padding: 0 10px; 
+        justify-content: center;
+        padding: 0 10px;
     }
 
     .language-selector select {
         padding: 8px 12px;
         font-size: 14px;
-        width: auto; 
-        max-width: 160px; 
+        width: auto;
+        max-width: 160px;
     }
+
     .home h1 {
         font-size: 35px;
         margin-top: 20px;
@@ -415,9 +435,9 @@ h2.heading {
         top: 13px;
         left: 13px;
         width: 20px;
-        height: 20px; 
+        height: 20px;
     }
-    
+
 }
 
 @media (max-width: 770px) {
