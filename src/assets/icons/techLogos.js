@@ -10,6 +10,8 @@ import JavaScriptLogo from './js-white.svg';
 import CssLogo from './css.svg';
 import GitHubLogo from './github.svg';
 import GitHubLogoWhite from './Github white.svg';
+import LaravelLogo from './laravel.svg';
+import TailwindLogo from './tailwind.svg';
 
 
 const techLogos = {
@@ -24,7 +26,9 @@ const techLogos = {
     JavaScript: JavaScriptLogo,
     Css: CssLogo,
     GitHub: GitHubLogo,
-    github: GitHubLogoWhite
+    github: GitHubLogoWhite,
+    Laravel: LaravelLogo,
+    Tailwind: TailwindLogo
 };
 
 export default techLogos;

@@ -23,20 +23,20 @@ const Curriculum = () => {
         <section className="section">
           <h3>Experiencia Profesional</h3>
           <div className="content-exp">
+            <h4>M360isec</h4>
+            <p className="date">Marzo 2025 - Actualidad | Tandil, Argentina</p>
+            <ul>
+              <li>Desarrollar interfaces intuitivas y optimizadas para agentes de ciberseguridad.</li>
+              <li>Conectar el backend con figma.</li>
+            </ul>
+          </div>
+          <div className="content-exp">
             <h4>Ayudante de Cátedra - Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN)</h4>
             <p className="date">Agosto 2023 - Actualidad | Tandil, Argentina</p>
             <ul>
               <li>Facilito clases sobre desarrollo web, utilizando tecnologías como PHP y MySQL.</li>
               <li>Implemento y enseño el uso del patrón de diseño MVC para el desarrollo de aplicaciones orientadas al backend.</li>
               <li>Guío a los estudiantes en la creación de APIs RESTful y la integración con Postman para realizar pruebas de endpoints.</li>
-            </ul>
-          </div>
-          <div className="content-exp">
-            <h4>M360isec</h4>
-            <p className="date">Marzo 2025 - Actualidad | Tandil, Argentina</p>
-            <ul>
-              <li>Desarrollar interfaces intuitivas y optimizadas para agentes de ciberseguridad.</li>
-              <li>Conectar el backend con figma.</li>
             </ul>
           </div>
         </section>
@@ -62,8 +62,8 @@ const Curriculum = () => {
         <section className="section">
           <h3>Skills</h3>
           <ul>
-            <li><strong>Desarrollo Frontend:</strong> HTML, CSS, Figma, React</li>
-            <li><strong>Desarrollo Backend:</strong> Java (Spring Boot), PHP y APIs RESTful</li>
+            <li><strong>Desarrollo Frontend:</strong> HTML, CSS, Figma, React, Angular, Tailwind</li>
+            <li><strong>Desarrollo Backend:</strong> Java (Spring Boot), PHP(Laravel) y APIs RESTful</li>
             <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL y MongoDB</li>
             <li><strong>Herramientas:</strong> Docker, Git, JUnit, TestNG, Swagger, Postman</li>
             <li><strong>Habilidades Blandas:</strong> Comunicación efectiva, trabajo en equipo, proactividad</li>

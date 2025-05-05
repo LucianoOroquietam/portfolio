@@ -17,6 +17,8 @@ import postmanIcon from "../assets/icons/postman.svg";
 import TypeScriptIcon from "../assets/icons/typescript.svg";
 import MongoDbIcon from "../assets/icons/mongodb.svg";
 import GitHubIcon from "../assets/icons/github.svg";
+import LaravelIcon from "../assets/icons/laravel.svg";
+import TailwindIcon from "../assets/icons/tailwind.svg";
 
 
 
@@ -25,13 +27,13 @@ export const skills = {
     backend: [
         { name: "Java", icon: javaIcon },
         { name: "SpringBoot", icon: springIcon },
-        { name: "PHP", icon: phpIcon},
+        { name: "PHP", icon: phpIcon },
         { name: "MySQL", icon: MySQLIcon },
         { name: "PostgreSQL", icon: PostgreSQLIcon },
-        { name: "MongoDb", icon: MongoDbIcon }
-
-        
+        { name: "MongoDb", icon: MongoDbIcon },
+        { name: "Laravel", icon: LaravelIcon }
     ],
+
     frontend: [
         { name: "HTML", icon: htmlIcon },
         { name: "CSS", icon: cssIcon },
@@ -39,9 +41,9 @@ export const skills = {
         { name: "TypeScript", icon: TypeScriptIcon },
         { name: "React", icon: reactIcon },
         { name: "Angular", icon: angularIcon },
-        
-
+        { name: "Tailwind", icon: TailwindIcon },
     ],
+    
     herramientas: [
         { name: "Docker", icon: dockerIcon },
         { name: "Git", icon: gitIcon },
