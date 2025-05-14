@@ -33,9 +33,9 @@ const Header = () => {
       <button className="menu-toggle" onClick={toggleMenu}>
         {isOpen ? '✖' : '☰'}
       </button>
-      
+
       <Link to={'/home'}>
-      <img className='logo' src="../src/assets/logoConNombre.svg" alt="" />
+        <img className='logo' src="/images/Logos/logoConNombre.svg" alt="Logo" />
         {/* <div className="logo">
           <span>L</span>
           <h3>
