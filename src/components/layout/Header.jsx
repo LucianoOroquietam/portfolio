@@ -33,15 +33,17 @@ const Header = () => {
       <button className="menu-toggle" onClick={toggleMenu}>
         {isOpen ? '✖' : '☰'}
       </button>
+      
       <Link to={'/home'}>
-        <div className="logo">
+      <img className='logo' src="../src/assets/logoConNombre.svg" alt="" />
+        {/* <div className="logo">
           <span>L</span>
           <h3>
             Luciano <br />
             Oroquieta <br />
             Merlino
           </h3>
-        </div>
+        </div> */}
       </Link>
 
       <nav className={isOpen ? 'nav-open' : ''}>
