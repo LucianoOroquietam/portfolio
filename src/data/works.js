@@ -2,7 +2,7 @@ export const works = [
     {
         'id': 1,
         'nombre': 'Diseño UX/UI',
-        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/',
+        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
         'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
         'tecnologias': ['JavaScript'],
         'categorias': ['Frontend', 'Diseño UX/UI', 'Animaciones', 'Juego Interactivo'],
@@ -12,7 +12,7 @@ export const works = [
     {
         'id': 2,
         'nombre': 'Ecommerce de cerveza',
-        'url': 'https://github.com/LucianoOroquietam/proyecto-angular',
+        'url': 'https://stackblitz.com/~/github.com/LucianoOroquietam/proyecto-angular?file=src/app/services/carrito-cerveza.service.ts',
         'urlRepo': 'https://github.com/LucianoOroquietam/proyecto-angular',
         'tecnologias': ['Angular'],
         'categorias': ['E-commerce', 'Frontend', 'API'],
