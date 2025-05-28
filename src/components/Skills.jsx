@@ -8,12 +8,12 @@ const Skills = () => {
 
     return (
         <section className="skills-section">
-            <h2 className="skills-title">{translate('skillsTitle')}</h2> {/* Traducir el título de la sección */}
+            <h2 className="skills-title">{translate('skillsTitle')}</h2> {/* Traducir */}
 
             <div className="skills-container">
                 {/* Back-End */}
                 <div className="skills-category">
-                    <h3 className="category-title">{translate('backEnd')}</h3> {/* Traducir Back-End */}
+                    <h3 className="category-title">{translate('backEnd')}</h3> 
                     <div className="skills-list">
                         {skills.backend.map((skill, index) => (
                             <div key={index} className="skill-card">
@@ -26,7 +26,7 @@ const Skills = () => {
 
                 {/* Front-End */}
                 <div className="skills-category">
-                    <h3 className="category-title">{translate('frontEnd')}</h3> {/* Traducir Front-End */}
+                    <h3 className="category-title">{translate('frontEnd')}</h3> 
                     <div className="skills-list">
                         {skills.frontend.map((skill, index) => (
                             <div key={index} className="skill-card">
@@ -39,7 +39,7 @@ const Skills = () => {
 
                 {/* Herramientas */}
                 <div className="skills-category">
-                    <h3 className="category-title">{translate('tools')}</h3> {/* Traducir Herramientas */}
+                    <h3 className="category-title">{translate('tools')}</h3> 
                     <div className="skills-list">
                         {skills.herramientas.map((skill, index) => (
                             <div key={index} className="skill-card">

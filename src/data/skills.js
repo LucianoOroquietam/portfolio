@@ -19,6 +19,8 @@ import MongoDbIcon from "../assets/icons/mongodb.svg";
 import GitHubIcon from "../assets/icons/github.svg";
 import LaravelIcon from "../assets/icons/laravel.svg";
 import TailwindIcon from "../assets/icons/tailwind.svg";
+import NodeIcon from "../assets/icons/nodejs.svg";
+
 
 
 
@@ -31,7 +33,9 @@ export const skills = {
         { name: "MySQL", icon: MySQLIcon },
         { name: "PostgreSQL", icon: PostgreSQLIcon },
         { name: "MongoDb", icon: MongoDbIcon },
-        { name: "Laravel", icon: LaravelIcon }
+        { name: "Laravel", icon: LaravelIcon },
+        { name: "NodeJs", icon: NodeIcon }
+
     ],
 
     frontend: [

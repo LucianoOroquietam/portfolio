@@ -31,34 +31,48 @@ const Curriculum = () => {
               <li>Guío a los estudiantes en la creación de APIs RESTful y la integración con Postman para realizar pruebas de endpoints.</li>
             </ul>
           </div>
+
+          <div className="content-exp">
+            <h4>Desarrollador y Diseñador Web Freelance</h4>
+            <p className="date">Enero 2024 - Actualidad</p>
+            <ul>
+              <li>Diseño de página web para agencia de viajes (Figma – trabajo en curso).</li>
+              <li>Desarrollo de sitio para consultora IT utilizando Next.js y Tailwind.</li>
+              
+            </ul>
+          </div>
         </section>
 
         <section className="section">
           <h3>Educación</h3>
           <div className="content-edu">
-            <h4>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN)</h4>
-            <p className="date">Marzo 2022 - Actualidad | Tandil, Argentina</p>
-            <p>Técnico Universitario en Desarrollo de Aplicaciones Informáticas (TUDAI)</p>
+            <h4>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).</h4>
+            <p className="date">Marzo 2022 - Actualidad | Tandil, Argentina.</p>
+            <p>Técnico Universitario en Desarrollo de Aplicaciones Informáticas (TUDAI).</p>
           </div>
+
+          
         </section>
 
         <section className="section">
           <h3>Formación Complementaria</h3>
           <ul>
             <li>Introducción a Angular - UNICEN</li>
-            <li>Google Analytics 4: La Nueva Generación de Analytics - UNICEN</li>
-            <li>Introducción a las Bases de Datos NoSQL - UNICEN</li>
+            <li>Google Analytics 4: La Nueva Generación de Analytics - UNICEN.</li>
+            <li>Introducción a las Bases de Datos NoSQL - UNICEN.</li>
+            <li>Master en React: ReactJS, Hooks, MERN, NodeJS, JWT - UDEMY.</li>
           </ul>
         </section>
 
         <section className="section">
           <h3>Skills</h3>
           <ul>
-            <li><strong>Desarrollo Frontend:</strong> HTML, CSS, Figma, React, Angular, Tailwind</li>
-            <li><strong>Desarrollo Backend:</strong> Java (Spring Boot), PHP(Laravel) y APIs RESTful</li>
-            <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL y MongoDB</li>
-            <li><strong>Herramientas:</strong> Docker, Git, JUnit, TestNG, Swagger, Postman</li>
-            <li><strong>Habilidades Blandas:</strong> Comunicación efectiva, trabajo en equipo, proactividad</li>
+            <li><strong>Desarrollo Frontend:</strong> HTML, CSS, Figma, React, Angular, Tailwind.</li>
+            <li><strong>Desarrollo Backend:</strong> Java (Spring Boot), PHP(Laravel),  NodeJs(Express). </li>
+            <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL y MongoDB.</li>
+            <li><strong>Herramientas:</strong> Docker, Git, Swagger, Postman.</li>
+            <li><strong>Otros:</strong> Electron, Next.js, MVC, APIs RESTful, testing.</li>
+            <li><strong>Habilidades Blandas:</strong> Comunicación efectiva, trabajo en equipo, proactividad.</li>
           </ul>
         </section>
 
