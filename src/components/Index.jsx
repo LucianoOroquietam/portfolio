@@ -66,17 +66,20 @@ const Index = () => {
                 <h2>{translate(`${i.nombre}_name`)}</h2>
                 <p>{translate(`${i.nombre}_description`)}</p>
 
-                <motion.a
-                  href={i.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="learn-more repo-link"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <FiExternalLink className="icon" /> 
-                  {translate('verProyecto')}
+                {i.url && (
+                  <motion.a
+                    href={i.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="learn-more repo-link"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <FiExternalLink className="icon" />
+                    {translate('verProyecto')}
                   </motion.a>
+                )}
 
+                {i.urlRepo && (
                   <motion.a
                     href={i.urlRepo}
                     target="_blank"
@@ -84,13 +87,14 @@ const Index = () => {
                     className="learn-more repo-link"
                     whileHover={{ scale: 1.05 }}
                   >
-                    <img src={techLogos.github} 
-                    alt="GitHub"
-                    className='github-icon'
+                    <img
+                      src={techLogos.github}
+                      alt="GitHub"
+                      className="github-icon"
                     />
                     {translate('verRepositorio')}
                   </motion.a>
-
+                )}
               </div>
             </motion.article>
           ))}

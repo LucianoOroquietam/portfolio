@@ -21,7 +21,7 @@ export const works = [
     {
         'id': 3,
         'nombre': 'Microservicios de Gestión',
-        'url': 'https://github.com/LucianoOroquietam/Microservicios-Spring-boot',
+        'url': '',
         'urlRepo': 'https://github.com/LucianoOroquietam/Microservicios-Spring-boot',
         'tecnologias': ['Spring'],
         'descripcion': 'Proyecto que implementa una arquitectura de microservicios con Spring Boot, donde cada servicio se ejecuta de forma independiente y se comunica a través de Eureka. Cada microservicio está desplegado en Docker, permitiendo escalabilidad y flexibilidad en la infraestructura.'
@@ -29,7 +29,7 @@ export const works = [
     {
         'id': 4,
         'nombre': 'API RESTful con PHP y SQL',
-        'url': 'https://github.com/LucianoOroquietam/api-rest-full',
+        'url': '',
         'urlRepo': 'https://github.com/LucianoOroquietam/api-rest-full',
         'tecnologias': ['PHP'],
         'categorias': ['Backend', 'API RESTful', 'Base de Datos'],
@@ -49,7 +49,7 @@ export const works = [
     {
         'id': 6,
         'nombre': 'Buscador de peliculas',
-        'url': 'https://github.com/LucianoOroquietam/Buscador-Peliculas',
+        'url': '',
         'urlRepo': 'https://github.com/LucianoOroquietam/Buscador-Peliculas',
         'tecnologias': ['React'],
         'categorias': ['Frontend'],
@@ -64,6 +64,15 @@ export const works = [
         'tecnologias': ['Html'],
         'categorias': ['Frontend'],
         'descripcion': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo. '
+    },
+    {
+        'id': 8,
+        'nombre': 'ToDo App Full Stack',
+        'url': '',
+        'urlRepo': "https://github.com/LucianoOroquietam/Challenge-Academia-ForIT-2025",
+        'tecnologias': ['React', 'NodeJs', 'SQLite3'],
+        'categorias': ['Frontend', 'Backend', ],
+        'descripcion': 'Aplicación básica de lista de tareas (ToDo) desarrollada para el challenge de ingreso a Academia ForIT 2025. Incluye backend con Express + TypeScript + SQLite3 y frontend en React con Vite. '
     }
 
 

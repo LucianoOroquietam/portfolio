@@ -36,8 +36,8 @@ const Curriculum = () => {
             <h4>Desarrollador y Diseñador Web Freelance</h4>
             <p className="date">Enero 2024 - Actualidad</p>
             <ul>
-              <li>Diseño de página web para agencia de viajes (Figma – trabajo en curso).</li>
-              <li>Desarrollo de sitio para consultora IT utilizando Next.js y Tailwind.</li>
+              <li>Diseño de página web para agencia de viajes (Figma).</li>
+              <li>Desarrollo de sitio para consultora IT.</li>
               
             </ul>
           </div>
