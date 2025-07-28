@@ -28,6 +28,8 @@ export const translations = {
         'Diseño pagina bautismo_description': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo.',
         'ToDo App Full Stack_name': 'ToDo App Full Stack',
         'ToDo App Full Stack_description': 'Aplicación básica de lista de tareas (ToDo) desarrollada para el challenge de ingreso a Academia ForIT 2025. Incluye backend con Express + TypeScript + SQLite3 y frontend en React con Vite.',
+        'LunexaIt_name': 'LunexaIt',
+        'LunexaIt_description': 'Construccion del sitio web de la Consultora IT enfocada en el desarrollo de soluciones digitales con tecnología moderna, diseño funcional y visión de producto.',
 
         verProyecto: "Ver proyecto",
         verRepositorio: "Ver repositorio"
@@ -61,6 +63,8 @@ export const translations = {
         'Diseño pagina bautismo_description': 'Website designed for a client who needed a page for a baptism. This template can be reused for any future baptism.',
         'ToDo App Full Stack_name': 'ToDo App Full Stack',
         'ToDo App Full Stack_description': 'Basic ToDo list application developed for the ForIT 2025 challenge. Includes backend with Express + TypeScript + SQLite3 and frontend with React and Vite.',
+        'LunexaIt_name': 'LunexaIt',
+        'LunexaIt_description': 'Construction of the website for the IT consulting firm focused on developing digital solutions with modern technology, functional design, and product vision.',
 
         verRepositorio: "View repository"
 

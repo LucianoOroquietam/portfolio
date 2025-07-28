@@ -1,13 +1,12 @@
 export const works = [
     {
         'id': 1,
-        'nombre': 'Diseño UX/UI',
-        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
-        'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
-        'tecnologias': ['JavaScript'],
-        'categorias': ['Frontend', 'Diseño UX/UI', 'Animaciones', 'Juego Interactivo'],
-        'descripcion': 'Un proyecto enfocado en diseño UX/UI, interactividad y animaciones avanzadas. Incluye prototipos en Figma, maquetación en código, un juego de "4 en línea" y efectos visuales avanzados con parallax y renderizado en canvas.'
-
+        'nombre': 'LunexaIt',
+        'url': 'https://lunexa-it.com/',
+        'urlRepo': '',
+        'tecnologias': ['React'],
+        'categorias': ['Frontend'],
+        'descripcion': 'Construccion del sitio web de la Consultora IT enfocada en el desarrollo de soluciones digitales con tecnología moderna, diseño funcional y visión de producto.'
     },
     {
         'id': 2,
@@ -48,14 +47,15 @@ export const works = [
     },
     {
         'id': 6,
-        'nombre': 'Buscador de peliculas',
-        'url': '',
-        'urlRepo': 'https://github.com/LucianoOroquietam/Buscador-Peliculas',
-        'tecnologias': ['React'],
-        'categorias': ['Frontend'],
-        'descripcion': 'Esta aplicación permite a los usuarios agregar, eliminar, buscar y filtrar películas en una lista. Utilizando React y localStorage, los datos se mantienen incluso al recargar la página.'
+        'nombre': 'Diseño UX/UI',
+        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
+        'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
+        'tecnologias': ['JavaScript'],
+        'categorias': ['Frontend', 'Diseño UX/UI', 'Animaciones', 'Juego Interactivo'],
+        'descripcion': 'Un proyecto enfocado en diseño UX/UI, interactividad y animaciones avanzadas. Incluye prototipos en Figma, maquetación en código, un juego de "4 en línea" y efectos visuales avanzados con parallax y renderizado en canvas.'
 
     },
+    
     {
         'id': 7,
         'nombre': 'Diseño pagina bautismo',

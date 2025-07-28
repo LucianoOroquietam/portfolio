@@ -1,5 +1,5 @@
 // src/components/Index.jsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { works } from '../data/works';
 import { motion } from 'framer-motion';
 import './index.css';
@@ -17,6 +17,8 @@ const Index = () => {
     const timeout = setTimeout(() => setIsVisible(true), 100);
     return () => clearTimeout(timeout);
   }, []);
+
+
 
   return (
     <div className={`home ${isVisible ? 'visible' : ''}`}>
@@ -58,6 +60,8 @@ const Index = () => {
               <div className="card-image">
                 <img className="img-portfolio" src={`/images/${i.nombre}.png`} alt="imagen proyecto" />
               </div>
+
+
 
               <div className="card-content">
                 <img className="tech-logo"

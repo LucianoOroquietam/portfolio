@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from "../data/skills";
 import { useLanguage } from "../context/LanguageContext"; // Usamos el contexto para obtener las traducciones
 import "./skills.css";
