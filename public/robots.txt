@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.luciano-oroquieta.me/sitemap.xml

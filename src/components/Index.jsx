@@ -30,11 +30,11 @@ const Index = () => {
       </div>
 
       <div className="presentation-container">
-        <img src={lulo} alt="Foto de Luciano Oroquieta" className="profile-photo" />
-        <h1 className="title">
+        <img src={lulo} alt="Foto de Luciano Oroquieta" className="profile-photo" itemProp="image" />
+        <h1 className="title" itemProp="name">
           <span className="name">{translate('greeting')}</span>
-          <span className="role">{translate('role')}</span>
-          <span className="education">{translate('degree')}</span>
+          <span className="role" itemProp="jobTitle">{translate('role')}</span>
+          <span className="education" itemProp="description">{translate('degree')}</span>
         </h1>
         <p className="work-details">{translate('description')}</p>
       </div>
