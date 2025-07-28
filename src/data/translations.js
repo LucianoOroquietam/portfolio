@@ -65,7 +65,7 @@ export const translations = {
         'ToDo App Full Stack_description': 'Basic ToDo list application developed for the ForIT 2025 challenge. Includes backend with Express + TypeScript + SQLite3 and frontend with React and Vite.',
         'LunexaIt_name': 'LunexaIt',
         'LunexaIt_description': 'Construction of the website for the IT consulting firm focused on developing digital solutions with modern technology, functional design, and product vision.',
-
+        verProyecto: "View proyect",
         verRepositorio: "View repository"
 
     },
