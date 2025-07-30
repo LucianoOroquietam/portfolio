@@ -1,155 +1,208 @@
+:root {
+  --text-light: rgb(236, 238, 240);
+  --accent: #D4A373;
+  --accent-hover: #F4A261;
+}
+
+/* ---------------- GLOBAL HEADER ---------------- */
 .header {
-    display: flex;
-    justify-content: center; /* Centramos el logo */
-    align-items: center;
-    padding: 20px;
-    color: rgb(236, 238, 240);
-    position: relative;
-    height: 132px;
-    border-bottom: 3px solid rgb(236, 238, 240);
-    margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* Desktop cambia a space-between */
+  padding: 20px;
+  color: var(--text-light);
+  position: relative;
+  height: 132px;
 }
 
+/* Logo */
 .header .logo {
-    display: flex;
-    align-items: center;
-    color: rgb(236, 238, 240);
-    text-decoration: none;
-    position: absolute;
-    left: 35%;
-    transform: translateX(-50%); 
-    position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--text-light);
+  text-decoration: none;
+  width: 200px;                /* tu tamaño original */
+  position: absolute;          /* centrado en mobile */
+  left: 35%;
+  transform: translateX(-265%);
+  transition: color 300ms;
 }
-
 .header .logo:hover {
-    color: rgb(236, 238, 240);
+  color: var(--text-light);
 }
-
 .header .logo span {
-    font-size: 90px;
-    font-weight: bolder;
-    line-height: 1;
+  font-size: 90px;
+  font-weight: bolder;
+  line-height: 1;
 }
-
 .header .logo h3 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
+/* Separador */
+.divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  margin: 0 40px;
+}
+
+/* Navegación */
 .header nav {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-
 .header nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
-    height: 132px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  height: 132px;
 }
-
-.header li a {
-    color: rgb(236, 238, 240);
-    text-decoration: none;
-    transition: all 300ms;
-}
-
 .header li {
-    text-transform: uppercase;
-    font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
+.header li a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 300ms;
+}
 .header .active,
 .header a:hover {
-    color: #F4A261;
+  color: var(--accent-hover);
 }
 
-.menu-toggle{
-    display: none;
+/* Selector de idioma */
+.language-selector-header {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.language-selector-header select {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: background-color 300ms, color 300ms;
+}
+.language-selector-header select:hover {
+  background-color: var(--accent);
+  color: #000;
 }
 
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;       /* sólo mobile */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  cursor: pointer;
+  position: absolute;
+  left: -15px;
+  top: 14px;
+  z-index: 101;
+  /* borde más suave si en algún momento lo necesitas */
+  border-radius: 2px;
+  transition: none;     /* sin efecto hover */
+}
+
+/* ---------------- MOBILE (≤768px) ---------------- */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: rgb(236, 238, 240);
-        cursor: pointer;
-        position: absolute;
-        left: -28px;
-        top: 16%;
-        transform: translateY(-50%);
-        z-index: 101;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .menu-toggle:hover,
-    .menu-toggle:focus {
-        background: none;
-        outline: none;
-    }
+  .header {
+    padding: 0;
+  }
 
-    .header .logo span {
-        font-size: 68px;
-    }
+  .header .logo {
+    display: none;
+  }
 
-    .header .logo h3 {
-        font-size: 16px;
-        margin-left: 5px;
-    }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105vh;
+    background: rgba(44, 44, 44, 0.95);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    z-index: 100;
+  }
+  .header nav.nav-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
 
-    .header .logo {
-        left: 50%;
-        top: 20px;
-        transform: translateX(-50%);
-    }
+  .header nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;
+  }
+  .header li a {
+    font-size: 22px;
+  }
 
-    .header nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 105vh;
-        background: rgba(44, 44, 44, 0.95);
-        backdrop-filter: blur(5px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0.3s ease, opacity 0.3s ease;
-        z-index: 100;
-    }
+  .language-selector-header {
+    top: 29px;
+    right: 10px;
+    transform: none;
+  }
+  .language-selector-header select {
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
+}
 
-    .header nav.nav-open {
-        visibility: visible;
-        opacity: 1;
-    }
+/* ---------------- DESKTOP (≥769px) ---------------- */
+@media (min-width: 769px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
 
-    body.no-scroll {
-        overflow: hidden;
-        height: 100vh;
-    }
+  .header .logo {
+    position: relative;
+    left: -52px;
+    transform: none;
+  }
 
-    .header nav ul {
-        flex-direction: column;
-        gap: 1.5rem;
-        height: auto;
-    }
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    .header li {
-        padding: 10px 0;
-    }
+  .header nav ul {
+    gap: 1.5rem;
+  }
 
-    .header li a {
-        font-size: 22px;
-    }
-
+  .language-selector-header {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: translateY(-6px);
+  }
 }

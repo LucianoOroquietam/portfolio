@@ -10,7 +10,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { FiExternalLink } from "react-icons/fi";
 
 const Index = () => {
-  const { language, changeLanguage, translate } = useLanguage();
+  const { translate } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,12 +22,6 @@ const Index = () => {
 
   return (
     <div className={`home ${isVisible ? 'visible' : ''}`}>
-      <div className="language-selector">
-        <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
-      </div>
 
       <div className="presentation-container">
         <img src={lulo} alt="Foto de Luciano Oroquieta" className="profile-photo" itemProp="image" />
