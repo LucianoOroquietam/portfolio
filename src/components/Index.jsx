@@ -23,6 +23,8 @@ const Index = () => {
   return (
     <div className={`home ${isVisible ? 'visible' : ''}`}>
 
+      <div className="divider"></div>
+
       <div className="presentation-container">
         <img src={lulo} alt="Foto de Luciano Oroquieta" className="profile-photo" itemProp="image" />
         <h1 className="title" itemProp="name">

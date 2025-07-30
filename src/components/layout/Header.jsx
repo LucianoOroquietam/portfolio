@@ -58,7 +58,6 @@ const Header = () => {
       </div>
     </header>
 
-    <div className='divider'></div>
     </>
 
   );
