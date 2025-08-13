@@ -73,6 +73,10 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="learn-more repo-link"
                     whileHover={{ scale: 1.05 }}
+                    onClick={(e) => {
+                      e.preventDefault(); // evita cualquier redirección automática
+                      window.open(i.url, '_blank', 'noopener,noreferrer'); // abre la URL correcta
+                    }}
                   >
                     <FiExternalLink className="icon" />
                     {translate('verProyecto')}
@@ -80,12 +84,14 @@ const Index = () => {
                 )}
 
                 {i.urlRepo && (
+
                   <motion.a
                     href={i.urlRepo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="learn-more repo-link"
                     whileHover={{ scale: 1.05 }}
+
                   >
                     <img
                       src={techLogos.github}
