@@ -48,7 +48,7 @@ export const works = [
     {
         'id': 6,
         'nombre': 'Diseño UX/UI',
-        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/',
+        'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
         'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
         'tecnologias': ['JavaScript'],
         'categorias': ['Frontend', 'Diseño UX/UI', 'Animaciones', 'Juego Interactivo'],
