@@ -4,7 +4,7 @@ import { works } from '../data/works';
 import { motion } from 'framer-motion';
 import './index.css';
 import Skills from './Skills';
-import lulo from '../assets/lulo.jpg';
+import lulo from '../assets/lulo.png';
 import techLogos from '../assets/icons/techLogos';
 import { useLanguage } from '../context/LanguageContext';
 import { FiExternalLink } from "react-icons/fi";
@@ -74,8 +74,8 @@ const Index = () => {
                     className="learn-more repo-link"
                     whileHover={{ scale: 1.05 }}
                     onClick={(e) => {
-                      e.preventDefault(); // evita cualquier redirección automática
-                      window.open(i.url, '_blank', 'noopener,noreferrer'); // abre la URL correcta
+                      e.preventDefault();
+                      window.open(i.url, '_blank', 'noopener,noreferrer'); 
                     }}
                   >
                     <FiExternalLink className="icon" />

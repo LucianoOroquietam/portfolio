@@ -3,7 +3,7 @@ export const translations = {
         greeting: "¡Hola! Soy Luciano Oroquieta",
         role: "Desarrollador Web Full Stack",
         degree: "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
-        description: "Actualmente me desempeño como Profesor Asistente en UNICEN en el área de Ciencias exactas, enseñando las bases del desarrollo web. Además, trabajo como Diseñador creando interfaces intuitivas y optimizadas.",
+        description: "Desarrollador Full Stack con experiencia en React, Next.js, Angular y Node.js. Me especializo en la creación de interfaces modernas y eficientes, integradas con backends escalables. Además, cuento con experiencia académica como Profesor Asistente en UNICEN, enseñando fundamentos del desarrollo web y acompañando a estudiantes en sus primeros pasos en la programación.",
         titleProjects: "Algunos de mis proyectos",
         navHome: "Inicio",
         navCv: "Curriculum",
@@ -14,8 +14,11 @@ export const translations = {
         tools: "Herramientas",
         'Diseño UX/UI_name': 'Diseño UX/UI',
         'Diseño UX/UI_description': 'Un proyecto enfocado en diseño UX/UI, interactividad y animaciones avanzadas. Incluye prototipos en Figma, maquetación en código, un juego de "4 en línea" y efectos visuales avanzados con parallax y renderizado en canvas.',
-        'Ecommerce de cerveza_name': 'Ecommerce de cerveza',
-        'Ecommerce de cerveza_description': 'Tienda online de cervezas desarrollada con Angular, que permite explorar diferentes productos, agregarlos al carrito y simular una compra. Incluye verificación de edad con localStorage y está conectada a una API para obtener datos dinámicos.',
+        'Flowik_name': 'Flowik',
+        'Flowik_description': `Aplicación web para PyMEs que centraliza la gestión de usuarios, clientes, productos y proveedores. Permite registrar ventas, controlar stock, generar alertas, e importar/exportar datos de forma masiva para agilizar tareas administrativas.
+            Usuario de prueba
+            Email: footalent2025@gmail.com
+            Password: Footalent2025*`,
         'Microservicios de Gestión_name': 'Microservicios de Gestión',
         'Microservicios de Gestión_description': 'Proyecto que implementa una arquitectura de microservicios con Spring Boot, donde cada servicio se ejecuta de forma independiente y se comunica a través de Eureka. Cada microservicio está desplegado en Docker, permitiendo escalabilidad y flexibilidad en la infraestructura.',
         'API RESTful con PHP y SQL_name': 'API RESTful con PHP y SQL',
@@ -38,7 +41,7 @@ export const translations = {
         greeting: "Hello! I'm Luciano Oroquieta",
         role: "Full Stack Web Developer",
         degree: "University Technician in Application Development",
-        description: "I am currently an Assistant Professor at UNICEN in the Faculty of Exact Sciences, teaching the basics of web development. Additionally, I work as a Designer creating intuitive and optimized interfaces.",
+        description: "Full-stack developer with experience in React, Next.js, Angular, and Node.js. I specialize in creating modern and efficient interfaces integrated with scalable backends. I also have academic experience as an Assistant Professor at UNICEN, teaching web development fundamentals and guiding students through their first steps in programming.",
         titleProjects: "Some of my projects",
         navHome: "Home",
         navCv: "Resume",
@@ -49,8 +52,13 @@ export const translations = {
         tools: "Tools",
         'Diseño UX/UI_name': 'UX/UI Design',
         'Diseño UX/UI_description': 'A project focused on UX/UI design, interactivity, and advanced animations. Includes Figma prototypes, coded layout, a "4 in a row" game, and advanced visual effects with parallax and canvas rendering.',
-        'Ecommerce de cerveza_name': 'Beer Ecommerce',
-        'Ecommerce de cerveza_description': 'An online beer store developed with Angular, allowing you to explore different products, add them to the cart, and simulate a purchase. Includes age verification with localStorage and is connected to an API for dynamic data.',
+        'Flowik_name': 'Flowik',
+        'Flowik_description': `Web app for Pymes centralizing users, clients, products and suppliers.
+Records sales, controls stock, triggers alerts, and supports bulk import/export.
+
+Test user
+Email: footalent2025@gmail.com
+Password: Footalent2025*`,
         'Microservicios de Gestión_name': 'Microservices Management',
         'Microservicios de Gestión_description': 'A project that implements a microservice architecture with Spring Boot, where each service runs independently and communicates via Eureka. Each microservice is deployed on Docker, allowing scalability and infrastructure flexibility.',
         'API RESTful con PHP y SQL_name': 'RESTful API with PHP and SQL',

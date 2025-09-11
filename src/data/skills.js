@@ -20,8 +20,7 @@ import GitHubIcon from "../assets/icons/github.svg";
 import LaravelIcon from "../assets/icons/laravel.svg";
 import TailwindIcon from "../assets/icons/tailwind.svg";
 import NodeIcon from "../assets/icons/nodejs.svg";
-
-
+import Next from "../assets/icons/nextjs.svg";
 
 
 
@@ -44,6 +43,7 @@ export const skills = {
         { name: "JavaScript", icon: jsIcon },
         { name: "TypeScript", icon: TypeScriptIcon },
         { name: "React", icon: reactIcon },
+        { name: "Next", icon: Next },
         { name: "Angular", icon: angularIcon },
         { name: "Tailwind", icon: TailwindIcon },
     ],

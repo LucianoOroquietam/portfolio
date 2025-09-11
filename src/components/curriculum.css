@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -121,6 +120,8 @@ a {
 }
 
 
+
+
 @media (max-width: 768px) {
     .header-cv h1 {
         font-size: 1.5rem;
@@ -141,4 +142,139 @@ a {
     .content .date {
         font-size: 0.8rem;
     }
+}
+
+
+.curriculum {
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg,#2c2c2c 0%, #262525 100%);
+}
+
+.header-cv h1 { letter-spacing: .2px; }
+.header-cv h2 { color:#bdbdbd; }
+.summary { max-width: 70ch; margin: 0 auto 10px; color:#cfcfcf; }
+.links-row { display:flex; gap:12px; align-items:center; justify-content:center; flex-wrap:wrap; }
+.dot-sep { width:4px; height:4px; background:#6a6a6a; border-radius:999px; display:inline-block }
+
+.section h3{
+  border-bottom: 1px solid rgba(255,255,255,.14);
+  text-transform:none;
+  letter-spacing:.2px;
+}
+
+.content-exp, .content-edu{
+  background: rgba(0,0,0,.14);
+  border: 1px solid rgba(255,255,255,.06);
+  border-left: 3px solid #D4A373;  
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+.content-exp h4, .content-edu h4{ margin: 0 0 4px 0; }
+.date{
+  color:#A8A8A8 !important;
+  font-size:.9rem !important;
+  margin:0 0 6px 0 !important;
+}
+
+ul { margin: 8px 0 8px 18px; }
+ul li { margin-bottom: 6px; }
+
+.recommendations .recommendation{
+  background: rgba(0,0,0,.10);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px;
+  padding: 14px;
+}
+.quote{
+  margin:0;
+  padding: 8px 12px;
+  border-left:4px solid #D4A373;
+  background: rgba(255,255,255,.03);
+  color:#f1f1f1;
+  line-height:1.55;
+  border-radius: 6px;
+}
+.quote-author{
+  margin:10px 2px 6px;
+  color:#c9c9c9;
+  font-style: italic;
+}
+.bullets-inline{
+  list-style:none;
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin: 4px 0 0; padding:0;
+}
+.bullets-inline li{
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:.9rem;
+  background: rgba(255,255,255,.02);
+}
+
+.download-btn{
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+.download-btn:hover{
+  background-color:#D4A373;
+  color:#1E1A1A;
+  border-color:#E2B586;
+}
+
+@media (max-width: 768px){
+  .content-exp, .content-edu{ padding: 10px 12px; }
+  .quote{ font-size:.95rem; }
+}
+
+
+/* --- timeline formación --- */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.timeline li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+.timeline .dot {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: #D4A373;
+  border-radius: 50%;
+}
+
+/* --- skills visuales --- */
+.skills-block h4 {
+  margin: 14px 0 6px;
+  font-size: 1rem;
+  color: #D4A373;
+  font-weight: 600;
+}
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+.tag-list li {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: .9rem;
+  color: #f3f3f3;
+}
+.tag-list.soft li {
+  background: rgba(212,163,115,.1);
+  border-color: rgba(212,163,115,.4);
+  color: #e8d5c3;
 }

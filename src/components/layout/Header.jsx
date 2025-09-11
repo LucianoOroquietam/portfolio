@@ -49,11 +49,24 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="language-selector-header">
-          <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-          </select>
+        <div className="language-selector-header pill-lang-selector">
+          <button
+            className={`pill-lang-btn${language === 'es' ? ' active' : ''}`}
+            onClick={() => changeLanguage('es')}
+            aria-label="Cambiar a español"
+            type="button"
+          >
+            ES
+          </button>
+          <span className="pill-divider">|</span>
+          <button
+            className={`pill-lang-btn${language === 'en' ? ' active' : ''}`}
+            onClick={() => changeLanguage('en')}
+            aria-label="Switch to English"
+            type="button"
+          >
+            EN
+          </button>
         </div>
       </div>
     </header>

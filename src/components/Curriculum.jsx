@@ -1,11 +1,10 @@
-import './curriculum.css';
+import "./curriculum.css";
 
 const Curriculum = () => {
   return (
     <>
       <div className="curriculum">
-        {/* HEADER CV */}
-        <div className="header-cv">
+        {/* <div className="header-cv">
           <h1>Luciano Oroquieta Merlino</h1>
           <h2>Técnico Universitario en Desarrollo de Aplicaciones Informáticas (TUDAI)</h2>
           <p className="summary">
@@ -16,14 +15,18 @@ const Curriculum = () => {
           <div className="contact-info">
             <p>📍 Tandil, Argentina</p>
             <p>📞 +54 2281 534974</p>
-            <p>📧 <a href="mailto:oroquietaluciano@gmail.com">oroquietaluciano@gmail.com</a></p>
             <p>
-              <a href="https://linkedin.com/in/luciano-oroquieta" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a> |
-              <a href="https://github.com/LucianoOroquietam" target="_blank" rel="noopener noreferrer"> 💻 GitHub</a> |
-              <a href="https://www.luciano-oroquieta.me/home" target="_blank" rel="noopener noreferrer"> 🌐 Portfolio</a>
+              📧 <a href="mailto:oroquietaluciano@gmail.com">oroquietaluciano@gmail.com</a>
+            </p>
+            <p className="links-row">
+              <a href="https://linkedin.com/in/luciano-oroquieta" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+              <span className="dot-sep" />
+              <a href="https://github.com/LucianoOroquietam" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+              <span className="dot-sep" />
+              <a href="https://www.luciano-oroquieta.me/home" target="_blank" rel="noopener noreferrer">🌐 Portfolio</a>
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* EXPERIENCIA PROFESIONAL */}
         <section className="section">
@@ -84,31 +87,87 @@ const Curriculum = () => {
             </ul>
           </div>
 
-        
+          <div className="content-exp">
+            <h4>RoverSec — Proyecto independiente de divulgación</h4>
+            <p className="date">2025</p>
+            <ul>
+              <li>Desarrollo fullstack con Next.js y TailwindCSS (mobile-first).</li>
+              <li>Diseño responsivo y performance orientada a contenido técnico.</li>
+              <li>Rol: programador principal y mantenimiento continuo.</li>
+            </ul>
+          </div>
+
+          <div className="content-exp">
+            <h4>Flowik – Panel de Gestión para PYMES</h4>
+            <p className="date">2025</p>
+            <ul>
+              <li>Rol : Lider tecnico de frontend y programador full stack.</li>
+              <li>Gestion de tareas y organizacion del equipo.</li>
+              <li>Tecnologias: React , Spring Boot, GitFlow , Jira, Mysql.</li>
+              <li>Importacion y exportacion de productos (Uso de IA).</li>
+            </ul>
+          </div>
         </section>
 
         {/* FORMACIÓN COMPLEMENTARIA */}
         <section className="section">
           <h3>Formación Complementaria</h3>
-          <ul>
-            <li>Introducción a Angular - UNICEN</li>
-            <li>Bases de Datos NoSQL - UNICEN</li>
-            <li>Google Analytics 4 - UNICEN</li>
-            <li>Master en React (Hooks, MERN, NodeJS, JWT) - Udemy</li>
+          <ul className="timeline">
+            <li><span className="dot"></span> Introducción a Angular - UNICEN</li>
+            <li><span className="dot"></span> Introduccion a React - Unicen</li>
+            <li><span className="dot"></span> Bases de Datos NoSQL - UNICEN</li>
+            <li><span className="dot"></span> Google Analytics 4 - UNICEN</li>
+            <li><span className="dot"></span> Master en React (Hooks, MERN, NodeJS, JWT) - Udemy</li>
+            <li><span className="dot"></span> MCP Bootcam - Microsoft (En curso).</li>
+            <li><span className="dot"></span> Seminario Desarrollo de Plataformas (En curso) - Unicen</li>
+
+          
+
           </ul>
         </section>
 
         {/* SKILLS */}
         <section className="section">
           <h3>Skills</h3>
-          <ul>
-            <li><strong>Frontend:</strong> HTML, CSS, Figma, React, Angular, Tailwind</li>
-            <li><strong>Backend:</strong> Java (Spring Boot), PHP (Laravel), Node.js (Express)</li>
-            <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL, MongoDB, SQLite</li>
-            <li><strong>Herramientas:</strong> Docker, Git, Swagger, Postman, ESLint, Prettier</li>
-            <li><strong>Otros:</strong> Electron, MVC, APIs RESTful, microservicios</li>
-            <li><strong>Blandas:</strong> Comunicación efectiva, trabajo en equipo, proactividad</li>
-          </ul>
+          <div className="skills-block">
+            <h4>Frontend</h4>
+            <ul className="tag-list">
+              <li>HTML</li><li>CSS</li><li>Figma</li><li>React</li><li>Angular</li><li>Tailwind</li><li>Next</li>
+            </ul>
+            <h4>Backend</h4>
+            <ul className="tag-list">
+              <li>Java (Spring Boot)</li><li>PHP (Laravel)</li><li>Node.js (Express)</li>
+            </ul>
+            <h4>Bases de Datos</h4>
+            <ul className="tag-list">
+              <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li>
+            </ul>
+            <h4>Herramientas</h4>
+            <ul className="tag-list">
+              <li>Docker</li><li>Git</li><li>Swagger</li><li>Postman</li><li>ESLint</li><li>Prettier</li>Slack<li>Jira</li><li>Trello</li>GitFlow<li>Figma</li>
+            </ul>
+            
+          </div>
+        </section>
+
+
+        {/* RECOMENDACIONES (nuevo) */}
+        <section className="section recommendations">
+          <h3>Recomendaciones</h3>
+
+          <div className="recommendation">
+            <blockquote className="quote">
+              “Luciano fue no solo un referente técnico, sino también un conector entre equipos.
+              Su compromiso y liderazgo marcaron un diferencial claro en la dinámica y la calidad del proyecto.”
+            </blockquote>
+            <p className="quote-author">— Lorena Sartori (PM) · Feedback Flowik</p>
+
+            <ul className="bullets-inline">
+              <li>Liderazgo</li>
+              <li>Comunicación efectiva</li>
+              <li>Aporte full-stack (deploy, DER)</li>
+            </ul>
+          </div>
         </section>
       </div>
 

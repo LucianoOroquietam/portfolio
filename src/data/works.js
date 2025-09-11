@@ -10,12 +10,12 @@ export const works = [
     },
     {
         'id': 2,
-        'nombre': 'Ecommerce de cerveza',
-        'url': 'https://stackblitz.com/~/github.com/LucianoOroquietam/proyecto-angular?file=src/app/services/carrito-cerveza.service.ts',
-        'urlRepo': 'https://github.com/LucianoOroquietam/proyecto-angular',
-        'tecnologias': ['Angular'],
+        'nombre': 'Flowik',
+        'url': 'https://flowik.netlify.app/login',
+        'urlRepo': 'https://github.com/petshop112/Flowik',
+        'tecnologias': ['React'],
         'categorias': ['E-commerce', 'Frontend', 'API'],
-        'descripcion': 'Tienda de Cerveza es una tienda online de cervezas desarrollada con Angular, que permite explorar diferentes productos, agregarlos al carrito y simular una compra. Incluye verificación de edad con localStorage y está conectada a una API para obtener datos dinámicos.'
+        'descripcion': 'Flowik es una aplicación web destinada a pequeñas y medianas empresas, que centraliza la gestión de usuarios, clientes, productos y proveedores. Su objetivo es digitalizar y simplificar las tareas administrativas del negocio mediante un panel intuitivo con funcionalidades clave como registro de ventas, control de stock, alertas automatizadas, importacion y exportacion masiva para agilizar tiempos y facilitar las tareas administrativas del administrador.',
     },
     {
         'id': 3,
