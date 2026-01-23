@@ -1,80 +1,526 @@
+// ═══════════════════════════════════════════════════════════════════════════
+// LUCIANO OROQUIETA — PORTFOLIO TRANSLATIONS (i18n)
+// Premium Copywriting for International Market
+// ═══════════════════════════════════════════════════════════════════════════
+
 export const translations = {
     es: {
-        greeting: "¡Hola! Soy Luciano Oroquieta",
-        role: "Desarrollador Web Full Stack",
-        degree: "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
-        description: "Desarrollador Full Stack con experiencia en React, Next.js, Angular y Node.js. Me especializo en la creación de interfaces modernas y eficientes, integradas con backends escalables. Además, cuento con experiencia académica como Profesor Asistente en UNICEN, enseñando fundamentos del desarrollo web y acompañando a estudiantes en sus primeros pasos en la programación.",
-        titleProjects: "Algunos de mis proyectos",
+        // ─────────────────────────────────────────────────────────────────────
+        // META & SEO
+        // ─────────────────────────────────────────────────────────────────────
+        metaTitle: "Luciano Oroquieta | Full Stack Developer",
+        metaDescription: "Desarrollador Full Stack especializado en React, Next.js, Angular y Node.js. Creo productos digitales escalables con código limpio y experiencias excepcionales.",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // NAVIGATION
+        // ─────────────────────────────────────────────────────────────────────
         navHome: "Inicio",
-        navCv: "Curriculum",
+        navProjects: "Proyectos",
+        navCv: "Experiencia",
         navContact: "Contacto",
-        skillsTitle: "Habilidades",
+        navHireCta: "Trabajemos juntos",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // HERO SECTION — High Impact Landing
+        // ─────────────────────────────────────────────────────────────────────
+        heroTagline: "Full Stack Developer",
+        heroHeadline: "Transformo ideas en productos digitales que escalan",
+        heroSubheadline: "Desarrollo aplicaciones web modernas con React, Next.js y Node.js. Enfocado en código limpio, performance y experiencias de usuario excepcionales.",
+        heroCtaPrimary: "Ver proyectos",
+        heroCtaSecondary: "Descargar CV",
+        heroCtaTertiary: "Contactar",
+        heroAvailability: "Disponible para proyectos",
+        heroScrollIndicator: "Scroll para explorar",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // ABOUT / INTRO SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        aboutSectionLabel: "Sobre mí",
+        aboutHeadline: "Desarrollador con mentalidad de producto",
+        aboutDescription1: "Soy un desarrollador Full Stack con experiencia construyendo productos digitales desde cero. Me especializo en crear interfaces modernas y backends escalables.",
+        aboutDescription2: "Actualmente soy Ayudante de Cátedra en UNICEN, donde enseño fundamentos de desarrollo web. Esta experiencia me ha dado una perspectiva única para comunicar conceptos técnicos con claridad.",
+        aboutHighlight1Title: "3+",
+        aboutHighlight1Label: "Años de experiencia",
+        aboutHighlight2Title: "10+",
+        aboutHighlight2Label: "Proyectos entregados",
+        aboutHighlight3Title: "5+",
+        aboutHighlight3Label: "Tecnologías dominadas",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // SKILLS SECTION — By Domain
+        // ─────────────────────────────────────────────────────────────────────
+        skillsSectionLabel: "Especialidades",
+        skillsHeadline: "Stack tecnológico",
+        skillsSubheadline: "Herramientas que domino para construir productos excepcionales",
+
+        // Domains
+        skillsDomainFrontend: "Frontend",
+        skillsDomainFrontendDesc: "Interfaces modernas, responsivas y de alto rendimiento",
+        skillsDomainBackend: "Backend",
+        skillsDomainBackendDesc: "APIs robustas, microservicios y arquitecturas escalables",
+        skillsDomainDatabase: "Bases de datos",
+        skillsDomainDatabaseDesc: "Modelado, optimización y gestión de datos",
+        skillsDomainTools: "DevOps & Herramientas",
+        skillsDomainToolsDesc: "Automatización, testing y flujos de trabajo eficientes",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // PROJECTS SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        projectsSectionLabel: "Portfolio",
+        projectsHeadline: "Proyectos destacados",
+        projectsSubheadline: "Una selección de trabajos que demuestran mi enfoque y capacidades",
+        projectsViewAll: "Ver todos los proyectos",
+        projectsViewLive: "Ver proyecto",
+        projectsViewRepo: "Ver código",
+        projectsContext: "Contexto",
+        projectsSolution: "Solución",
+        projectsResult: "Resultado",
+        projectsTech: "Tecnologías",
+
+        // Featured Projects Data
+        'Supermarket POS_name': 'Supermarket POS',
+        'Supermarket POS_tagline': 'Sistema de Gestión Empresarial',
+        'Supermarket POS_context': 'Desarrollo End-to-End de un sistema integral para la gestión completa de supermercados y almacenes.',
+        'Supermarket POS_solution': 'Implementé una aplicación de escritorio multiplataforma con Electron y Angular v16, diseñando la arquitectura completa desde la base de datos hasta la interfaz de usuario con Angular Material.',
+        'Supermarket POS_result': 'Sistema robusto de punto de venta con gestión de inventario, ventas, clientes y reportes en tiempo real, optimizado para usabilidad.',
+        'Supermarket POS_description': 'Sistema integral de gestión End-to-End para supermercados. App de escritorio con Electron y Angular v16, UI/UX optimizada con Angular Material.',
+
+        'LunexaIt_name': 'Lunexa IT',
+        'LunexaIt_tagline': 'Consultora IT',
+        'LunexaIt_context': 'Una consultora IT necesitaba un sitio web que transmitiera profesionalismo y modernidad.',
+        'LunexaIt_solution': 'Diseñé y desarrollé un sitio web corporativo con React y diseño responsive, enfocado en conversión.',
+        'LunexaIt_result': 'Sitio web en producción que representa efectivamente la marca y genera leads de calidad.',
+        'LunexaIt_description': 'Sitio web corporativo para consultora IT. Desarrollo completo con React, diseño moderno y enfoque en conversión.',
+
+        'Flowik_name': 'Flowik',
+        'Flowik_tagline': 'SaaS de Gestión',
+        'Flowik_context': 'PyMEs necesitaban una solución simple para digitalizar su gestión administrativa.',
+        'Flowik_solution': 'Lideré el frontend de un panel de gestión completo con React y Spring Boot, incluyendo control de stock, ventas y alertas automatizadas.',
+        'Flowik_result': 'Plataforma funcional usada por negocios reales para optimizar sus operaciones diarias.',
+        'Flowik_description': 'Panel de gestión para PyMEs. Control de usuarios, productos, stock, ventas y proveedores. Importación/exportación masiva de datos.',
+
+        'Microservicios de Gestión_name': 'Microservicios',
+        'Microservicios de Gestión_tagline': 'Arquitectura Distribuida',
+        'Microservicios de Gestión_context': 'Proyecto para explorar y dominar arquitecturas de microservicios enterprise.',
+        'Microservicios de Gestión_solution': 'Implementé una arquitectura con Spring Boot, Eureka para service discovery, Docker para containerización y JWT para seguridad.',
+        'Microservicios de Gestión_result': 'Sistema distribuido escalable que demuestra conocimiento de patrones enterprise.',
+        'Microservicios de Gestión_description': 'Arquitectura de microservicios con Spring Boot, Eureka y Docker. Servicios independientes con comunicación distribuida.',
+
+        'API RESTful con PHP y SQL_name': 'API RESTful',
+        'API RESTful con PHP y SQL_tagline': 'Backend PHP',
+        'API RESTful con PHP y SQL_context': 'Sistema de gestión que requería una API robusta para operaciones CRUD.',
+        'API RESTful con PHP y SQL_solution': 'Desarrollé una API REST completa con PHP, siguiendo mejores prácticas de diseño de APIs.',
+        'API RESTful con PHP y SQL_result': 'API funcional y bien documentada lista para integración con cualquier frontend.',
+        'API RESTful con PHP y SQL_description': 'API RESTful completa para gestión de datos. Operaciones CRUD con PHP y MySQL.',
+
+        'Pagina de Coca Cola_name': 'Landing Coca-Cola',
+        'Pagina de Coca Cola_tagline': 'Maquetación Web',
+        'Pagina de Coca Cola_context': 'Proyecto de práctica para dominar técnicas de maquetación moderna.',
+        'Pagina de Coca Cola_solution': 'Recreé la landing page de Coca-Cola con HTML y CSS puro, capturando la esencia de la marca.',
+        'Pagina de Coca Cola_result': 'Maquetación pixel-perfect que demuestra dominio de CSS y atención al detalle.',
+        'Pagina de Coca Cola_description': 'Maquetación de landing page corporativa. HTML5 y CSS3 con diseño responsive.',
+
+        'Diseño UX/UI_name': 'Proyecto UX/UI',
+        'Diseño UX/UI_tagline': 'Diseño + Animaciones',
+        'Diseño UX/UI_context': 'Proyecto académico para explorar diseño UX/UI e interactividad avanzada.',
+        'Diseño UX/UI_solution': 'Creé prototipos en Figma, implementé animaciones con parallax, canvas y un juego interactivo "4 en línea".',
+        'Diseño UX/UI_result': 'Proyecto completo que demuestra capacidades de diseño y desarrollo frontend avanzado.',
+        'Diseño UX/UI_description': 'Proyecto de diseño UX/UI con prototipos Figma, animaciones parallax, canvas y juego interactivo.',
+
+        'Diseño pagina bautismo_name': 'Evento Landing',
+        'Diseño pagina bautismo_tagline': 'Diseño para Cliente',
+        'Diseño pagina bautismo_context': 'Cliente necesitaba una página elegante para un evento especial.',
+        'Diseño pagina bautismo_solution': 'Diseñé una landing page minimalista y elegante, fácilmente reutilizable como template.',
+        'Diseño pagina bautismo_result': 'Template funcional entregado al cliente y disponible para futuros eventos.',
+        'Diseño pagina bautismo_description': 'Landing page para eventos. Diseño elegante y minimalista, responsive y reutilizable.',
+
+        'ToDo App Full Stack_name': 'ToDo App',
+        'ToDo App Full Stack_tagline': 'Full Stack Challenge',
+        'ToDo App Full Stack_context': 'Challenge técnico para demostrar habilidades full stack completas.',
+        'ToDo App Full Stack_solution': 'Desarrollé una aplicación completa con React + Vite en frontend y Express + TypeScript + SQLite3 en backend.',
+        'ToDo App Full Stack_result': 'Aplicación funcional que demuestra dominio de todo el stack moderno.',
+        'ToDo App Full Stack_description': 'Aplicación full stack con React, Express, TypeScript y SQLite3. CRUD completo con persistencia.',
+
+        // ─────────────────────────────────────────────────────────────────────
+        // EXPERIENCE / CURRICULUM SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        experienceSectionLabel: "Trayectoria",
+        experienceHeadline: "Experiencia profesional",
+        experienceSubheadline: "Mi camino en el desarrollo de software",
+
+        expRole1: "Ayudante de Cátedra",
+        expCompany1: "UNICEN",
+        expPeriod1: "Agosto 2023 – Actualidad",
+        expLocation1: "Tandil, Argentina",
+        expDesc1_1: "Facilito clases de desarrollo web con PHP y MySQL para estudiantes universitarios.",
+        expDesc1_2: "Enseño el patrón MVC para aplicaciones backend en entorno académico.",
+        expDesc1_3: "Guío a estudiantes en la creación de APIs RESTful y testing con Postman.",
+
+        expRole2: "Desarrollador Web Freelance",
+        expCompany2: "Independiente",
+        expPeriod2: "Enero 2024 – Actualidad",
+        expLocation2: "Remoto",
+        expDesc2_1: "Diseño de sitios web para clientes utilizando Figma y herramientas modernas.",
+        expDesc2_2: "Desarrollo de aplicaciones web con React y TailwindCSS.",
+        expDesc2_3: "Implementación de interfaces responsivas y accesibles.",
+
+        expRole3: "Líder Técnico Frontend",
+        expCompany3: "Proyecto Flowik",
+        expPeriod3: "2025",
+        expLocation3: "Remoto",
+        expDesc3_1: "Liderazgo técnico del equipo de frontend en proyecto SaaS.",
+        expDesc3_2: "Gestión de tareas y organización del equipo con metodologías ágiles.",
+        expDesc3_3: "Stack: React, Spring Boot, GitFlow, Jira, MySQL.",
+
+        expRole4: "Desarrollador Full Stack (Freelance)",
+        expCompany4: "Proyecto Retail (SaaS)",
+        expPeriod4: "Marzo 2025 – Enero 2026",
+        expLocation4: "Remoto",
+        expDesc4_1: "Desarrollo End-to-End: Desarrollé un sistema integral de gestión para supermercados y almacenes, abarcando desde el diseño de base de datos hasta la interfaz de usuario.",
+        expDesc4_2: "Arquitectura Híbrida: Implementé una aplicación de escritorio multiplataforma utilizando Electron y Angular (v16), asegurando una experiencia nativa y performante.",
+        expDesc4_3: "UI/UX: Diseñé componentes con Angular Material para optimizar la experiencia del usuario en puntos de venta.",
+
+        expRole5: "Desarrollador Frontend",
+        expCompany5: "AgroBlock",
+        expPeriod5: "Actualidad",
+        expLocation5: "Remoto",
+        expDesc5_1: "Diseñé y desarrollé funcionalidades para una plataforma de gestión agrícola y ganadera orientada a la optimización operativa del campo.",
+        expDesc5_2: "Implementé módulos de administración de polígonos/lotes, facilitando la organización, identificación y planificación de áreas productivas.",
+        expDesc5_3: "La solución centraliza información clave del establecimiento para mejorar la toma de decisiones de productores y técnicos del sector.",
+
+        // Education
+        educationHeadline: "Formación académica",
+        eduDegree1: "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
+        eduInstitution1: "UNICEN",
+        eduPeriod1: "2022 – Actualidad",
+
+        // Certifications
+        certificationsHeadline: "Formación complementaria",
+        cert1: "Introducción a Angular - UNICEN",
+        cert2: "Introducción a React - UNICEN",
+        cert3: "Bases de Datos NoSQL - UNICEN",
+        cert4: "Google Analytics 4 - UNICEN",
+        cert5: "Master en React (Hooks, MERN, NodeJS, JWT) - Udemy",
+        cert6: "MCP Bootcamp - Microsoft (En curso)",
+        cert7: "Seminario Desarrollo de Plataformas - UNICEN (En curso)",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // CONTACT SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        contactSectionLabel: "Contacto",
+        contactHeadline: "¿Tienes un proyecto en mente?",
+        contactSubheadline: "Estoy abierto a nuevas oportunidades y colaboraciones. Hablemos sobre cómo puedo ayudarte.",
+        contactFormName: "Nombre",
+        contactFormNamePlaceholder: "Tu nombre",
+        contactFormEmail: "Email",
+        contactFormEmailPlaceholder: "tu@email.com",
+        contactFormMessage: "Mensaje",
+        contactFormMessagePlaceholder: "Cuéntame sobre tu proyecto o idea...",
+        contactFormSubmit: "Enviar mensaje",
+        contactFormSending: "Enviando...",
+        contactFormSuccess: "¡Mensaje enviado correctamente! Te responderé pronto.",
+        contactFormError: "Hubo un error al enviar. Intenta de nuevo.",
+        contactAlternative: "O escríbeme directamente a",
+        contactInfoTitle: "Información de contacto",
+        contactLocationLabel: "Ubicación",
+        contactLocation: "Tandil, Argentina",
+        contactEmailLabel: "Email",
+        contactPhoneLabel: "Teléfono",
+        contactSocialLabel: "Redes sociales",
+        contactAvailability: "Disponible para proyectos freelance y posiciones remotas",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // FOOTER
+        // ─────────────────────────────────────────────────────────────────────
+        footerTagline: "Creando experiencias digitales excepcionales",
+        footerRights: "Todos los derechos reservados",
+        footerBuiltWith: "Desarrollado con",
+        footerAnd: "y",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // 404 PAGE
+        // ─────────────────────────────────────────────────────────────────────
+        notFoundTitle: "Página no encontrada",
+        notFoundDescription: "La página que buscas no existe o ha sido movida.",
+        notFoundCta: "Volver al inicio",
+        notFoundBack: "Volver atrás",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // COMMON / MISC
+        // ─────────────────────────────────────────────────────────────────────
+        loading: "Cargando...",
+        viewMore: "Ver más",
+        close: "Cerrar",
         backEnd: "Backend",
         frontEnd: "Frontend",
         tools: "Herramientas",
-        'Diseño UX/UI_name': 'Diseño UX/UI',
-        'Diseño UX/UI_description': 'Un proyecto enfocado en diseño UX/UI, interactividad y animaciones avanzadas. Incluye prototipos en Figma, maquetación en código, un juego de "4 en línea" y efectos visuales avanzados con parallax y renderizado en canvas.',
-        'Flowik_name': 'Flowik',
-        'Flowik_description': `Aplicación web para PyMEs que centraliza la gestión de usuarios, clientes, productos y proveedores. Permite registrar ventas, controlar stock, generar alertas, e importar/exportar datos de forma masiva para agilizar tareas administrativas.
-            Usuario de prueba
-            Email: footalent2025@gmail.com
-            Password: Footalent2025*`,
-        'Microservicios de Gestión_name': 'Microservicios de Gestión',
-        'Microservicios de Gestión_description': 'Proyecto que implementa una arquitectura de microservicios con Spring Boot, donde cada servicio se ejecuta de forma independiente y se comunica a través de Eureka. Cada microservicio está desplegado en Docker, permitiendo escalabilidad y flexibilidad en la infraestructura.',
-        'API RESTful con PHP y SQL_name': 'API RESTful con PHP y SQL',
-        'API RESTful con PHP y SQL_description': 'Una API REST-FULL diseñada para realizar operaciones CRUD en un sistema de gestión de bandas musicales.',
-        'Pagina de Coca Cola_name': 'Página de Coca Cola',
-        'Pagina de Coca Cola_description': 'Este proyecto orientado a una maquetación de la página web de Coca-Cola, transmitiendo toda la frescura, energía y esencia icónica de la marca.',
-        'Buscador de peliculas_name': 'Buscador de películas',
-        'Buscador de peliculas_description': 'Esta aplicación permite a los usuarios agregar, eliminar, buscar y filtrar películas en una lista. Utilizando React y localStorage, los datos se mantienen incluso al recargar la página.',
-        'Diseño pagina bautismo_name': 'Diseño página bautismo',
-        'Diseño pagina bautismo_description': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo.',
-        'ToDo App Full Stack_name': 'ToDo App Full Stack',
-        'ToDo App Full Stack_description': 'Aplicación básica de lista de tareas (ToDo) desarrollada para el challenge de ingreso a Academia ForIT 2025. Incluye backend con Express + TypeScript + SQLite3 y frontend en React con Vite.',
-        'LunexaIt_name': 'LunexaIt',
-        'LunexaIt_description': 'Construccion del sitio web de la Consultora IT enfocada en el desarrollo de soluciones digitales con tecnología moderna, diseño funcional y visión de producto.',
-
+        skillsTitle: "Habilidades",
+        greeting: "¡Hola! Soy Luciano Oroquieta",
+        role: "Desarrollador Web Full Stack",
+        degree: "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
+        description: "Desarrollador Full Stack con experiencia en React, Next.js, Angular y Node.js. Me especializo en la creación de interfaces modernas y eficientes, integradas con backends escalables.",
+        titleProjects: "Proyectos destacados",
         verProyecto: "Ver proyecto",
-        verRepositorio: "Ver repositorio"
+        verRepositorio: "Ver repositorio",
     },
+
     en: {
+        // ─────────────────────────────────────────────────────────────────────
+        // META & SEO
+        // ─────────────────────────────────────────────────────────────────────
+        metaTitle: "Luciano Oroquieta | Full Stack Developer",
+        metaDescription: "Full Stack Developer specialized in React, Next.js, Angular, and Node.js. I build scalable digital products with clean code and exceptional user experiences.",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // NAVIGATION
+        // ─────────────────────────────────────────────────────────────────────
+        navHome: "Home",
+        navProjects: "Projects",
+        navCv: "Experience",
+        navContact: "Contact",
+        navHireCta: "Let's work together",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // HERO SECTION — High Impact Landing
+        // ─────────────────────────────────────────────────────────────────────
+        heroTagline: "Full Stack Developer",
+        heroHeadline: "I transform ideas into digital products that scale",
+        heroSubheadline: "I build modern web applications with React, Next.js, and Node.js. Focused on clean code, performance, and exceptional user experiences.",
+        heroCtaPrimary: "View projects",
+        heroCtaSecondary: "Download CV",
+        heroCtaTertiary: "Get in touch",
+        heroAvailability: "Available for projects",
+        heroScrollIndicator: "Scroll to explore",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // ABOUT / INTRO SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        aboutSectionLabel: "About me",
+        aboutHeadline: "Developer with a product mindset",
+        aboutDescription1: "I'm a Full Stack Developer with experience building digital products from scratch. I specialize in creating modern interfaces and scalable backends.",
+        aboutDescription2: "Currently, I'm a Teaching Assistant at UNICEN, where I teach web development fundamentals. This experience has given me a unique perspective for communicating technical concepts clearly.",
+        aboutHighlight1Title: "3+",
+        aboutHighlight1Label: "Years of experience",
+        aboutHighlight2Title: "10+",
+        aboutHighlight2Label: "Projects delivered",
+        aboutHighlight3Title: "5+",
+        aboutHighlight3Label: "Technologies mastered",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // SKILLS SECTION — By Domain
+        // ─────────────────────────────────────────────────────────────────────
+        skillsSectionLabel: "Expertise",
+        skillsHeadline: "Tech Stack",
+        skillsSubheadline: "Tools I master to build exceptional products",
+
+        // Domains
+        skillsDomainFrontend: "Frontend",
+        skillsDomainFrontendDesc: "Modern, responsive, high-performance interfaces",
+        skillsDomainBackend: "Backend",
+        skillsDomainBackendDesc: "Robust APIs, microservices, and scalable architectures",
+        skillsDomainDatabase: "Databases",
+        skillsDomainDatabaseDesc: "Modeling, optimization, and data management",
+        skillsDomainTools: "DevOps & Tools",
+        skillsDomainToolsDesc: "Automation, testing, and efficient workflows",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // PROJECTS SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        projectsSectionLabel: "Portfolio",
+        projectsHeadline: "Featured Projects",
+        projectsSubheadline: "A selection of work that demonstrates my approach and capabilities",
+        projectsViewAll: "View all projects",
+        projectsViewLive: "View project",
+        projectsViewRepo: "View code",
+        projectsContext: "Context",
+        projectsSolution: "Solution",
+        projectsResult: "Result",
+        projectsTech: "Technologies",
+
+        // Featured Projects Data
+        'Supermarket POS_name': 'Supermarket POS',
+        'Supermarket POS_tagline': 'Business Management System',
+        'Supermarket POS_context': 'End-to-End development of a comprehensive system for complete supermarket and store management.',
+        'Supermarket POS_solution': 'I implemented a cross-platform desktop application with Electron and Angular v16, designing the complete architecture from database to user interface with Angular Material.',
+        'Supermarket POS_result': 'Robust point-of-sale system with inventory management, sales, customers and real-time reports, optimized for usability.',
+        'Supermarket POS_description': 'Comprehensive End-to-End management system for supermarkets. Desktop app with Electron and Angular v16, optimized UI/UX with Angular Material.',
+
+        'LunexaIt_name': 'Lunexa IT',
+        'LunexaIt_tagline': 'IT Consultancy',
+        'LunexaIt_context': 'An IT consultancy needed a website that conveyed professionalism and modernity.',
+        'LunexaIt_solution': 'I designed and developed a corporate website with React and responsive design, focused on conversion.',
+        'LunexaIt_result': 'Production website that effectively represents the brand and generates quality leads.',
+        'LunexaIt_description': 'Corporate website for IT consultancy. Complete development with React, modern design and conversion focus.',
+
+        'Flowik_name': 'Flowik',
+        'Flowik_tagline': 'Management SaaS',
+        'Flowik_context': 'SMBs needed a simple solution to digitize their administrative management.',
+        'Flowik_solution': 'I led the frontend of a complete management panel with React and Spring Boot, including stock control, sales, and automated alerts.',
+        'Flowik_result': 'Functional platform used by real businesses to optimize their daily operations.',
+        'Flowik_description': 'Management panel for SMBs. Control of users, products, stock, sales and suppliers. Bulk import/export of data.',
+
+        'Microservicios de Gestión_name': 'Microservices',
+        'Microservicios de Gestión_tagline': 'Distributed Architecture',
+        'Microservicios de Gestión_context': 'Project to explore and master enterprise microservices architectures.',
+        'Microservicios de Gestión_solution': 'I implemented an architecture with Spring Boot, Eureka for service discovery, Docker for containerization, and JWT for security.',
+        'Microservicios de Gestión_result': 'Scalable distributed system that demonstrates knowledge of enterprise patterns.',
+        'Microservicios de Gestión_description': 'Microservices architecture with Spring Boot, Eureka and Docker. Independent services with distributed communication.',
+
+        'API RESTful con PHP y SQL_name': 'RESTful API',
+        'API RESTful con PHP y SQL_tagline': 'PHP Backend',
+        'API RESTful con PHP y SQL_context': 'Management system that required a robust API for CRUD operations.',
+        'API RESTful con PHP y SQL_solution': 'I developed a complete REST API with PHP, following API design best practices.',
+        'API RESTful con PHP y SQL_result': 'Functional and well-documented API ready for integration with any frontend.',
+        'API RESTful con PHP y SQL_description': 'Complete RESTful API for data management. CRUD operations with PHP and MySQL.',
+
+        'Pagina de Coca Cola_name': 'Coca-Cola Landing',
+        'Pagina de Coca Cola_tagline': 'Web Layout',
+        'Pagina de Coca Cola_context': 'Practice project to master modern layout techniques.',
+        'Pagina de Coca Cola_solution': 'I recreated the Coca-Cola landing page with pure HTML and CSS, capturing the brand essence.',
+        'Pagina de Coca Cola_result': 'Pixel-perfect layout that demonstrates CSS mastery and attention to detail.',
+        'Pagina de Coca Cola_description': 'Corporate landing page layout. HTML5 and CSS3 with responsive design.',
+
+        'Diseño UX/UI_name': 'UX/UI Project',
+        'Diseño UX/UI_tagline': 'Design + Animations',
+        'Diseño UX/UI_context': 'Academic project to explore UX/UI design and advanced interactivity.',
+        'Diseño UX/UI_solution': 'I created Figma prototypes, implemented animations with parallax, canvas, and an interactive "Connect 4" game.',
+        'Diseño UX/UI_result': 'Complete project demonstrating advanced design and frontend development capabilities.',
+        'Diseño UX/UI_description': 'UX/UI design project with Figma prototypes, parallax animations, canvas and interactive game.',
+
+        'Diseño pagina bautismo_name': 'Event Landing',
+        'Diseño pagina bautismo_tagline': 'Client Design',
+        'Diseño pagina bautismo_context': 'Client needed an elegant page for a special event.',
+        'Diseño pagina bautismo_solution': 'I designed a minimalist and elegant landing page, easily reusable as a template.',
+        'Diseño pagina bautismo_result': 'Functional template delivered to client and available for future events.',
+        'Diseño pagina bautismo_description': 'Event landing page. Elegant and minimalist design, responsive and reusable.',
+
+        'ToDo App Full Stack_name': 'ToDo App',
+        'ToDo App Full Stack_tagline': 'Full Stack Challenge',
+        'ToDo App Full Stack_context': 'Technical challenge to demonstrate complete full stack skills.',
+        'ToDo App Full Stack_solution': 'I developed a complete application with React + Vite on frontend and Express + TypeScript + SQLite3 on backend.',
+        'ToDo App Full Stack_result': 'Functional application that demonstrates mastery of the entire modern stack.',
+        'ToDo App Full Stack_description': 'Full stack application with React, Express, TypeScript and SQLite3. Complete CRUD with persistence.',
+
+        // ─────────────────────────────────────────────────────────────────────
+        // EXPERIENCE / CURRICULUM SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        experienceSectionLabel: "Journey",
+        experienceHeadline: "Professional Experience",
+        experienceSubheadline: "My path in software development",
+
+        expRole1: "Teaching Assistant",
+        expCompany1: "UNICEN",
+        expPeriod1: "August 2023 – Present",
+        expLocation1: "Tandil, Argentina",
+        expDesc1_1: "I facilitate web development classes with PHP and MySQL for university students.",
+        expDesc1_2: "I teach the MVC pattern for backend applications in an academic environment.",
+        expDesc1_3: "I guide students in creating RESTful APIs and testing with Postman.",
+
+        expRole2: "Freelance Web Developer",
+        expCompany2: "Independent",
+        expPeriod2: "January 2024 – Present",
+        expLocation2: "Remote",
+        expDesc2_1: "Website design for clients using Figma and modern tools.",
+        expDesc2_2: "Web application development with React and TailwindCSS.",
+        expDesc2_3: "Implementation of responsive and accessible interfaces.",
+
+        expRole3: "Frontend Technical Lead",
+        expCompany3: "Flowik Project",
+        expPeriod3: "2025",
+        expLocation3: "Remote",
+        expDesc3_1: "Technical leadership of the frontend team in a SaaS project.",
+        expDesc3_2: "Task management and team organization with agile methodologies.",
+        expDesc3_3: "Stack: React, Spring Boot, GitFlow, Jira, MySQL.",
+
+        expRole4: "Full Stack Developer (Freelance)",
+        expCompany4: "Retail Project (SaaS)",
+        expPeriod4: "March 2025 – January 2026",
+        expLocation4: "Remote",
+        expDesc4_1: "End-to-End Development: Developed a comprehensive management system for supermarkets and stores, covering from database design to user interface.",
+        expDesc4_2: "Hybrid Architecture: Implemented a cross-platform desktop application using Electron and Angular (v16), ensuring a native and performant experience.",
+        expDesc4_3: "UI/UX: Designed components with Angular Material to optimize the point-of-sale user experience.",
+
+        expRole5: "Frontend Developer",
+        expCompany5: "AgroBlock",
+        expPeriod5: "Present",
+        expLocation5: "Remote",
+        expDesc5_1: "Designed and developed features for an agricultural and livestock management platform focused on operational field optimization.",
+        expDesc5_2: "Implemented polygon/plot administration modules, facilitating the organization, identification, and planning of productive areas.",
+        expDesc5_3: "The solution centralizes key establishment information to improve decision-making for producers and sector technicians.",
+
+        // Education
+        educationHeadline: "Education",
+        eduDegree1: "University Technician in Application Development",
+        eduInstitution1: "UNICEN",
+        eduPeriod1: "2022 – Present",
+
+        // Certifications
+        certificationsHeadline: "Additional Training",
+        cert1: "Introduction to Angular - UNICEN",
+        cert2: "Introduction to React - UNICEN",
+        cert3: "NoSQL Databases - UNICEN",
+        cert4: "Google Analytics 4 - UNICEN",
+        cert5: "Master in React (Hooks, MERN, NodeJS, JWT) - Udemy",
+        cert6: "MCP Bootcamp - Microsoft (In progress)",
+        cert7: "Platform Development Seminar - UNICEN (In progress)",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // CONTACT SECTION
+        // ─────────────────────────────────────────────────────────────────────
+        contactSectionLabel: "Contact",
+        contactHeadline: "Have a project in mind?",
+        contactSubheadline: "I'm open to new opportunities and collaborations. Let's talk about how I can help you.",
+        contactFormName: "Name",
+        contactFormNamePlaceholder: "Your name",
+        contactFormEmail: "Email",
+        contactFormEmailPlaceholder: "you@email.com",
+        contactFormMessage: "Message",
+        contactFormMessagePlaceholder: "Tell me about your project or idea...",
+        contactFormSubmit: "Send message",
+        contactFormSending: "Sending...",
+        contactFormSuccess: "Message sent successfully! I'll get back to you soon.",
+        contactFormError: "There was an error sending. Please try again.",
+        contactAlternative: "Or email me directly at",
+        contactInfoTitle: "Contact Information",
+        contactLocationLabel: "Location",
+        contactLocation: "Tandil, Argentina",
+        contactEmailLabel: "Email",
+        contactPhoneLabel: "Phone",
+        contactSocialLabel: "Social media",
+        contactAvailability: "Available for freelance projects and remote positions",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // FOOTER
+        // ─────────────────────────────────────────────────────────────────────
+        footerTagline: "Creating exceptional digital experiences",
+        footerRights: "All rights reserved",
+        footerBuiltWith: "Built with",
+        footerAnd: "and",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // 404 PAGE
+        // ─────────────────────────────────────────────────────────────────────
+        notFoundTitle: "Page not found",
+        notFoundDescription: "The page you are looking for does not exist or has been moved.",
+        notFoundCta: "Go to home",
+        notFoundBack: "Go back",
+
+        // ─────────────────────────────────────────────────────────────────────
+        // COMMON / MISC
+        // ─────────────────────────────────────────────────────────────────────
+        loading: "Loading...",
+        viewMore: "View more",
+        close: "Close",
+        backEnd: "Backend",
+        frontEnd: "Frontend",
+        tools: "Tools",
+        skillsTitle: "Skills",
         greeting: "Hello! I'm Luciano Oroquieta",
         role: "Full Stack Web Developer",
         degree: "University Technician in Application Development",
-        description: "Full-stack developer with experience in React, Next.js, Angular, and Node.js. I specialize in creating modern and efficient interfaces integrated with scalable backends. I also have academic experience as an Assistant Professor at UNICEN, teaching web development fundamentals and guiding students through their first steps in programming.",
-        titleProjects: "Some of my projects",
-        navHome: "Home",
-        navCv: "Resume",
-        navContact: "Contact",
-        skillsTitle: "Skills",
-        backEnd: "Back-End",
-        frontEnd: "Front-End",
-        tools: "Tools",
-        'Diseño UX/UI_name': 'UX/UI Design',
-        'Diseño UX/UI_description': 'A project focused on UX/UI design, interactivity, and advanced animations. Includes Figma prototypes, coded layout, a "4 in a row" game, and advanced visual effects with parallax and canvas rendering.',
-        'Flowik_name': 'Flowik',
-        'Flowik_description': `Web app for Pymes centralizing users, clients, products and suppliers.
-Records sales, controls stock, triggers alerts, and supports bulk import/export.
-
-Test user
-Email: footalent2025@gmail.com
-Password: Footalent2025*`,
-        'Microservicios de Gestión_name': 'Microservices Management',
-        'Microservicios de Gestión_description': 'A project that implements a microservice architecture with Spring Boot, where each service runs independently and communicates via Eureka. Each microservice is deployed on Docker, allowing scalability and infrastructure flexibility.',
-        'API RESTful con PHP y SQL_name': 'RESTful API with PHP and SQL',
-        'API RESTful con PHP y SQL_description': 'A REST-FULL API designed to perform CRUD operations in a band management system.',
-        'Pagina de Coca Cola_name': 'Coca-Cola Page',
-        'Pagina de Coca Cola_description': 'Layout project for the Coca-Cola website, conveying all the freshness, energy, and iconic essence of the brand.',
-        'Buscador de peliculas_name': 'Movie Finder',
-        'Buscador de peliculas_description': 'This app allows users to add, delete, search, and filter movies in a list. Using React and localStorage, data is maintained even when the page is reloaded.',
-        'Diseño pagina bautismo_name': 'Baptism Page Design',
-        'Diseño pagina bautismo_description': 'Website designed for a client who needed a page for a baptism. This template can be reused for any future baptism.',
-        'ToDo App Full Stack_name': 'ToDo App Full Stack',
-        'ToDo App Full Stack_description': 'Basic ToDo list application developed for the ForIT 2025 challenge. Includes backend with Express + TypeScript + SQLite3 and frontend with React and Vite.',
-        'LunexaIt_name': 'LunexaIt',
-        'LunexaIt_description': 'Construction of the website for the IT consulting firm focused on developing digital solutions with modern technology, functional design, and product vision.',
-        verProyecto: "View proyect",
-        verRepositorio: "View repository"
-
+        description: "Full Stack Developer with experience in React, Next.js, Angular, and Node.js. I specialize in creating modern and efficient interfaces integrated with scalable backends.",
+        titleProjects: "Featured Projects",
+        verProyecto: "View project",
+        verRepositorio: "View repository",
     },
 };

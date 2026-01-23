@@ -2,6 +2,7 @@ export const works = [
     {
         'id': 1,
         'nombre': 'LunexaIt',
+        'imagen': '/images/LunexaIt.webp',
         'url': 'https://lunexa-it.com/',
         'urlRepo': '',
         'tecnologias': ['React'],
@@ -10,7 +11,18 @@ export const works = [
     },
     {
         'id': 2,
+        'nombre': 'Supermarket POS',
+        'imagen': '/images/Supermarket.webp',
+        'url': '', // Link al .exe para descarga
+        'urlRepo': '', // No disponible
+        'tecnologias': ['Angular', 'Electron', 'TypeScript'],
+        'categorias': ['Desktop App', 'Full Stack', 'POS'],
+        'descripcion': 'Sistema integral de gestión End-to-End para supermercados y almacenes. Aplicación de escritorio multiplataforma con Electron y Angular v16, enfocada en puntos de venta con UI/UX optimizada usando Angular Material. Incluye gestión completa de inventario, ventas, clientes y reportes en tiempo real.'
+    },
+    {
+        'id': 3,
         'nombre': 'Flowik',
+        'imagen': '/images/Flowik.webp',
         'url': 'https://flowik.netlify.app/login',
         'urlRepo': 'https://github.com/petshop112/Flowik',
         'tecnologias': ['React'],
@@ -18,16 +30,18 @@ export const works = [
         'descripcion': 'Flowik es una aplicación web destinada a pequeñas y medianas empresas, que centraliza la gestión de usuarios, clientes, productos y proveedores. Su objetivo es digitalizar y simplificar las tareas administrativas del negocio mediante un panel intuitivo con funcionalidades clave como registro de ventas, control de stock, alertas automatizadas, importacion y exportacion masiva para agilizar tiempos y facilitar las tareas administrativas del administrador.',
     },
     {
-        'id': 3,
+        'id': 4,
         'nombre': 'Microservicios de Gestión',
+        'imagen': '/images/Microservicios de Gestión.webp',
         'url': '',
         'urlRepo': 'https://github.com/LucianoOroquietam/Microservicios-Spring-boot',
         'tecnologias': ['Spring'],
         'descripcion': 'Proyecto que implementa una arquitectura de microservicios con Spring Boot, donde cada servicio se ejecuta de forma independiente y se comunica a través de Eureka. Cada microservicio está desplegado en Docker, permitiendo escalabilidad y flexibilidad en la infraestructura.'
     },
     {
-        'id': 4,
+        'id': 5,
         'nombre': 'API RESTful con PHP y SQL',
+        'imagen': '/images/API RESTful con PHP y SQL.webp',
         'url': '',
         'urlRepo': 'https://github.com/LucianoOroquietam/api-rest-full',
         'tecnologias': ['PHP'],
@@ -36,8 +50,9 @@ export const works = [
 
     },
     {
-        'id': 5,
+        'id': 6,
         'nombre': 'Pagina de Coca Cola',
+        'imagen': '/images/Pagina de Coca Cola.webp',
         'url': 'https://cocapresentacion.netlify.app/',
         'urlRepo': "",
         'tecnologias': ['Html'],
@@ -46,8 +61,9 @@ export const works = [
 
     },
     {
-        'id': 6,
+        'id': 7,
         'nombre': 'Diseño UX/UI',
+        'imagen': '/images/Buscador de peliculas.webp',
         'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
         'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
         'tecnologias': ['JavaScript'],
@@ -57,8 +73,9 @@ export const works = [
     },
     
     {
-        'id': 7,
+        'id': 8,
         'nombre': 'Diseño pagina bautismo',
+        'imagen': '/images/Diseño pagina bautismo.webp',
         'url': 'https://bautismo.netlify.app/',
         'urlRepo': "",
         'tecnologias': ['Html'],
@@ -66,8 +83,9 @@ export const works = [
         'descripcion': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo. '
     },
     {
-        'id': 8,
+        'id': 9,
         'nombre': 'ToDo App Full Stack',
+        'imagen': '/images/ToDos App Full Stack.webp',
         'url': '',
         'urlRepo': "https://github.com/LucianoOroquietam/Challenge-Academia-ForIT-2025",
         'tecnologias': ['React', 'NodeJs', 'SQLite3'],

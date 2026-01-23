@@ -1,17 +1,13 @@
-html {
-    scroll-behavior: smooth;
-}
+/* ═══════════════════════════════════════════════════════════════════════════
+   MAIN CSS — Premium Portfolio 2026
+   Import design system first, then add any global overrides
+   ═══════════════════════════════════════════════════════════════════════════ */
 
-body {
-    background-color: rgb(30, 26, 26);
-    font-size: 16px;
-    padding: 0;
-    font-family: Poppins, sans-serif;
-    color: rgb(236, 238, 240);
-}
+@import './styles/design-system.css';
 
+/* Legacy classes - kept for backward compatibility */
 .layout {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,10 +15,8 @@ body {
 }
 
 .content {
-    min-height: 700px;
     flex: 1;
 }
-
 
 /*footer*/
 
