@@ -2,7 +2,7 @@
 // PORTFOLIO PAGE — Full Projects Gallery 2026
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { works } from '../data/works';
@@ -32,9 +32,17 @@ const PortfolioPage = () => {
     const [activeFilter, setActiveFilter] = useState('all');
     const [viewMode, setViewMode] = useState('grid');
 
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant'
+        });
+    }, []);
+
     // Extract unique technologies for filters
     const allTechs = [...new Set(works.flatMap(work => work.tecnologias || []))];
-    const mainFilters = ['React', 'Spring', 'NodeJs', 'JavaScript'];
+    const mainFilters = ['React', 'Angular', 'Spring', 'NodeJs', 'JavaScript'];
 
     const filteredWorks = activeFilter === 'all'
         ? works

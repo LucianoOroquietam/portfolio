@@ -63,7 +63,7 @@ export const works = [
     {
         'id': 7,
         'nombre': 'Diseño UX/UI',
-        'imagen': '/images/Buscador de peliculas.webp',
+        'imagen': '/images/Diseño UX/UI.png',
         'url': 'https://lucianooroquietam.github.io/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-/TP4/',
         'urlRepo': 'http://github.com/LucianoOroquietam/Proyecto-Frontend-UX-UI-Animaciones-Juego-interactivo-',
         'tecnologias': ['JavaScript'],

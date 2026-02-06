@@ -2,6 +2,7 @@
 // CURRICULUM PAGE — Premium Experience Timeline 2026
 // ═══════════════════════════════════════════════════════════════════════════
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { FiBriefcase, FiBook, FiAward, FiDownload, FiMapPin, FiCalendar } from 'react-icons/fi';
@@ -9,6 +10,14 @@ import './CurriculumPage.css';
 
 const CurriculumPage = () => {
     const { translate } = useLanguage();
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant'
+        });
+    }, []);
 
     const experiences = [
         {

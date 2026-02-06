@@ -21,6 +21,7 @@ import LaravelIcon from "../assets/icons/laravel.svg";
 import TailwindIcon from "../assets/icons/tailwind.svg";
 import NodeIcon from "../assets/icons/nodejs.svg";
 import Next from "../assets/icons/nextjs.svg";
+import n8nIcon from "../assets/icons/n8n.svg";
 
 
 
@@ -55,6 +56,7 @@ export const skills = {
         { name: "JUnit", icon: junitIcon },
         { name: "Swagger", icon: SwaggerIcon },
         { name: "Postman", icon: postmanIcon },
-        { name: "Figma", icon: figmaIcon }
+        { name: "Figma", icon: figmaIcon },
+        { name: "n8n", icon: n8nIcon }
     ]
 };

@@ -2,7 +2,7 @@
 // CONTACT PAGE — Premium Design 2026
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
 import { useLanguage } from '../context/LanguageContext';
@@ -17,6 +17,14 @@ const ContactPage = () => {
         message: '',
     });
     const [status, setStatus] = useState('idle'); // idle, sending, success, error
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant'
+        });
+    }, []);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
