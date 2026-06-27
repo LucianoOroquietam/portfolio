@@ -112,6 +112,14 @@
     to { transform: rotate(360deg); }
 }
 
+.contact-form__captcha-error {
+    color: var(--color-error);
+    font-size: var(--text-sm);
+    margin-top: var(--space-3);
+    text-align: center;
+    font-weight: var(--font-medium);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Info Side
    ───────────────────────────────────────────────────────────────────────────── */

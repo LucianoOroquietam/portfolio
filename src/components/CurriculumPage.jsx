@@ -21,6 +21,18 @@ const CurriculumPage = () => {
 
     const experiences = [
         {
+            role: translate('expRole6'),
+            company: translate('expCompany6'),
+            period: translate('expPeriod6'),
+            location: translate('expLocation6'),
+            descriptions: [
+                translate('expDesc6_1'),
+                translate('expDesc6_2'),
+                translate('expDesc6_3'),
+            ],
+            current: true
+        },
+        {
             role: translate('expRole5'),
             company: translate('expCompany5'),
             period: translate('expPeriod5'),
@@ -98,6 +110,7 @@ const CurriculumPage = () => {
         translate('cert5'),
         translate('cert6'),
         translate('cert7'),
+        translate('cert8'),
     ];
 
     const containerVariants = {

@@ -88,6 +88,7 @@ const Header = () => {
                                         className={({ isActive }) => 
                                             `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`
                                         }
+                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                     >
                                         {link.label}
                                     </NavLink>
@@ -171,7 +172,10 @@ const Header = () => {
                                                 className={({ isActive }) => 
                                                     `header__mobile-nav-link ${isActive ? 'header__mobile-nav-link--active' : ''}`
                                                 }
-                                                onClick={closeMenu}
+                                                onClick={() => {
+                                                    closeMenu();
+                                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                }}
                                             >
                                                 {link.label}
                                             </NavLink>

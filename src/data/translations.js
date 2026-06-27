@@ -36,9 +36,9 @@ export const translations = {
         // ABOUT / INTRO SECTION
         // ─────────────────────────────────────────────────────────────────────
         aboutSectionLabel: "Sobre mí",
-        aboutHeadline: "Desarrollador con mentalidad de producto",
-        aboutDescription1: "Soy un desarrollador Full Stack con experiencia construyendo productos digitales desde cero. Me especializo en crear interfaces modernas y backends escalables.",
-        aboutDescription2: "Actualmente soy Ayudante de Cátedra en UNICEN, donde enseño fundamentos de desarrollo web. Esta experiencia me ha dado una perspectiva única para comunicar conceptos técnicos con claridad.",
+        aboutHeadline: "Ingeniero de Automatización e IA",
+        aboutDescription1: "Soy un Ingeniero de Automatizaciones y desarrollador Full Stack con experiencia construyendo productos digitales y flujos de automatización desde cero. Me especializo en integrar IA, crear interfaces modernas y backends escalables.",
+        aboutDescription2: "Actualmente me desempeño en Thanos Corp desarrollando agentes de inteligencia artificial locales avanzados para optimizar y automatizar procesos de negocio.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Años de experiencia",
         aboutHighlight2Title: "10+",
@@ -78,6 +78,27 @@ export const translations = {
         projectsTech: "Tecnologías",
 
         // Featured Projects Data
+        'Plataforma de Sustentación IA_name': 'Plataforma de Sustentación',
+        'Plataforma de Sustentación IA_tagline': 'WebRTC + Inteligencia Artificial',
+        'Plataforma de Sustentación IA_context': 'Thanos Corp requería un sistema seguro tipo Google Meet para interactuar con agentes de IA en tiempo real sin latencia.',
+        'Plataforma de Sustentación IA_solution': 'Desarrollé una plataforma Full Stack integrando WebRTC directo con modelos de IA, con un robusto sistema de autenticación, control de tiempo de salas y UI premium.',
+        'Plataforma de Sustentación IA_result': 'Plataforma segura y estable operando en producción con latencia ultra-baja y funcionalidades multimodales de recolección de requerimientos.',
+        'Plataforma de Sustentación IA_description': 'Plataforma web premium tipo Google Meet para conversación interactiva por voz en tiempo real con agentes de IA mediante WebRTC directo.',
+
+        'Página Web Thanos Corp_name': 'Página Web Thanos Corp',
+        'Página Web Thanos Corp_tagline': 'Sitio Corporativo High-Tech',
+        'Página Web Thanos Corp_context': 'La compañía necesitaba una presencia digital impactante que reflejara su enfoque avanzado en Inteligencia Artificial y Ciberseguridad.',
+        'Página Web Thanos Corp_solution': 'Construí una interfaz moderna utilizando Next.js 16 y Tailwind CSS con efectos de glassmorphism, micro-animaciones y fondos dinámicos estilo cyberpunk.',
+        'Página Web Thanos Corp_result': 'Sitio web corporativo de alto rendimiento visual que comunica efectivamente la oferta core de Thanos Corp.',
+        'Página Web Thanos Corp_description': 'Sitio web corporativo diseñado con estética High-Tech/Cyberpunk. Desarrollo con Next.js 16, optimizado con micro-animaciones.',
+
+        'Agente de Llamadas IA_name': 'Agente de Llamadas',
+        'Agente de Llamadas IA_tagline': 'IA Conversacional Telefónica',
+        'Agente de Llamadas IA_context': 'Se necesitaba automatizar la prospección comercial de servicios de ciberseguridad mediante llamadas telefónicas naturales.',
+        'Agente de Llamadas IA_solution': 'Implementé un backend en FastAPI integrado con Twilio y múltiples motores de IA (OpenAI, Deepgram), con flujos conversacionales, guardado de transcripciones y resúmenes.',
+        'Agente de Llamadas IA_result': 'Sistema capaz de mantener conversaciones fluidas por teléfono en tiempo real con prospectos para agendar reuniones automáticamente.',
+        'Agente de Llamadas IA_description': 'Sistema de gestión de llamadas telefónicas automatizadas con IA conversacional en tiempo real. Integra Twilio y múltiples motores de IA.',
+
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Sistema de Gestión Empresarial',
         'Supermarket POS_context': 'Desarrollo End-to-End de un sistema integral para la gestión completa de supermercados y almacenes.',
@@ -188,6 +209,14 @@ export const translations = {
         expDesc5_2: "Implementé módulos de administración de polígonos/lotes, facilitando la organización, identificación y planificación de áreas productivas.",
         expDesc5_3: "La solución centraliza información clave del establecimiento para mejorar la toma de decisiones de productores y técnicos del sector.",
 
+        expRole6: "Ingeniero de Automatización e IA",
+        expCompany6: "Thanos Corp",
+        expPeriod6: "Marzo 2026 – Actualidad",
+        expLocation6: "Remoto",
+        expDesc6_1: "Infraestructura y despliegue: Administré entornos con Dokploy, desplegando herramientas internas, orquestadores y bases de datos MySQL.",
+        expDesc6_2: "Desarrollo de IA: Creé y orquesté múltiples agentes de inteligencia artificial locales con Claude Code y Ollama.",
+        expDesc6_3: "Productos internos: Creé una agencia automatizada y agentes especializados (Factory MCP, Agente CEO) para procesos de negocio.",
+
         // Education
         educationHeadline: "Formación académica",
         eduDegree1: "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
@@ -196,13 +225,14 @@ export const translations = {
 
         // Certifications
         certificationsHeadline: "Formación complementaria",
-        cert1: "Introducción a Angular - UNICEN",
-        cert2: "Introducción a React - UNICEN",
-        cert3: "Bases de Datos NoSQL - UNICEN",
-        cert4: "Google Analytics 4 - UNICEN",
-        cert5: "Master en React (Hooks, MERN, NodeJS, JWT) - Udemy",
-        cert6: "MCP Bootcamp - Microsoft (En curso)",
-        cert7: "Seminario Desarrollo de Plataformas - UNICEN (En curso)",
+        cert1: "Devops Advanced Professional Certification - CertiProf",
+        cert2: "Master en React: ReactJS, Hooks, MERN, NodeJS, JWT - Udemy",
+        cert3: "NextJs: Framework de react para produccion - Udemy (En curso)",
+        cert4: "Curso n8n - Automatización de Flujos - Udemy",
+        cert5: "Seminario Desarrollo de Plataformas - UNICEN",
+        cert6: "Seminario en Angular - UNICEN",
+        cert7: "Seminario Bases de Datos NoSQL - UNICEN",
+        cert8: "Seminario Google Analytics 4",
 
         // ─────────────────────────────────────────────────────────────────────
         // CONTACT SECTION
@@ -227,7 +257,6 @@ export const translations = {
         contactEmailLabel: "Email",
         contactPhoneLabel: "Teléfono",
         contactSocialLabel: "Redes sociales",
-        contactAvailability: "Disponible para proyectos freelance y posiciones remotas",
 
         // ─────────────────────────────────────────────────────────────────────
         // FOOTER
@@ -296,9 +325,9 @@ export const translations = {
         // ABOUT / INTRO SECTION
         // ─────────────────────────────────────────────────────────────────────
         aboutSectionLabel: "About me",
-        aboutHeadline: "Developer with a product mindset",
-        aboutDescription1: "I'm a Full Stack Developer with experience building digital products from scratch. I specialize in creating modern interfaces and scalable backends.",
-        aboutDescription2: "Currently, I'm a Teaching Assistant at UNICEN, where I teach web development fundamentals. This experience has given me a unique perspective for communicating technical concepts clearly.",
+        aboutHeadline: "Automation & AI Engineer",
+        aboutDescription1: "I'm an Automation Engineer and Full Stack Developer with experience building digital products and automated workflows from scratch. I specialize in AI integration, creating modern interfaces, and scalable backends.",
+        aboutDescription2: "Currently, I work at Thanos Corp developing advanced local artificial intelligence agents to automate and optimize business processes.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Years of experience",
         aboutHighlight2Title: "10+",
@@ -338,6 +367,27 @@ export const translations = {
         projectsTech: "Technologies",
 
         // Featured Projects Data
+        'Plataforma de Sustentación IA_name': 'AI Sustentation Platform',
+        'Plataforma de Sustentación IA_tagline': 'WebRTC + Artificial Intelligence',
+        'Plataforma de Sustentación IA_context': 'Thanos Corp required a secure Google Meet-like system to interact with AI agents in real time without latency.',
+        'Plataforma de Sustentación IA_solution': 'I developed a Full Stack platform integrating direct WebRTC with AI models, featuring a robust authentication system, room time control, and premium UI.',
+        'Plataforma de Sustentación IA_result': 'Secure and stable platform operating in production with ultra-low latency and multimodal requirement gathering features.',
+        'Plataforma de Sustentación IA_description': 'Premium Google Meet-like web platform for real-time interactive voice conversation with AI agents via direct WebRTC.',
+
+        'Página Web Thanos Corp_name': 'Thanos Corp Website',
+        'Página Web Thanos Corp_tagline': 'High-Tech Corporate Site',
+        'Página Web Thanos Corp_context': 'The company needed an impactful digital presence reflecting its advanced focus on AI and Cybersecurity.',
+        'Página Web Thanos Corp_solution': 'I built a modern interface using Next.js 16 and Tailwind CSS with glassmorphism effects, micro-animations, and dynamic cyberpunk-style backgrounds.',
+        'Página Web Thanos Corp_result': 'High-performance visual corporate website that effectively communicates Thanos Corp core offerings.',
+        'Página Web Thanos Corp_description': 'Corporate website designed with High-Tech/Cyberpunk aesthetics. Developed with Next.js 16, optimized with micro-animations.',
+
+        'Agente de Llamadas IA_name': 'AI Call Agent',
+        'Agente de Llamadas IA_tagline': 'Conversational AI Telephony',
+        'Agente de Llamadas IA_context': 'There was a need to automate commercial prospecting for cybersecurity services through natural phone calls.',
+        'Agente de Llamadas IA_solution': 'I implemented a FastAPI backend integrated with Twilio and multiple AI engines (OpenAI, Deepgram), featuring conversational flows, transcription saving, and summaries.',
+        'Agente de Llamadas IA_result': 'System capable of maintaining fluid real-time phone conversations with prospects to automatically schedule meetings.',
+        'Agente de Llamadas IA_description': 'Automated phone call management system with real-time conversational AI. Integrates Twilio and multiple AI engines.',
+
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Business Management System',
         'Supermarket POS_context': 'End-to-End development of a comprehensive system for complete supermarket and store management.',
@@ -448,6 +498,14 @@ export const translations = {
         expDesc5_2: "Implemented polygon/plot administration modules, facilitating the organization, identification, and planning of productive areas.",
         expDesc5_3: "The solution centralizes key establishment information to improve decision-making for producers and sector technicians.",
 
+        expRole6: "Automation & AI Engineer",
+        expCompany6: "Thanos Corp",
+        expPeriod6: "March 2026 – Present",
+        expLocation6: "Remote",
+        expDesc6_1: "Infrastructure & deployment: Managed environments with Dokploy, deploying internal tools, orchestrators, and MySQL databases.",
+        expDesc6_2: "AI Development: Created and orchestrated multiple local artificial intelligence agents using Claude Code and Ollama.",
+        expDesc6_3: "Internal products: Created an automated agency and specialized agents (Factory MCP, CEO Agent) to accelerate business processes.",
+
         // Education
         educationHeadline: "Education",
         eduDegree1: "University Technician in Application Development",
@@ -456,13 +514,14 @@ export const translations = {
 
         // Certifications
         certificationsHeadline: "Additional Training",
-        cert1: "Introduction to Angular - UNICEN",
-        cert2: "Introduction to React - UNICEN",
-        cert3: "NoSQL Databases - UNICEN",
-        cert4: "Google Analytics 4 - UNICEN",
-        cert5: "Master in React (Hooks, MERN, NodeJS, JWT) - Udemy",
-        cert6: "MCP Bootcamp - Microsoft (In progress)",
-        cert7: "Platform Development Seminar - UNICEN (In progress)",
+        cert1: "DEVOPS ADVANCED PROFESSIONAL CERTIFICATION - CertiProf",
+        cert2: "Master in React: ReactJS, Hooks, MERN, NodeJS, JWT - Udemy",
+        cert3: "NextJs: React Framework for Production - Udemy (In progress)",
+        cert4: "n8n Course - Workflow Automation - Udemy",
+        cert5: "Platform Development Seminar - UNICEN",
+        cert6: "Angular Seminar - UNICEN",
+        cert7: "NoSQL Databases Seminar - UNICEN",
+        cert8: "Google Analytics 4 Seminar",
 
         // ─────────────────────────────────────────────────────────────────────
         // CONTACT SECTION
@@ -487,7 +546,6 @@ export const translations = {
         contactEmailLabel: "Email",
         contactPhoneLabel: "Phone",
         contactSocialLabel: "Social media",
-        contactAvailability: "Available for freelance projects and remote positions",
 
         // ─────────────────────────────────────────────────────────────────────
         // FOOTER

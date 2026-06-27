@@ -1,5 +1,35 @@
 export const works = [
     {
+        'id': 10,
+        'nombre': 'Plataforma de Sustentación IA',
+        'imagen': '/images/sustentacion-ia.png',
+        'url': '',
+        'urlRepo': '',
+        'tecnologias': ['Python', 'React', 'FastAPI', 'WebRTC'],
+        'categorias': ['Full Stack', 'Inteligencia Artificial'],
+        'descripcion': 'Plataforma web premium tipo Google Meet para conversación interactiva por voz en tiempo real con agentes de IA mediante WebRTC directo.'
+    },
+    {
+        'id': 11,
+        'nombre': 'Página Web Thanos Corp',
+        'imagen': '/images/web-thanos.png',
+        'url': '',
+        'urlRepo': '',
+        'tecnologias': ['Next.js', 'TypeScript', 'TailwindCSS'],
+        'categorias': ['Frontend', 'Diseño UX/UI'],
+        'descripcion': 'Sitio web corporativo diseñado con estética High-Tech/Cyberpunk. Desarrollo con Next.js 16, optimizado con micro-animaciones y glassmorphism.'
+    },
+    {
+        'id': 12,
+        'nombre': 'Agente de Llamadas IA',
+        'imagen': '/images/agente-llamadas.png',
+        'url': '',
+        'urlRepo': '',
+        'tecnologias': ['Python', 'FastAPI', 'IA'],
+        'categorias': ['Backend', 'Inteligencia Artificial'],
+        'descripcion': 'Sistema de gestión de llamadas telefónicas automatizadas con IA conversacional en tiempo real. Integra Twilio y múltiples motores de IA (OpenAI, Deepgram).'
+    },
+    {
         'id': 1,
         'nombre': 'LunexaIt',
         'imagen': '/images/LunexaIt.webp',

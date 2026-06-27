@@ -5,18 +5,21 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../context/LanguageContext';
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiSend, FiCheck, FiX } from 'react-icons/fi';
 import './ContactPage.css';
 
 const ContactPage = () => {
-    const { translate } = useLanguage();
+    const { translate, language } = useLanguage();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
     });
     const [status, setStatus] = useState('idle'); // idle, sending, success, error
+    const [captchaToken, setCaptchaToken] = useState(null);
+    const [captchaError, setCaptchaError] = useState(false);
 
     // Scroll to top when component mounts
     useEffect(() => {
@@ -32,13 +35,24 @@ const ContactPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!captchaToken) {
+            setCaptchaError(true);
+            return;
+        }
+
         setStatus('sending');
+
+        const emailParams = {
+            ...formData,
+            'g-recaptcha-response': captchaToken
+        };
 
         emailjs
             .send(
                 'service_s9tshsp',
                 'template_e4xyzv7',
-                formData,
+                emailParams,
                 'ELH78UW8hdQwdFfDx'
             )
             .then(
@@ -100,7 +114,7 @@ const ContactPage = () => {
     return (
         <main className="contact-page">
             <div className="container">
-                <motion.div 
+                <motion.div
                     className="contact-page__wrapper"
                     variants={containerVariants}
                     initial="hidden"
@@ -164,6 +178,22 @@ const ContactPage = () => {
                                         required
                                         rows={5}
                                     />
+                                </div>
+
+                                <div className="contact-form__group" style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                    <ReCAPTCHA
+                                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                                        onChange={(token) => {
+                                            setCaptchaToken(token);
+                                            if (token) setCaptchaError(false);
+                                        }}
+                                        theme="dark"
+                                    />
+                                    {captchaError && (
+                                        <p className="contact-form__captcha-error">
+                                            {language === 'es' ? 'Por favor, completa el captcha para continuar.' : 'Please complete the captcha to continue.'}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <motion.button
@@ -245,11 +275,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
 
-                            {/* Availability Badge */}
-                            <div className="contact-availability">
-                                <div className="contact-availability__dot" />
-                                <span>{translate('contactAvailability')}</span>
-                            </div>
+
                         </motion.div>
                     </div>
                 </motion.div>

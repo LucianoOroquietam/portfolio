@@ -17,7 +17,7 @@ import postmanIcon from "../assets/icons/postman.svg";
 import TypeScriptIcon from "../assets/icons/typescript.svg";
 import MongoDbIcon from "../assets/icons/mongodb.svg";
 import GitHubIcon from "../assets/icons/github.svg";
-import LaravelIcon from "../assets/icons/laravel.svg";
+import PythonIcon from "../assets/icons/python.svg";
 import TailwindIcon from "../assets/icons/tailwind.svg";
 import NodeIcon from "../assets/icons/nodejs.svg";
 import Next from "../assets/icons/nextjs.svg";
@@ -33,7 +33,7 @@ export const skills = {
         { name: "MySQL", icon: MySQLIcon },
         { name: "PostgreSQL", icon: PostgreSQLIcon },
         { name: "MongoDb", icon: MongoDbIcon },
-        { name: "Laravel", icon: LaravelIcon },
+        { name: "Python", icon: PythonIcon },
         { name: "NodeJs", icon: NodeIcon }
 
     ],

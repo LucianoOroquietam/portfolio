@@ -8,9 +8,7 @@ const Curriculum = () => {
           <h1>Luciano Oroquieta Merlino</h1>
           <h2>Técnico Universitario en Desarrollo de Aplicaciones Informáticas (TUDAI)</h2>
           <p className="summary">
-            Soy Ayudante de Cátedra en UNICEN y desarrollador Fullstack con experiencia en proyectos
-            académicos y freelance. Me especializo en arquitecturas MVC, APIs RESTful y microservicios,
-            creando soluciones eficientes y escalables.
+            Soy un Ingeniero de Automatizaciones y desarrollador Full Stack con experiencia construyendo productos digitales y flujos de automatización desde cero. Me especializo en integrar IA, crear interfaces modernas y backends escalables, creando soluciones eficientes para optimizar procesos de negocio.
           </p>
           <div className="contact-info">
             <p>📍 Tandil, Argentina</p>
@@ -31,6 +29,16 @@ const Curriculum = () => {
         {/* EXPERIENCIA PROFESIONAL */}
         <section className="section">
           <h3>Experiencia Profesional</h3>
+
+          <div className="content-exp">
+            <h4>Ingeniero de Automatización e IA - Thanos Corp</h4>
+            <p className="date">Marzo 2026 – Actualidad | Remoto</p>
+            <ul>
+              <li>Infraestructura y despliegue: Entornos con Dokploy, orquestadores, Plane, MySQL.</li>
+              <li>Desarrollo de IA: Creación y orquestación de agentes locales con Claude Code y Ollama.</li>
+              <li>Productos internos: Agencia automatizada y agentes especializados.</li>
+            </ul>
+          </div>
 
           <div className="content-exp">
             <h4>Ayudante de Cátedra - UNICEN</h4>
@@ -113,16 +121,14 @@ const Curriculum = () => {
         <section className="section">
           <h3>Formación Complementaria</h3>
           <ul className="timeline">
-            <li><span className="dot"></span> Introducción a Angular - UNICEN</li>
-            <li><span className="dot"></span> Introduccion a React - Unicen</li>
-            <li><span className="dot"></span> Bases de Datos NoSQL - UNICEN</li>
-            <li><span className="dot"></span> Google Analytics 4 - UNICEN</li>
-            <li><span className="dot"></span> Master en React (Hooks, MERN, NodeJS, JWT) - Udemy</li>
-            <li><span className="dot"></span> MCP Bootcam - Microsoft (En curso).</li>
-            <li><span className="dot"></span> Seminario Desarrollo de Plataformas (En curso) - Unicen</li>
-
-          
-
+            <li><span className="dot"></span> Devops Advanced Professional Certification - CertiProf</li>
+            <li><span className="dot"></span> Master en React: ReactJS, Hooks, MERN, NodeJS, JWT - Udemy</li>
+            <li><span className="dot"></span> NextJs: Framework de react para produccion - Udemy (En curso)</li>
+            <li><span className="dot"></span> Curso n8n - Automatización de Flujos - Udemy</li>
+            <li><span className="dot"></span> Seminario Desarrollo de Plataformas - UNICEN</li>
+            <li><span className="dot"></span> Seminario en Angular - UNICEN</li>
+            <li><span className="dot"></span> Seminario Bases de Datos NoSQL - UNICEN</li>
+            <li><span className="dot"></span> Seminario Google Analytics 4</li>
           </ul>
         </section>
 
@@ -146,7 +152,7 @@ const Curriculum = () => {
             <ul className="tag-list">
               <li>Docker</li><li>Git</li><li>Swagger</li><li>Postman</li><li>ESLint</li><li>Prettier</li>Slack<li>Jira</li><li>Trello</li>GitFlow<li>Figma</li>
             </ul>
-            
+
           </div>
         </section>
 
