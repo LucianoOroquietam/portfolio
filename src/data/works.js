@@ -13,7 +13,7 @@ export const works = [
         'id': 11,
         'nombre': 'Página Web Thanos Corp',
         'imagen': '/images/web-thanos.png',
-        'url': '',
+        'url': 'https://than-os.com/quienes-somos',
         'urlRepo': '',
         'tecnologias': ['Next.js', 'TypeScript', 'TailwindCSS'],
         'categorias': ['Frontend', 'Diseño UX/UI'],
@@ -30,10 +30,20 @@ export const works = [
         'descripcion': 'Sistema de gestión de llamadas telefónicas automatizadas con IA conversacional en tiempo real. Integra Twilio y múltiples motores de IA (OpenAI, Deepgram).'
     },
     {
+        'id': 13,
+        'nombre': 'AI Real Estate RAG Agent',
+        'imagen': '/images/real-estate-rag.png',
+        'url': 'https://www.loom.com/share/a616f442bea84f399916291b6a22dd88',
+        'urlRepo': 'https://github.com/LucianoOroquietam/AI-Real-Estate-RAG-Agent-Inmobiliaria-Melisa-Schwab',
+        'tecnologias': ['n8n', 'OpenAI', 'Supabase', 'Telegram'],
+        'categorias': ['Inteligencia Artificial', 'Automatización', 'n8n'],
+        'descripcion': 'Ecosistema completo de IA para el sector inmobiliario. Pipeline RAG con búsqueda semántica vía pgvector y chatbot conversacional con respuestas multimedia nativas en Telegram.'
+    },
+    {
         'id': 1,
         'nombre': 'LunexaIt',
         'imagen': '/images/LunexaIt.webp',
-        'url': 'https://lunexa-it.com/',
+        'url': '',
         'urlRepo': '',
         'tecnologias': ['React'],
         'categorias': ['Frontend'],

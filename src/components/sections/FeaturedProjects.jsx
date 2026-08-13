@@ -12,6 +12,8 @@ import {
     SiReact, SiAngular, SiNodedotjs, SiSpringboot, 
     SiJavascript, SiTypescript, SiPhp, SiHtml5 
 } from 'react-icons/si';
+import n8nIcon from '../../assets/icons/n8n.svg';
+import nextjsIcon from '../../assets/icons/nextjs.svg';
 import { Link } from 'react-router-dom';
 import './FeaturedProjects.css';
 
@@ -30,6 +32,14 @@ const CustomPythonIcon = (props) => (
     </svg>
 );
 
+const N8nIcon = ({ className, style }) => (
+    <img src={n8nIcon} alt="n8n" className={className} style={{ height: '60px', width: 'auto', maxWidth: '70%', ...style }} />
+);
+
+const NextjsIcon = ({ className, style }) => (
+    <img src={nextjsIcon} alt="Next.js" className={className} style={{ ...style }} />
+);
+
 // Mapeo de tecnologías a logos
 const techLogos = {
     'React': SiReact,
@@ -42,6 +52,8 @@ const techLogos = {
     'PHP': SiPhp,
     'Html': SiHtml5,
     'Python': CustomPythonIcon,
+    'n8n': N8nIcon,
+    'Next.js': NextjsIcon,
 };
 
 const FeaturedProjects = () => {

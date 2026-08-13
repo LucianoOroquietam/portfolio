@@ -99,6 +99,13 @@ export const translations = {
         'Agente de Llamadas IA_result': 'Sistema capaz de mantener conversaciones fluidas por teléfono en tiempo real con prospectos para agendar reuniones automáticamente.',
         'Agente de Llamadas IA_description': 'Sistema de gestión de llamadas telefónicas automatizadas con IA conversacional en tiempo real. Integra Twilio y múltiples motores de IA.',
 
+        'AI Real Estate RAG Agent_name': 'AI Real Estate RAG Agent',
+        'AI Real Estate RAG Agent_tagline': 'RAG Inmobiliario + Telegram Bot',
+        'AI Real Estate RAG Agent_context': 'Una inmobiliaria necesitaba transformar su web estática en un asistente inteligente capaz de buscar propiedades por similitud semántica.',
+        'AI Real Estate RAG Agent_solution': 'Construí un pipeline RAG completo con n8n, Firecrawl y pgvector en Supabase, con un chatbot de Telegram que procesa voz y texto con respuestas multimedia nativas.',
+        'AI Real Estate RAG Agent_result': 'Asistente inmobiliario operativo que responde consultas en lenguaje natural con imágenes y detalles de propiedades directamente en Telegram.',
+        'AI Real Estate RAG Agent_description': 'Ecosistema de IA para el sector inmobiliario. Pipeline RAG con búsqueda semántica y chatbot conversacional con multimedia nativa en Telegram.',
+
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Sistema de Gestión Empresarial',
         'Supermarket POS_context': 'Desarrollo End-to-End de un sistema integral para la gestión completa de supermercados y almacenes.',
@@ -387,6 +394,13 @@ export const translations = {
         'Agente de Llamadas IA_solution': 'I implemented a FastAPI backend integrated with Twilio and multiple AI engines (OpenAI, Deepgram), featuring conversational flows, transcription saving, and summaries.',
         'Agente de Llamadas IA_result': 'System capable of maintaining fluid real-time phone conversations with prospects to automatically schedule meetings.',
         'Agente de Llamadas IA_description': 'Automated phone call management system with real-time conversational AI. Integrates Twilio and multiple AI engines.',
+
+        'AI Real Estate RAG Agent_name': 'AI Real Estate RAG Agent',
+        'AI Real Estate RAG Agent_tagline': 'Real Estate RAG + Telegram Bot',
+        'AI Real Estate RAG Agent_context': 'A real estate agency needed to transform its static website into an intelligent assistant capable of searching properties by semantic similarity.',
+        'AI Real Estate RAG Agent_solution': 'I built a complete RAG pipeline with n8n, Firecrawl and pgvector on Supabase, with a Telegram chatbot that processes voice and text with native multimedia responses.',
+        'AI Real Estate RAG Agent_result': 'Operational real estate assistant that responds to natural language queries with property images and details directly in Telegram.',
+        'AI Real Estate RAG Agent_description': 'AI ecosystem for the real estate sector. RAG pipeline with semantic search and conversational chatbot with native multimedia in Telegram.',
 
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Business Management System',

@@ -11,6 +11,8 @@ import {
     SiReact, SiAngular, SiNodedotjs, SiSpringboot, 
     SiJavascript, SiTypescript, SiPhp, SiHtml5 
 } from 'react-icons/si';
+import n8nIcon from '../assets/icons/n8n.svg';
+import nextjsIcon from '../assets/icons/nextjs.svg';
 import './PortfolioPage.css';
 
 const CustomPythonIcon = (props) => (
@@ -28,6 +30,14 @@ const CustomPythonIcon = (props) => (
     </svg>
 );
 
+const N8nIcon = ({ className, style }) => (
+    <img src={n8nIcon} alt="n8n" className={className} style={{ height: '60px', width: 'auto', maxWidth: '70%', ...style }} />
+);
+
+const NextjsIcon = ({ className, style }) => (
+    <img src={nextjsIcon} alt="Next.js" className={className} style={{ ...style }} />
+);
+
 // Mapeo de tecnologías a logos
 const techLogos = {
     'React': SiReact,
@@ -40,6 +50,8 @@ const techLogos = {
     'PHP': SiPhp,
     'Html': SiHtml5,
     'Python': CustomPythonIcon,
+    'n8n': N8nIcon,
+    'Next.js': NextjsIcon,
 };
 
 const PortfolioPage = () => {
@@ -57,7 +69,7 @@ const PortfolioPage = () => {
 
     // Extract unique technologies for filters
     const allTechs = [...new Set(works.flatMap(work => work.tecnologias || []))];
-    const mainFilters = ['React', 'Angular', 'Spring', 'NodeJs', 'JavaScript', 'Python'];
+    const mainFilters = ['React', 'Angular', 'Spring', 'NodeJs', 'JavaScript', 'Python', 'n8n'];
 
     const filteredWorks = activeFilter === 'all'
         ? works
