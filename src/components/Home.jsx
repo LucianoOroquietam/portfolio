@@ -5,8 +5,9 @@
 
 import Hero from './sections/Hero';
 import About from './sections/About';
-import SkillsSection from './sections/SkillsSection';
+import ThinkingSection from './sections/ThinkingSection';
 import FeaturedProjects from './sections/FeaturedProjects';
+import SkillsSection from './sections/SkillsSection';
 import CTASection from './sections/CTASection';
 
 const Home = () => {
@@ -14,8 +15,9 @@ const Home = () => {
         <main className="home-page">
             <Hero />
             <About />
-            <SkillsSection />
+            <ThinkingSection />
             <FeaturedProjects />
+            <SkillsSection />
             <CTASection />
         </main>
     );

@@ -8,8 +8,8 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // META & SEO
         // ─────────────────────────────────────────────────────────────────────
-        metaTitle: "Luciano Oroquieta | Full Stack Developer",
-        metaDescription: "Desarrollador Full Stack especializado en React, Next.js, Angular y Node.js. Creo productos digitales escalables con código limpio y experiencias excepcionales.",
+        metaTitle: "Luciano Oroquieta | Automation & AI Engineer",
+        metaDescription: "Automation & AI Engineer que diseña sistemas con software, automatización e inteligencia artificial para eliminar trabajo manual y devolver tiempo a las personas.",
 
         // ─────────────────────────────────────────────────────────────────────
         // NAVIGATION
@@ -23,22 +23,36 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // HERO SECTION — High Impact Landing
         // ─────────────────────────────────────────────────────────────────────
-        heroTagline: "Full Stack Developer",
-        heroHeadline: "Transformo ideas en productos digitales que escalan",
-        heroSubheadline: "Desarrollo aplicaciones web modernas con React, Next.js y Node.js. Enfocado en código limpio, performance y experiencias de usuario excepcionales.",
+        heroTagline: "Automation & AI Engineer",
+        heroHeadline: "Diseño sistemas que devuelven tiempo a las personas",
+        heroSubheadline: "Entiendo procesos, detecto oportunidades y construyo soluciones que eliminan trabajo manual y devuelven tiempo.",
         heroCtaPrimary: "Ver proyectos",
         heroCtaSecondary: "Descargar CV",
         heroCtaTertiary: "Contactar",
         heroAvailability: "Disponible para proyectos",
         heroScrollIndicator: "Scroll para explorar",
 
+        // Snippet decorativo
+        heroSnippetVar: "mision",
+        heroSnippetProp1: "analizar",
+        heroSnippetVal1: '"procesos"',
+        heroSnippetProp2: "detectar",
+        heroSnippetVal2: '"cuellos de botella"',
+        heroSnippetProp3: "automatizar",
+        heroSnippetVal3: '"trabajo repetitivo"',
+        heroSnippetProp4: "devolverTiempo",
+
+        heroFocus1: "Software",
+        heroFocus2: "Automatización",
+        heroFocus3: "Inteligencia Artificial",
+
         // ─────────────────────────────────────────────────────────────────────
         // ABOUT / INTRO SECTION
         // ─────────────────────────────────────────────────────────────────────
         aboutSectionLabel: "Sobre mí",
-        aboutHeadline: "Ingeniero de Automatización e IA",
-        aboutDescription1: "Soy un Ingeniero de Automatizaciones y desarrollador Full Stack con experiencia construyendo productos digitales y flujos de automatización desde cero. Me especializo en integrar IA, crear interfaces modernas y backends escalables.",
-        aboutDescription2: "Actualmente me desempeño en Thanos Corp desarrollando agentes de inteligencia artificial locales avanzados para optimizar y automatizar procesos de negocio.",
+        aboutHeadline: "Me apasiona entender cómo funcionan las cosas",
+        aboutDescription1: "No me interesa solo diseñar software. Me interesa pensar sistemas que simplifiquen el trabajo, automaticen lo repetitivo y mejoren la vida de quien los usa.",
+        aboutDescription2: "Hoy trabajo en Thanos Corp como Automation & AI Engineer, diseñando agentes de inteligencia artificial y flujos de automatización que resuelven problemas reales.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Años de experiencia",
         aboutHighlight2Title: "10+",
@@ -47,11 +61,27 @@ export const translations = {
         aboutHighlight3Label: "Tecnologías dominadas",
 
         // ─────────────────────────────────────────────────────────────────────
+        // THINKING SECTION — ¿Cuál es tu forma de pensar?
+        // ─────────────────────────────────────────────────────────────────────
+        thinkingSectionLabel: "Mi enfoque",
+        thinkingHeadline: "Mi forma de pensar",
+        thinkingSubheadline: "No me quedo en la tarea. Entiendo el sistema completo y busco dónde puedo hacer que funcione mejor.",
+        thinkingStep1Number: "01",
+        thinkingStep1Title: "Entiendo el proceso",
+        thinkingStep1Desc: "Antes de escribir código, mapeo cómo funciona todo: quién lo hace, cuánto tarda y dónde aparecen los errores.",
+        thinkingStep2Number: "02",
+        thinkingStep2Title: "Detecto oportunidades",
+        thinkingStep2Desc: "Identifico los cuellos de botella y las tareas repetitivas que consumen tiempo sin aportar valor real.",
+        thinkingStep3Number: "03",
+        thinkingStep3Title: "Automatizo con propósito",
+        thinkingStep3Desc: "Construyo la solución con software, automatización e IA para eliminar el trabajo manual y devolver tiempo.",
+
+        // ─────────────────────────────────────────────────────────────────────
         // SKILLS SECTION — By Domain
         // ─────────────────────────────────────────────────────────────────────
         skillsSectionLabel: "Especialidades",
         skillsHeadline: "Stack tecnológico",
-        skillsSubheadline: "Herramientas que domino para construir productos excepcionales",
+        skillsSubheadline: "Las herramientas con las que construyo soluciones reales",
 
         // Domains
         skillsDomainFrontend: "Frontend",
@@ -245,8 +275,8 @@ export const translations = {
         // CONTACT SECTION
         // ─────────────────────────────────────────────────────────────────────
         contactSectionLabel: "Contacto",
-        contactHeadline: "¿Tienes un proyecto en mente?",
-        contactSubheadline: "Estoy abierto a nuevas oportunidades y colaboraciones. Hablemos sobre cómo puedo ayudarte.",
+        contactHeadline: "¿Querés devolver tiempo a tu equipo?",
+        contactSubheadline: "Si tenés un proceso que consume demasiado tiempo o una idea que querés automatizar, hablemos.",
         contactFormName: "Nombre",
         contactFormNamePlaceholder: "Tu nombre",
         contactFormEmail: "Email",
@@ -268,7 +298,7 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // FOOTER
         // ─────────────────────────────────────────────────────────────────────
-        footerTagline: "Creando experiencias digitales excepcionales",
+        footerTagline: "Sistemas que devuelven tiempo a las personas",
         footerRights: "Todos los derechos reservados",
         footerBuiltWith: "Desarrollado con",
         footerAnd: "y",
@@ -304,8 +334,8 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // META & SEO
         // ─────────────────────────────────────────────────────────────────────
-        metaTitle: "Luciano Oroquieta | Full Stack Developer",
-        metaDescription: "Full Stack Developer specialized in React, Next.js, Angular, and Node.js. I build scalable digital products with clean code and exceptional user experiences.",
+        metaTitle: "Luciano Oroquieta | Automation & AI Engineer",
+        metaDescription: "Automation & AI Engineer who designs systems with software, automation, and artificial intelligence to eliminate manual work and give people their time back.",
 
         // ─────────────────────────────────────────────────────────────────────
         // NAVIGATION
@@ -319,22 +349,36 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // HERO SECTION — High Impact Landing
         // ─────────────────────────────────────────────────────────────────────
-        heroTagline: "Full Stack Developer",
-        heroHeadline: "I transform ideas into digital products that scale",
-        heroSubheadline: "I build modern web applications with React, Next.js, and Node.js. Focused on clean code, performance, and exceptional user experiences.",
+        heroTagline: "Automation & AI Engineer",
+        heroHeadline: "I design systems that give people their time back",
+        heroSubheadline: "I understand processes, detect opportunities, and build solutions that eliminate manual work and give time back.",
         heroCtaPrimary: "View projects",
         heroCtaSecondary: "Download CV",
         heroCtaTertiary: "Get in touch",
         heroAvailability: "Available for projects",
         heroScrollIndicator: "Scroll to explore",
 
+        // Decorative snippet
+        heroSnippetVar: "mission",
+        heroSnippetProp1: "analyze",
+        heroSnippetVal1: '"processes"',
+        heroSnippetProp2: "detect",
+        heroSnippetVal2: '"bottlenecks"',
+        heroSnippetProp3: "automate",
+        heroSnippetVal3: '"repetitive work"',
+        heroSnippetProp4: "returnTime",
+
+        heroFocus1: "Software",
+        heroFocus2: "Automation",
+        heroFocus3: "Artificial Intelligence",
+
         // ─────────────────────────────────────────────────────────────────────
         // ABOUT / INTRO SECTION
         // ─────────────────────────────────────────────────────────────────────
         aboutSectionLabel: "About me",
-        aboutHeadline: "Automation & AI Engineer",
-        aboutDescription1: "I'm an Automation Engineer and Full Stack Developer with experience building digital products and automated workflows from scratch. I specialize in AI integration, creating modern interfaces, and scalable backends.",
-        aboutDescription2: "Currently, I work at Thanos Corp developing advanced local artificial intelligence agents to automate and optimize business processes.",
+        aboutHeadline: "I'm passionate about understanding how things work",
+        aboutDescription1: "I'm not just interested in designing software. I want to think in systems that simplify work, automate the repetitive, and improve the lives of the people who use them.",
+        aboutDescription2: "Today I work at Thanos Corp as an Automation & AI Engineer, designing AI agents and automation flows that solve real business problems.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Years of experience",
         aboutHighlight2Title: "10+",
@@ -343,11 +387,27 @@ export const translations = {
         aboutHighlight3Label: "Technologies mastered",
 
         // ─────────────────────────────────────────────────────────────────────
+        // THINKING SECTION — How do you think?
+        // ─────────────────────────────────────────────────────────────────────
+        thinkingSectionLabel: "My approach",
+        thinkingHeadline: "How I think",
+        thinkingSubheadline: "I don't stop at the task. I understand the whole system and look for where I can make it work better.",
+        thinkingStep1Number: "01",
+        thinkingStep1Title: "I understand the process",
+        thinkingStep1Desc: "Before writing code, I map how everything works: who does it, how long it takes, and where errors appear.",
+        thinkingStep2Number: "02",
+        thinkingStep2Title: "I detect opportunities",
+        thinkingStep2Desc: "I identify the bottlenecks and repetitive tasks that consume time without delivering real value.",
+        thinkingStep3Number: "03",
+        thinkingStep3Title: "I automate with purpose",
+        thinkingStep3Desc: "I build the solution with software, automation, and AI to eliminate manual work and give time back.",
+
+        // ─────────────────────────────────────────────────────────────────────
         // SKILLS SECTION — By Domain
         // ─────────────────────────────────────────────────────────────────────
         skillsSectionLabel: "Expertise",
         skillsHeadline: "Tech Stack",
-        skillsSubheadline: "Tools I master to build exceptional products",
+        skillsSubheadline: "The tools I use to build real solutions",
 
         // Domains
         skillsDomainFrontend: "Frontend",
@@ -541,8 +601,8 @@ export const translations = {
         // CONTACT SECTION
         // ─────────────────────────────────────────────────────────────────────
         contactSectionLabel: "Contact",
-        contactHeadline: "Have a project in mind?",
-        contactSubheadline: "I'm open to new opportunities and collaborations. Let's talk about how I can help you.",
+        contactHeadline: "Want to give time back to your team?",
+        contactSubheadline: "If you have a process that takes too much time or an idea you want to automate, let's talk.",
         contactFormName: "Name",
         contactFormNamePlaceholder: "Your name",
         contactFormEmail: "Email",
@@ -564,7 +624,7 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         // FOOTER
         // ─────────────────────────────────────────────────────────────────────
-        footerTagline: "Creating exceptional digital experiences",
+        footerTagline: "Systems that give people their time back",
         footerRights: "All rights reserved",
         footerBuiltWith: "Built with",
         footerAnd: "and",

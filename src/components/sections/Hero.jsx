@@ -57,19 +57,12 @@ const Hero = () => {
             </div>
 
             <div className="hero__container container">
-                <motion.div 
+                <motion.div
                     className="hero__content"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
-                    {/* Availability Badge */}
-                    <motion.div variants={itemVariants} className="hero__badge-wrapper">
-                        <div className="hero__badge">
-                            <span className="hero__badge-dot" />
-                            <span>{translate('heroAvailability')}</span>
-                        </div>
-                    </motion.div>
 
                     {/* Tagline */}
                     <motion.p variants={itemVariants} className="hero__tagline">
@@ -92,9 +85,9 @@ const Hero = () => {
                             {translate('heroCtaPrimary')}
                             <FiArrowRight className="hero__cta-icon" />
                         </a>
-                        <a 
-                            href="/CV_Luciano_Oroquieta.pdf" 
-                            download="CV_Luciano_Oroquieta.pdf" 
+                        <a
+                            href="/CV_Luciano_Oroquieta.pdf"
+                            download="CV_Luciano_Oroquieta.pdf"
                             className="btn btn-secondary btn-lg hero__cta-secondary"
                         >
                             <FiDownload className="hero__cta-icon" />
@@ -106,19 +99,22 @@ const Hero = () => {
                         </Link>
                     </motion.div>
 
-                    {/* Tech Stack Preview */}
+                    {/* Focus Areas */}
                     <motion.div variants={itemVariants} className="hero__tech-stack">
-                        <span className="hero__tech-label">Stack:</span>
                         <div className="hero__tech-items">
-                            {['React', 'Next.js', 'Angular', 'Node.js', 'Spring Boot'].map((tech, index) => (
-                                <motion.span 
-                                    key={tech}
+                            {[
+                                translate('heroFocus1'),
+                                translate('heroFocus2'),
+                                translate('heroFocus3'),
+                            ].map((label, index) => (
+                                <motion.span
+                                    key={label}
                                     className="hero__tech-item"
                                     initial={{ opacity: 0, scale: 0.8 }}
                                     animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: 1 + index * 0.1 }}
+                                    transition={{ delay: 0.8 + index * 0.1 }}
                                 >
-                                    {tech}
+                                    {label}
                                 </motion.span>
                             ))}
                         </div>
@@ -126,7 +122,7 @@ const Hero = () => {
                 </motion.div>
 
                 {/* Decorative Visual */}
-                <motion.div 
+                <motion.div
                     className="hero__visual"
                     variants={floatVariants}
                     animate="animate"
@@ -134,23 +130,28 @@ const Hero = () => {
                     <div className="hero__visual-card hero__visual-card--1">
                         <div className="hero__visual-code">
                             <span className="code-keyword">const</span>
-                            <span className="code-variable"> developer</span>
+                            <span className="code-variable"> {translate('heroSnippetVar')}</span>
                             <span className="code-operator"> = </span>
                             <span className="code-bracket">{'{'}</span>
                             <br />
-                            <span className="code-property">  name</span>
+                            <span className="code-property">  {translate('heroSnippetProp1')}</span>
                             <span className="code-operator">:</span>
-                            <span className="code-string"> "Luciano"</span>
+                            <span className="code-string"> {translate('heroSnippetVal1')}</span>
                             <span className="code-comma">,</span>
                             <br />
-                            <span className="code-property">  passion</span>
+                            <span className="code-property">  {translate('heroSnippetProp2')}</span>
                             <span className="code-operator">:</span>
-                            <span className="code-string"> "Building"</span>
+                            <span className="code-string"> {translate('heroSnippetVal2')}</span>
                             <span className="code-comma">,</span>
                             <br />
-                            <span className="code-property">  status</span>
+                            <span className="code-property">  {translate('heroSnippetProp3')}</span>
                             <span className="code-operator">:</span>
-                            <span className="code-string"> "Available"</span>
+                            <span className="code-string"> {translate('heroSnippetVal3')}</span>
+                            <span className="code-comma">,</span>
+                            <br />
+                            <span className="code-property">  {translate('heroSnippetProp4')}</span>
+                            <span className="code-operator">:</span>
+                            <span className="code-string"> true</span>
                             <br />
                             <span className="code-bracket">{'}'}</span>
                             <span className="code-semicolon">;</span>
@@ -172,7 +173,7 @@ const Hero = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <motion.div 
+            <motion.div
                 className="hero__scroll-indicator"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
