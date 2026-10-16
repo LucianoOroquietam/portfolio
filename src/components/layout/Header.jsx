@@ -35,6 +35,19 @@ const Header = () => {
         document.body.classList.remove('no-scroll');
     };
 
+    // Escape cierra el menú móvil
+    useEffect(() => {
+        if (!isOpen) return undefined;
+        const onKey = (e) => {
+            if (e.key === 'Escape') {
+                setIsOpen(false);
+                document.body.classList.remove('no-scroll');
+            }
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+    }, [isOpen]);
+
     // Clean up on unmount
     useEffect(() => {
         return () => document.body.classList.remove('no-scroll');
@@ -42,6 +55,7 @@ const Header = () => {
 
     const navLinks = [
         { to: '/home', label: translate('navHome') },
+        { to: '/portfolio', label: translate('navProjects') },
         { to: '/curriculum', label: translate('navCv') },
         { to: '/contact', label: translate('navContact') },
     ];
@@ -70,7 +84,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
+            <header className={`header ${isScrolled ? 'header--scrolled' : ''} ${isOpen ? 'header--open' : ''}`}>
                 <div className="header__container container">
                     {/* Logo */}
                     <Link to="/home" className="header__logo" onClick={closeMenu}>
@@ -129,6 +143,7 @@ const Header = () => {
                             className="header__menu-toggle"
                             onClick={toggleMenu}
                             aria-label={isOpen ? 'Close menu' : 'Open menu'}
+                            aria-expanded={isOpen}
                         >
                             {isOpen ? <FiX /> : <FiMenu />}
                         </button>

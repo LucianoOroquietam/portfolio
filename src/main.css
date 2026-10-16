@@ -1,11 +1,11 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   MAIN CSS — Premium Portfolio 2026
-   Import design system first, then add any global overrides
+   MAIN CSS — importa el sistema de diseño y define el layout raíz.
+   (Se eliminaron las reglas legacy de .footer y .not-found: chocaban con
+   layout/Footer.css y NotFound.css.)
    ═══════════════════════════════════════════════════════════════════════════ */
 
 @import './styles/design-system.css';
 
-/* Legacy classes - kept for backward compatibility */
 .layout {
     width: 100%;
     margin: 0 auto;
@@ -16,116 +16,4 @@
 
 .content {
     flex: 1;
-}
-
-/*footer*/
-
-.footer {
-    min-height: 60px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 150px;
-    padding: 20px 10px;
-    border-top: 2px solid #666;
-    background: #2C2C2C;
-    color: rgb(236, 238, 240);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer h2 {
-    font-size: 13px;
-    font-style: italic;
-    order: 2; /* Mueve el copyright abajo */
-}
-
-.footer-links {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-    order: 1;
-}
-
-.footer-links a {
-    color: #F4A261;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 13px;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.footer-links a:hover {
-    color: #D57A40;
-    background: rgba(255, 255, 255, 0.1); /* Efecto hover más visible */
-}
-
-.icons-links-footer{
-    height: 16px;
-    width: 16px;
-}
-
-
-/*error 404 not found*/
-.not-found {
-    text-align: center;
-    padding: 50px;
-}
-
-.not-found h1 {
-    font-size: 8rem;
-    color: #f4a261;
-}
-
-.not-found p {
-    font-size: 1.5rem;
-    color: rgb(236, 238, 240);
-    margin: 20px 0;
-}
-
-.not-found .go-home {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: rgb(236, 238, 240);
-    background-color: #f4a261;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.not-found .go-home:hover {
-    background-color: #e76f51;
-}
-
-@media (max-width: 480px) {
-    .footer {
-        padding: 10px 5px;
-    }
-
-    .footer h2 {
-        font-size: 10px;
-        font-style: italic;
-        margin: 5px 0;
-    }
-    
-
-    .footer-links {
-        gap: 8px;
-    }
-
-    .footer-links a {
-        font-size: 10px;
-    }
-
-    .icons-links-footer {
-        height: 12px;
-        width: 12px;
-    }
 }

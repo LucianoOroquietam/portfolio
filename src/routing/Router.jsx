@@ -10,10 +10,13 @@ import CurriculumPage from '../components/CurriculumPage.jsx'
 import Header from '../components/layout/Header.jsx'
 import Footer from '../components/layout/Footer.jsx'
 import NotFound from '../components/NotFound.jsx'
+import { useLanguage } from '../context/LanguageContext.jsx'
 
 const Router = () => {
+    const { translate } = useLanguage();
     return (
         <BrowserRouter>
+            <a href="#main" className="skip-link">{translate('navSkip')}</a>
             <Header />
             <Routes>
                 <Route path='/' element={<Navigate to="/home" replace />} />

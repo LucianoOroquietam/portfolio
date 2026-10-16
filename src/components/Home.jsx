@@ -9,10 +9,12 @@ import ThinkingSection from './sections/ThinkingSection';
 import FeaturedProjects from './sections/FeaturedProjects';
 import SkillsSection from './sections/SkillsSection';
 import CTASection from './sections/CTASection';
+import SideRail from './ui/SideRail';
 
 const Home = () => {
     return (
-        <main className="home-page">
+        <main className="home-page" id="main">
+            <SideRail />
             <Hero />
             <About />
             <ThinkingSection />

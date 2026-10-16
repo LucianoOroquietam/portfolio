@@ -25,6 +25,8 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         heroTagline: "Automation & AI Engineer",
         heroHeadline: "Diseño sistemas que devuelven tiempo a las personas",
+        heroGreeting: "¡Hola! Soy",
+        heroName: "Luciano",
         heroSubheadline: "Entiendo procesos, detecto oportunidades y construyo soluciones que eliminan trabajo manual y devuelven tiempo.",
         heroCtaPrimary: "Ver proyectos",
         heroCtaSecondary: "Descargar CV",
@@ -45,6 +47,17 @@ export const translations = {
         heroFocus1: "Software",
         heroFocus2: "Automatización",
         heroFocus3: "Inteligencia Artificial",
+        heroFlowTitle: "workflow · cómo trabajo",
+        heroFlowStatus: "en ejecución",
+        heroFlow1: "Analizar", heroFlow1Sub: "procesos",
+        heroFlow2: "Detectar", heroFlow2Sub: "cuellos de botella",
+        heroFlow3: "Automatizar", heroFlow3Sub: "trabajo repetitivo",
+        heroFlow4: "Devolver", heroFlow4Sub: "tiempo a las personas",
+        heroFactRole: "Automation & AI Engineer en Thanos Corp",
+        heroVisualCaption: "Plataforma de Sustentación: conversación por voz en tiempo real con agentes de IA",
+        heroVisualLink: "Ver el caso",
+        heroVisualCaption2: "Agente de Llamadas: llamadas automatizadas con IA conversacional",
+        navSkip: "Saltar al contenido",
 
         // ─────────────────────────────────────────────────────────────────────
         // ABOUT / INTRO SECTION
@@ -55,10 +68,19 @@ export const translations = {
         aboutDescription2: "Hoy trabajo en Thanos Corp como Automation & AI Engineer, diseñando agentes de inteligencia artificial y flujos de automatización que resuelven problemas reales.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Años de experiencia",
-        aboutHighlight2Title: "10+",
-        aboutHighlight2Label: "Proyectos entregados",
-        aboutHighlight3Title: "5+",
-        aboutHighlight3Label: "Tecnologías dominadas",
+        aboutHighlight2Label: "Proyectos en este portfolio",
+        aboutHighlight3Title: "UNICEN",
+        aboutHighlight3Label: "Tecnicatura universitaria en curso",
+        aboutBadgeEdu: "Estudiante UNICEN",
+        aboutBadgeWork: "Thanos Corp",
+        aboutFactNowLabel: "Hoy",
+        aboutFactNowValue: "Automation & AI Engineer en Thanos Corp",
+        aboutFactStudyLabel: "Formación",
+        aboutFactStudyValue: "Tecnicatura universitaria en Desarrollo de Aplicaciones Informáticas, UNICEN",
+        aboutFactExpLabel: "Experiencia",
+        aboutFactExpValue: "3+ años desarrollando software",
+        aboutFactBaseLabel: "Base",
+        aboutFactBaseValue: "Tandil, Argentina · trabajo remoto",
 
         // ─────────────────────────────────────────────────────────────────────
         // THINKING SECTION — ¿Cuál es tu forma de pensar?
@@ -92,6 +114,10 @@ export const translations = {
         skillsDomainDatabaseDesc: "Modelado, optimización y gestión de datos",
         skillsDomainTools: "DevOps & Herramientas",
         skillsDomainToolsDesc: "Automatización, testing y flujos de trabajo eficientes",
+        skillsDomainAI: "IA & Automatización",
+        skillsDomainAIDesc: "Agentes, voz en tiempo real, RAG y flujos que conectan sistemas",
+        skillsDomainInfra: "Infraestructura & herramientas",
+        skillsDomainInfraDesc: "Despliegue, versionado, pruebas y diseño",
 
         // ─────────────────────────────────────────────────────────────────────
         // PROJECTS SECTION
@@ -103,9 +129,19 @@ export const translations = {
         projectsViewLive: "Ver proyecto",
         projectsViewRepo: "Ver código",
         projectsContext: "Contexto",
+        projectsSystem: "Sistema",
+        projectsMore: "Más trabajos",
+        projectsCase: "Caso",
+        projectsNoDemo: "Sin demo pública",
+        projectsDemoVideo: "Ver demo en video",
         projectsSolution: "Solución",
         projectsResult: "Resultado",
         projectsTech: "Tecnologías",
+        projectsProblem: "Problema",
+        projectsBuilt: "Lo que desarrollé",
+        projectsArchitecture: "Arquitectura",
+        projectsNoLinks: "Sin enlace público",
+        projectsViewCaseAria: "Ver proyecto",
 
         // Featured Projects Data
         'Plataforma de Sustentación IA_name': 'Plataforma de Sustentación',
@@ -299,6 +335,8 @@ export const translations = {
         // FOOTER
         // ─────────────────────────────────────────────────────────────────────
         footerTagline: "Sistemas que devuelven tiempo a las personas",
+        footerNavProjects: "Proyectos",
+        footerCv: "Descargar CV",
         footerRights: "Todos los derechos reservados",
         footerBuiltWith: "Desarrollado con",
         footerAnd: "y",
@@ -351,6 +389,8 @@ export const translations = {
         // ─────────────────────────────────────────────────────────────────────
         heroTagline: "Automation & AI Engineer",
         heroHeadline: "I design systems that give people their time back",
+        heroGreeting: "Hi! I'm",
+        heroName: "Luciano",
         heroSubheadline: "I understand processes, detect opportunities, and build solutions that eliminate manual work and give time back.",
         heroCtaPrimary: "View projects",
         heroCtaSecondary: "Download CV",
@@ -371,6 +411,17 @@ export const translations = {
         heroFocus1: "Software",
         heroFocus2: "Automation",
         heroFocus3: "Artificial Intelligence",
+        heroFlowTitle: "workflow · how I work",
+        heroFlowStatus: "running",
+        heroFlow1: "Analyze", heroFlow1Sub: "processes",
+        heroFlow2: "Detect", heroFlow2Sub: "bottlenecks",
+        heroFlow3: "Automate", heroFlow3Sub: "repetitive work",
+        heroFlow4: "Give back", heroFlow4Sub: "time to people",
+        heroFactRole: "Automation & AI Engineer at Thanos Corp",
+        heroVisualCaption: "Sustentación Platform: real-time voice conversation with AI agents",
+        heroVisualLink: "View the case",
+        heroVisualCaption2: "Call Agent: automated phone calls with conversational AI",
+        navSkip: "Skip to content",
 
         // ─────────────────────────────────────────────────────────────────────
         // ABOUT / INTRO SECTION
@@ -381,10 +432,19 @@ export const translations = {
         aboutDescription2: "Today I work at Thanos Corp as an Automation & AI Engineer, designing AI agents and automation flows that solve real business problems.",
         aboutHighlight1Title: "3+",
         aboutHighlight1Label: "Years of experience",
-        aboutHighlight2Title: "10+",
-        aboutHighlight2Label: "Projects delivered",
-        aboutHighlight3Title: "5+",
-        aboutHighlight3Label: "Technologies mastered",
+        aboutHighlight2Label: "Projects in this portfolio",
+        aboutHighlight3Title: "UNICEN",
+        aboutHighlight3Label: "University degree in progress",
+        aboutBadgeEdu: "UNICEN student",
+        aboutBadgeWork: "Thanos Corp",
+        aboutFactNowLabel: "Now",
+        aboutFactNowValue: "Automation & AI Engineer at Thanos Corp",
+        aboutFactStudyLabel: "Education",
+        aboutFactStudyValue: "University degree in Application Development, UNICEN",
+        aboutFactExpLabel: "Experience",
+        aboutFactExpValue: "3+ years building software",
+        aboutFactBaseLabel: "Based in",
+        aboutFactBaseValue: "Tandil, Argentina · remote work",
 
         // ─────────────────────────────────────────────────────────────────────
         // THINKING SECTION — How do you think?
@@ -406,7 +466,7 @@ export const translations = {
         // SKILLS SECTION — By Domain
         // ─────────────────────────────────────────────────────────────────────
         skillsSectionLabel: "Expertise",
-        skillsHeadline: "Tech Stack",
+        skillsHeadline: "Tech stack",
         skillsSubheadline: "The tools I use to build real solutions",
 
         // Domains
@@ -418,20 +478,34 @@ export const translations = {
         skillsDomainDatabaseDesc: "Modeling, optimization, and data management",
         skillsDomainTools: "DevOps & Tools",
         skillsDomainToolsDesc: "Automation, testing, and efficient workflows",
+        skillsDomainAI: "AI & Automation",
+        skillsDomainAIDesc: "Agents, real-time voice, RAG, and flows that connect systems",
+        skillsDomainInfra: "Infrastructure & tooling",
+        skillsDomainInfraDesc: "Deployment, versioning, testing, and design",
 
         // ─────────────────────────────────────────────────────────────────────
         // PROJECTS SECTION
         // ─────────────────────────────────────────────────────────────────────
         projectsSectionLabel: "Portfolio",
-        projectsHeadline: "Featured Projects",
+        projectsHeadline: "Featured projects",
         projectsSubheadline: "A selection of work that demonstrates my approach and capabilities",
         projectsViewAll: "View all projects",
         projectsViewLive: "View project",
         projectsViewRepo: "View code",
         projectsContext: "Context",
+        projectsSystem: "System",
+        projectsMore: "More work",
+        projectsCase: "Case",
+        projectsNoDemo: "No public demo",
+        projectsDemoVideo: "Watch video demo",
         projectsSolution: "Solution",
         projectsResult: "Result",
         projectsTech: "Technologies",
+        projectsProblem: "Problem",
+        projectsBuilt: "What I built",
+        projectsArchitecture: "Architecture",
+        projectsNoLinks: "No public link",
+        projectsViewCaseAria: "View project",
 
         // Featured Projects Data
         'Plataforma de Sustentación IA_name': 'AI Sustentation Platform',
@@ -529,7 +603,7 @@ export const translations = {
         // EXPERIENCE / CURRICULUM SECTION
         // ─────────────────────────────────────────────────────────────────────
         experienceSectionLabel: "Journey",
-        experienceHeadline: "Professional Experience",
+        experienceHeadline: "Professional experience",
         experienceSubheadline: "My path in software development",
 
         expRole1: "Teaching Assistant",
@@ -587,7 +661,7 @@ export const translations = {
         eduPeriod1: "2022 – Present",
 
         // Certifications
-        certificationsHeadline: "Additional Training",
+        certificationsHeadline: "Additional training",
         cert1: "DEVOPS ADVANCED PROFESSIONAL CERTIFICATION - CertiProf",
         cert2: "Master in React: ReactJS, Hooks, MERN, NodeJS, JWT - Udemy",
         cert3: "NextJs: React Framework for Production - Udemy (In progress)",
@@ -625,6 +699,8 @@ export const translations = {
         // FOOTER
         // ─────────────────────────────────────────────────────────────────────
         footerTagline: "Systems that give people their time back",
+        footerNavProjects: "Projects",
+        footerCv: "Download CV",
         footerRights: "All rights reserved",
         footerBuiltWith: "Built with",
         footerAnd: "and",

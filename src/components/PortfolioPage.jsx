@@ -67,8 +67,6 @@ const PortfolioPage = () => {
         });
     }, []);
 
-    // Extract unique technologies for filters
-    const allTechs = [...new Set(works.flatMap(work => work.tecnologias || []))];
     const mainFilters = ['React', 'Angular', 'Spring', 'NodeJs', 'JavaScript', 'Python', 'n8n'];
 
     const filteredWorks = activeFilter === 'all'
@@ -98,7 +96,7 @@ const PortfolioPage = () => {
     };
 
     return (
-        <main className="portfolio-page">
+        <main id="main" className="portfolio-page">
             <div className="container">
                 <motion.div 
                     className="portfolio-page__wrapper"
@@ -169,7 +167,7 @@ const PortfolioPage = () => {
                             animate="visible"
                             exit="hidden"
                         >
-                                                        {filteredWorks.map((work, index) => {
+                                                        {filteredWorks.map((work) => {
                                 const techs = work.tecnologias || [];
                                 const TechIcon = techs[0] ? techLogos[techs[0]] : null;
                                 

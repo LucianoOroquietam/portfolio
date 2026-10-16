@@ -1,100 +1,71 @@
 // ═══════════════════════════════════════════════════════════════════════════
-// FOOTER — Premium Design 2026
+// FOOTER — cierre editorial: nombre, navegación, contacto con ícono y redes
+// con logotipos oficiales (Simple Icons vía react-icons).
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { Link } from 'react-router-dom';
+import { FiArrowUpRight, FiMail } from 'react-icons/fi';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { useLanguage } from '../../context/LanguageContext';
-import { FiGithub, FiLinkedin, FiMail, FiHeart } from 'react-icons/fi';
 import './Footer.css';
+
+const EMAIL = 'oroquietaluciano@gmail.com';
+
+const SOCIAL = [
+    { label: 'GitHub', href: 'https://github.com/LucianoOroquietam', Icon: SiGithub },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/luciano-oroquieta', Icon: SiLinkedin },
+];
 
 const Footer = () => {
     const { translate } = useLanguage();
     const currentYear = new Date().getFullYear();
 
-    const socialLinks = [
-        { 
-            icon: <FiGithub />, 
-            href: 'https://github.com/LucianoOroquietam', 
-            label: 'GitHub' 
-        },
-        { 
-            icon: <FiLinkedin />, 
-            href: 'https://linkedin.com/in/luciano-oroquieta', 
-            label: 'LinkedIn' 
-        },
-        { 
-            icon: <FiMail />, 
-            href: 'mailto:oroquietaluciano@gmail.com', 
-            label: 'Email' 
-        },
-    ];
-
-    const navLinks = [
-        { to: '/home', label: translate('navHome') },
-        { to: '/curriculum', label: translate('navCv') },
-        { to: '/contact', label: translate('navContact') },
-    ];
-
     return (
         <footer className="footer">
             <div className="footer__container container">
-                {/* Top Section */}
-                <div className="footer__top">
-                    {/* Brand */}
-                    <div className="footer__brand">
-                        <Link to="/home" className="footer__logo">
-                            <div className="footer__logo-mark">LO</div>
-                            <span className="footer__logo-text">Luciano<span>.</span></span>
-                        </Link>
+                <Link to="/home" className="footer__wordmark" aria-label="Luciano, inicio">
+                    Luciano<span>.</span>
+                </Link>
+
+                <div className="footer__grid">
+                    <div className="footer__col">
+                        <h3 className="footer__title">{translate('navHireCta')}</h3>
                         <p className="footer__tagline">{translate('footerTagline')}</p>
                     </div>
 
-                    {/* Navigation */}
-                    <nav className="footer__nav">
-                        <h4 className="footer__nav-title">Links</h4>
-                        <ul className="footer__nav-list">
-                            {navLinks.map((link) => (
-                                <li key={link.to}>
-                                    <Link to={link.to} className="footer__nav-link">
-                                        {link.label}
-                                    </Link>
+                    <div className="footer__col">
+                        <span className="footer__label">{translate('contactEmailLabel')}</span>
+                        <a href={`mailto:${EMAIL}`} className="footer__mail">
+                            <FiMail aria-hidden="true" />
+                            <span>{EMAIL}</span>
+                        </a>
+                    </div>
+
+                    <div className="footer__col">
+                        <span className="footer__label">{translate('contactSocialLabel')}</span>
+                        <ul className="footer__social">
+                            {SOCIAL.map(({ label, href, Icon }) => (
+                                <li key={label}>
+                                    <a
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="footer__social-link"
+                                        aria-label={`${label} (se abre en una pestaña nueva)`}
+                                    >
+                                        <Icon aria-hidden="true" />
+                                        <span>{label}</span>
+                                        <FiArrowUpRight className="footer__social-arrow" aria-hidden="true" />
+                                    </a>
                                 </li>
                             ))}
                         </ul>
-                    </nav>
-
-                    {/* Social */}
-                    <div className="footer__social">
-                        <h4 className="footer__social-title">{translate('contactSocialLabel')}</h4>
-                        <div className="footer__social-links">
-                            {socialLinks.map((link) => (
-                                <a
-                                    key={link.label}
-                                    href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="footer__social-link"
-                                    aria-label={link.label}
-                                >
-                                    {link.icon}
-                                </a>
-                            ))}
-                        </div>
                     </div>
                 </div>
 
-                {/* Divider */}
-                <div className="footer__divider" />
-
-                {/* Bottom Section */}
-                <div className="footer__bottom">
-                    <p className="footer__copyright">
-                        © {currentYear} Luciano Oroquieta. {translate('footerRights')}.
-                    </p>
-                    <p className="footer__built-with">
-                        {translate('footerBuiltWith')} <FiHeart className="footer__heart" /> {translate('footerAnd')} React
-                    </p>
-                </div>
+                <p className="footer__copy">
+                    © {currentYear} Luciano Oroquieta. {translate('footerRights')}.
+                </p>
             </div>
         </footer>
     );

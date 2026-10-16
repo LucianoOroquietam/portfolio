@@ -112,7 +112,7 @@ const ContactPage = () => {
     };
 
     return (
-        <main className="contact-page">
+        <main id="main" className="contact-page">
             <div className="container">
                 <motion.div
                     className="contact-page__wrapper"

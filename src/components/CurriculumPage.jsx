@@ -131,7 +131,7 @@ const CurriculumPage = () => {
     };
 
     return (
-        <main className="curriculum-page">
+        <main id="main" className="curriculum-page">
             <div className="container">
                 <motion.div 
                     className="curriculum-page__wrapper"

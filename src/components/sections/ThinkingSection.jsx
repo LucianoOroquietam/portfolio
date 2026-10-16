@@ -1,122 +1,55 @@
 // ═══════════════════════════════════════════════════════════════════════════
-// THINKING SECTION — ¿Cuál es tu forma de pensar?
-// 3 pasos que definen el enfoque de Luciano
+// PROCESO — título fijo a la izquierda; cada paso se enciende al pasar por el centro
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { motion } from 'framer-motion';
-import { useLanguage } from '../../context/LanguageContext';
-import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FiSearch, FiTarget, FiZap } from 'react-icons/fi';
+import { useInView } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
+import Reveal from '../ui/Reveal';
 import './ThinkingSection.css';
+
+const STEPS = [1, 2, 3];
+
+// Un paso se considera activo cuando su centro cruza la franja central de la pantalla
+const ProcessStep = ({ n, translate, delay }) => {
+    const ref = useRef(null);
+    const active = useInView(ref, { margin: '-45% 0px -45% 0px' });
+
+    return (
+        <Reveal
+            as="li"
+            className={`process__step ${active ? 'is-active' : ''}`}
+            delay={delay}
+            y={16}
+            ref={ref}
+        >
+            <span className="process__number" aria-hidden="true">{translate(`thinkingStep${n}Number`)}</span>
+            <h3 className="process__title">{translate(`thinkingStep${n}Title`)}</h3>
+            <p className="process__desc">{translate(`thinkingStep${n}Desc`)}</p>
+        </Reveal>
+    );
+};
 
 const ThinkingSection = () => {
     const { translate } = useLanguage();
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: '-80px' });
-
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.2, delayChildren: 0.1 }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 40 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }
-        }
-    };
-
-    const steps = [
-        {
-            icon: <FiSearch />,
-            number: translate('thinkingStep1Number'),
-            title: translate('thinkingStep1Title'),
-            desc: translate('thinkingStep1Desc'),
-            color: '#f97316',
-        },
-        {
-            icon: <FiTarget />,
-            number: translate('thinkingStep2Number'),
-            title: translate('thinkingStep2Title'),
-            desc: translate('thinkingStep2Desc'),
-            color: '#fb923c',
-        },
-        {
-            icon: <FiZap />,
-            number: translate('thinkingStep3Number'),
-            title: translate('thinkingStep3Title'),
-            desc: translate('thinkingStep3Desc'),
-            color: '#fdba74',
-        },
-    ];
 
     return (
-        <section className="thinking-section section" id="thinking" ref={ref}>
-            {/* Background decorative orb */}
-            <div className="thinking-section__bg-orb" />
-
-            <div className="container">
-                {/* Section Header */}
-                <motion.div
-                    className="thinking-section__header"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate={isInView ? 'visible' : 'hidden'}
-                >
-                    <motion.span variants={itemVariants} className="thinking-section__label">
-                        {translate('thinkingSectionLabel')}
-                    </motion.span>
-                    <motion.h2 variants={itemVariants} className="thinking-section__headline">
+        <section className="process section" id="thinking" aria-labelledby="process-title">
+            <div className="container process__wrapper">
+                <header className="process__intro">
+                    <Reveal as="h2" className="process__headline" id="process-title">
                         {translate('thinkingHeadline')}
-                    </motion.h2>
-                    <motion.p variants={itemVariants} className="thinking-section__subheadline">
+                    </Reveal>
+                    <Reveal as="p" className="process__sub" delay={0.08}>
                         {translate('thinkingSubheadline')}
-                    </motion.p>
-                </motion.div>
+                    </Reveal>
+                </header>
 
-                {/* Steps */}
-                <motion.div
-                    className="thinking-section__steps"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate={isInView ? 'visible' : 'hidden'}
-                >
-                    {steps.map((step, index) => (
-                        <motion.div
-                            key={step.number}
-                            variants={itemVariants}
-                            className="thinking-step"
-                            style={{ '--step-color': step.color }}
-                        >
-                            {/* Connector line (between cards) */}
-                            {index < steps.length - 1 && (
-                                <div className="thinking-step__connector" />
-                            )}
-
-                            {/* Number badge */}
-                            <div className="thinking-step__number-badge">
-                                {step.number}
-                            </div>
-
-                            {/* Icon */}
-                            <div className="thinking-step__icon-wrapper">
-                                {step.icon}
-                            </div>
-
-                            {/* Content */}
-                            <div className="thinking-step__content">
-                                <h3 className="thinking-step__title">{step.title}</h3>
-                                <p className="thinking-step__desc">{step.desc}</p>
-                            </div>
-                        </motion.div>
+                <ol className="process__steps">
+                    {STEPS.map((n, i) => (
+                        <ProcessStep key={n} n={n} translate={translate} delay={i * 0.06} />
                     ))}
-                </motion.div>
+                </ol>
             </div>
         </section>
     );

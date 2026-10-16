@@ -12,7 +12,7 @@ const NotFound = () => {
     const { translate } = useLanguage();
 
     return (
-        <main className="not-found-page">
+        <main id="main" className="not-found-page">
             <div className="not-found-page__bg">
                 <div className="not-found-page__grid" />
             </div>

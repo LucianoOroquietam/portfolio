@@ -1,109 +1,72 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   CTA SECTION STYLES — Call to Action
+   CTA
    ═══════════════════════════════════════════════════════════════════════════ */
 
-.cta-section {
-    padding: var(--section-padding-y) 0;
-    background: var(--color-bg-primary);
-}
-
-.cta-section__wrapper {
+.cta__panel {
     position: relative;
-    padding: var(--space-16) var(--space-8);
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: center;
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid var(--color-border-accent);
     border-radius: var(--radius-3xl);
     overflow: hidden;
+    background:
+        radial-gradient(ellipse 60% 90% at 100% 0%, rgba(249, 115, 22, 0.16), transparent 70%),
+        var(--color-bg-secondary);
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   Background
-   ───────────────────────────────────────────────────────────────────────────── */
+.cta__main { display: flex; flex-direction: column; gap: var(--space-5); }
 
-.cta-section__bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
+.cta__headline {
+    font-size: clamp(2.25rem, 1.5rem + 2.8vw, 3.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    max-width: 18ch;
+    text-wrap: balance;
 }
 
-.cta-section__gradient {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, 
-        rgba(249, 115, 22, 0.15) 0%, 
-        rgba(249, 115, 22, 0.05) 50%,
-        rgba(24, 24, 27, 0.9) 100%
-    );
-}
+.cta__sub { font-size: var(--text-lg); max-width: 32rem; }
 
-.cta-section__pattern {
-    position: absolute;
-    inset: 0;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(249, 115, 22, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.08) 0%, transparent 40%);
-}
+.cta__side { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-6); }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   Content
-   ───────────────────────────────────────────────────────────────────────────── */
-
-.cta-section__content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: var(--space-6);
-}
-
-.cta-section__headline {
-    font-size: var(--text-4xl);
-    font-weight: var(--font-bold);
+.cta__email {
+    font-family: var(--font-family-primary);
+    font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+    font-weight: var(--font-semibold);
+    letter-spacing: -0.02em;
     color: var(--color-text-primary);
-    line-height: var(--leading-tight);
-    max-width: 16ch;
+    border-bottom: 1px solid var(--color-border-accent-strong);
+    padding-bottom: 4px;
+    overflow-wrap: anywhere;
 }
 
-.cta-section__subheadline {
-    font-size: var(--text-lg);
+.cta__email:hover { color: var(--color-accent-primary); border-color: var(--color-accent-primary); }
+
+.cta__links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-6);
+}
+
+.cta__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
     color: var(--color-text-secondary);
-    line-height: var(--leading-relaxed);
-    max-width: 50ch;
 }
 
-.cta-section__actions {
-    margin-top: var(--space-4);
+.cta__links a:hover { color: var(--color-accent-primary); }
+
+@media (max-width: 860px) {
+    .cta__panel { grid-template-columns: 1fr; align-items: start; }
 }
 
-.cta-section__actions .btn {
-    gap: var(--space-3);
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   Responsive
-   ───────────────────────────────────────────────────────────────────────────── */
-
-@media (max-width: 768px) {
-    .cta-section__wrapper {
-        padding: var(--space-12) var(--space-6);
-    }
-
-    .cta-section__headline {
-        font-size: var(--text-3xl);
-    }
-}
-
-@media (max-width: 480px) {
-    .cta-section__wrapper {
-        padding: var(--space-10) var(--space-5);
-        border-radius: var(--radius-2xl);
-    }
-
-    .cta-section__headline {
-        font-size: var(--text-2xl);
-    }
-
-    .cta-section__subheadline {
-        font-size: var(--text-base);
-    }
+@media (max-width: 560px) {
+    .cta__side .btn { width: 100%; }
+    .cta__headline { font-size: clamp(2rem, 8vw, 2.5rem); }
+    .cta__email { font-size: 0.95rem; letter-spacing: -0.01em; }
 }

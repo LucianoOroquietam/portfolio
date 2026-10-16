@@ -1,8 +1,12 @@
+// `flujo`: etapas del sistema, tomadas de la descripción real de cada proyecto.
+// `destacado`: aparece como caso de estudio en el Home.
 export const works = [
     {
         'id': 10,
         'nombre': 'Plataforma de Sustentación IA',
+        'flujo': ['React', 'FastAPI · auth y salas', 'WebRTC', 'Agente IA'],
         'imagen': '/images/sustentacion-ia.png',
+        'dimensiones': [1899, 915],
         'url': '',
         'urlRepo': '',
         'tecnologias': ['Python', 'React', 'FastAPI', 'WebRTC'],
@@ -13,6 +17,7 @@ export const works = [
         'id': 11,
         'nombre': 'Página Web Thanos Corp',
         'imagen': '/images/web-thanos.png',
+        'dimensiones': [1919, 951],
         'url': 'https://than-os.com/quienes-somos',
         'urlRepo': '',
         'tecnologias': ['Next.js', 'TypeScript', 'TailwindCSS'],
@@ -22,7 +27,9 @@ export const works = [
     {
         'id': 12,
         'nombre': 'Agente de Llamadas IA',
+        'flujo': ['Twilio', 'FastAPI', 'OpenAI + Deepgram', 'Transcripción y resumen'],
         'imagen': '/images/agente-llamadas.png',
+        'dimensiones': [1920, 1156],
         'url': '',
         'urlRepo': '',
         'tecnologias': ['Python', 'FastAPI', 'IA'],
@@ -32,7 +39,8 @@ export const works = [
     {
         'id': 13,
         'nombre': 'AI Real Estate RAG Agent',
-        'imagen': '/images/real-estate-rag.png',
+        'flujo': ['Firecrawl', 'n8n', 'pgvector · Supabase', 'Bot de Telegram'],
+        'imagen': '', // sin captura propia todavía: la UI muestra el diagrama del sistema
         'url': 'https://www.loom.com/share/a616f442bea84f399916291b6a22dd88',
         'urlRepo': 'https://github.com/LucianoOroquietam/AI-Real-Estate-RAG-Agent-Inmobiliaria-Melisa-Schwab',
         'tecnologias': ['n8n', 'OpenAI', 'Supabase', 'Telegram'],
@@ -121,17 +129,5 @@ export const works = [
         'tecnologias': ['Html'],
         'categorias': ['Frontend'],
         'descripcion': 'Web diseñada para un cliente, la web que se muestra es una plantilla que se puede usar para futuro con cualquier bautismo. '
-    },
-    {
-        'id': 9,
-        'nombre': 'ToDo App Full Stack',
-        'imagen': '/images/ToDos App Full Stack.webp',
-        'url': '',
-        'urlRepo': "https://github.com/LucianoOroquietam/Challenge-Academia-ForIT-2025",
-        'tecnologias': ['React', 'NodeJs', 'SQLite3'],
-        'categorias': ['Frontend', 'Backend', ],
-        'descripcion': 'Aplicación básica de lista de tareas (ToDo) desarrollada para el challenge de ingreso a Academia ForIT 2025. Incluye backend con Express + TypeScript + SQLite3 y frontend en React con Vite. '
     }
-
-
 ];

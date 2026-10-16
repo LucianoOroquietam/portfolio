@@ -1,67 +1,55 @@
 // ═══════════════════════════════════════════════════════════════════════════
-// CTA SECTION — Call to Action Premium Component
+// CTA — contacto directo y visible (email, formulario, LinkedIn, GitHub, CV)
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { motion } from 'framer-motion';
-import { useLanguage } from '../../context/LanguageContext';
 import { Link } from 'react-router-dom';
-import { FiMail, FiArrowRight } from 'react-icons/fi';
+import { FiMail, FiArrowRight, FiLinkedin, FiGithub, FiDownload } from 'react-icons/fi';
+import { useLanguage } from '../../context/LanguageContext';
+import Reveal from '../ui/Reveal';
 import './CTASection.css';
+
+const EMAIL = 'oroquietaluciano@gmail.com';
 
 const CTASection = () => {
     const { translate } = useLanguage();
 
     return (
-        <section className="cta-section">
+        <section className="cta section" id="contact" aria-labelledby="cta-title">
             <div className="container">
-                <motion.div 
-                    className="cta-section__wrapper"
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
-                >
-                    {/* Background Elements */}
-                    <div className="cta-section__bg">
-                        <div className="cta-section__gradient" />
-                        <div className="cta-section__pattern" />
+                <Reveal className="cta__panel" y={24}>
+                    <div className="cta__main">
+                        <h2 className="cta__headline" id="cta-title">{translate('contactHeadline')}</h2>
+                        <p className="cta__sub">{translate('contactSubheadline')}</p>
                     </div>
 
-                    {/* Content */}
-                    <div className="cta-section__content">
-                        <motion.h2 
-                            className="cta-section__headline"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 }}
-                        >
-                            {translate('contactHeadline')}
-                        </motion.h2>
-                        <motion.p 
-                            className="cta-section__subheadline"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.3 }}
-                        >
-                            {translate('contactSubheadline')}
-                        </motion.p>
-                        <motion.div 
-                            className="cta-section__actions"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.4 }}
-                        >
-                            <Link to="/contact" className="btn btn-primary btn-lg">
-                                <FiMail />
-                                {translate('heroCtaTertiary')}
-                                <FiArrowRight />
-                            </Link>
-                        </motion.div>
+                    <div className="cta__side">
+                        <a href={`mailto:${EMAIL}`} className="cta__email">{EMAIL}</a>
+
+                        <Link to="/contact" className="btn btn-primary btn-lg">
+                            <FiMail />
+                            {translate('heroCtaTertiary')}
+                            <FiArrowRight />
+                        </Link>
+
+                        <ul className="cta__links">
+                            <li>
+                                <a href="https://www.linkedin.com/in/luciano-oroquieta" target="_blank" rel="noopener noreferrer">
+                                    <FiLinkedin /> LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LucianoOroquietam" target="_blank" rel="noopener noreferrer">
+                                    <FiGithub /> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/CV_Luciano_Oroquieta.pdf" download="CV_Luciano_Oroquieta.pdf">
+                                    <FiDownload /> {translate('heroCtaSecondary')}
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </motion.div>
+                </Reveal>
             </div>
         </section>
     );
