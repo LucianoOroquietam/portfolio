@@ -30,8 +30,8 @@ const Hero = () => {
                 <img
                     src="/images/luciano-hero.webp"
                     alt=""
-                    width="1087"
-                    height="1447"
+                    width="1295"
+                    height="1214"
                     decoding="async"
                     fetchPriority="high"
                 />
