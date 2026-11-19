@@ -2,6 +2,18 @@
 // `destacado`: aparece como caso de estudio en el Home.
 export const works = [
     {
+        'id': 14,
+        'nombre': 'AgroBlock',
+        'flujo': ['Next.js · React Native offline', 'NestJS · PostgreSQL', 'Collar Ternerito · LoRa', 'IA · Amazon Bedrock'],
+        'imagen': '/images/agroblock.webp',
+        'dimensiones': [1554, 765],
+        'url': 'https://agroblock.com.ar/',
+        'urlRepo': '',
+        'tecnologias': ['Next.js', 'React Native', 'NestJS', 'PostgreSQL', 'Leaflet', 'AWS Bedrock', 'Docker'],
+        'categorias': ['AgTech', 'Full Stack', 'Inteligencia Artificial'],
+        'descripcion': 'Ecosistema ganadero con una sola cuenta y un registro único por animal: gestión del establecimiento, gestión veterinaria con trabajo sin conexión, collar para ganado por LoRa y marketplace.'
+    },
+    {
         'id': 10,
         'nombre': 'Plataforma de Sustentación IA',
         'flujo': ['React', 'FastAPI · auth y salas', 'WebRTC', 'Agente IA'],
@@ -12,17 +24,6 @@ export const works = [
         'tecnologias': ['Python', 'React', 'FastAPI', 'WebRTC'],
         'categorias': ['Full Stack', 'Inteligencia Artificial'],
         'descripcion': 'Plataforma web premium tipo Google Meet para conversación interactiva por voz en tiempo real con agentes de IA mediante WebRTC directo.'
-    },
-    {
-        'id': 11,
-        'nombre': 'Página Web Thanos Corp',
-        'imagen': '/images/web-thanos.png',
-        'dimensiones': [1919, 951],
-        'url': 'https://than-os.com/quienes-somos',
-        'urlRepo': '',
-        'tecnologias': ['Next.js', 'TypeScript', 'TailwindCSS'],
-        'categorias': ['Frontend', 'Diseño UX/UI'],
-        'descripcion': 'Sitio web corporativo diseñado con estética High-Tech/Cyberpunk. Desarrollo con Next.js 16, optimizado con micro-animaciones y glassmorphism.'
     },
     {
         'id': 12,
@@ -37,6 +38,18 @@ export const works = [
         'descripcion': 'Sistema de gestión de llamadas telefónicas automatizadas con IA conversacional en tiempo real. Integra Twilio y múltiples motores de IA (OpenAI, Deepgram).'
     },
     {
+        'id': 15,
+        'nombre': 'FabriThanos',
+        'flujo': ['Entrevista + documentos', 'Fábrica · agentes, skills y MCP', 'Validación y empaquetado', 'Despliegue aislado · aprobación humana'],
+        'imagen': '/images/fabrithanos.webp',
+        'dimensiones': [1917, 884],
+        'url': '',
+        'urlRepo': '',
+        'tecnologias': ['Claude Agent SDK', 'Next.js', 'NestJS', 'MCP', 'Three.js', 'MySQL', 'Redis', 'Docker'],
+        'categorias': ['Inteligencia Artificial', 'Full Stack', 'Automatización'],
+        'descripcion': 'Fábrica y operador multi-tenant de departamentos de agentes compatibles con Claude Code: convierte una entrevista y los documentos de un proceso en un departamento funcional y lo despliega aislado, con aprobación humana, políticas y auditoría.'
+    },
+    {
         'id': 13,
         'nombre': 'AI Real Estate RAG Agent',
         'flujo': ['Firecrawl', 'n8n', 'pgvector · Supabase', 'Bot de Telegram'],
@@ -46,6 +59,17 @@ export const works = [
         'tecnologias': ['n8n', 'OpenAI', 'Supabase', 'Telegram'],
         'categorias': ['Inteligencia Artificial', 'Automatización', 'n8n'],
         'descripcion': 'Ecosistema completo de IA para el sector inmobiliario. Pipeline RAG con búsqueda semántica vía pgvector y chatbot conversacional con respuestas multimedia nativas en Telegram.'
+    },
+    {
+        'id': 11,
+        'nombre': 'Página Web Thanos Corp',
+        'imagen': '/images/web-thanos.png',
+        'dimensiones': [1919, 951],
+        'url': 'https://than-os.com/quienes-somos',
+        'urlRepo': '',
+        'tecnologias': ['Next.js', 'TypeScript', 'TailwindCSS'],
+        'categorias': ['Frontend', 'Diseño UX/UI'],
+        'descripcion': 'Sitio web corporativo diseñado con estética High-Tech/Cyberpunk. Desarrollo con Next.js 16, optimizado con micro-animaciones y glassmorphism.'
     },
     {
         'id': 1,

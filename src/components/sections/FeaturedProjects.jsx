@@ -2,7 +2,7 @@
 // PROYECTOS — casos destacados con tres composiciones distintas + grilla compacta
 //   1. Caso principal: imagen a todo el ancho, texto debajo en columnas
 //   2. Par: dos casos lado a lado
-//   3. Caso dividido: diagrama del sistema + texto (proyecto sin captura propia)
+//   3. Caso dividido: visual (captura o diagrama del sistema) + texto
 // Datos: works.js (proyecto) + translations.js (problema / solución / tagline)
 // ═══════════════════════════════════════════════════════════════════════════
 
@@ -21,7 +21,7 @@ const FEATURED_COUNT = 4;
 
 const isVideo = (url) => /loom\.com|youtu/i.test(url);
 
-// Enlaces reales del proyecto; si no hay ninguno se indica sin inventar demo.
+// Enlaces reales del proyecto; si no hay ninguno no se muestra nada.
 const projectLinks = (project, translate) => {
     const links = [];
     if (project.url) {
@@ -40,7 +40,7 @@ const projectLinks = (project, translate) => {
 
 const ProjectLinks = ({ project, translate }) => {
     const links = projectLinks(project, translate);
-    if (!links.length) return <span className="case__nodemo">{translate('projectsNoLinks')}</span>;
+    if (!links.length) return null;
 
     return (
         <div className="case__links">
@@ -157,7 +157,7 @@ const HalfCase = ({ project, translate, delay }) => {
 const SplitCase = ({ project, translate }) => {
     const name = translate(`${project.nombre}_name`);
     return (
-        <Reveal as="article" className="case case--split" y={24}>
+        <Reveal as="article" className={`case case--split${project.imagen ? ' case--split-shot' : ''}`} y={24}>
             <Visual project={project} name={name} translate={translate} />
             <div className="case__body">
                 <CaseHead project={project} name={name} translate={translate} />
@@ -214,7 +214,8 @@ const FeaturedProjects = () => {
     const others = works.slice(FEATURED_COUNT);
     const [lead, ...rest] = featured;
     const pair = rest.filter((p) => p.imagen).slice(0, 2);
-    const split = rest.filter((p) => !p.imagen);
+    // Lo que no entra en el par va como caso dividido (con captura o con diagrama)
+    const split = rest.filter((p) => !pair.includes(p));
 
     return (
         <section className="projects section" id="projects" aria-labelledby="projects-title">

@@ -172,6 +172,20 @@ export const translations = {
         'AI Real Estate RAG Agent_result': 'Asistente inmobiliario operativo que responde consultas en lenguaje natural con imágenes y detalles de propiedades directamente en Telegram.',
         'AI Real Estate RAG Agent_description': 'Ecosistema de IA para el sector inmobiliario. Pipeline RAG con búsqueda semántica y chatbot conversacional con multimedia nativa en Telegram.',
 
+        'AgroBlock_name': 'AgroBlock',
+        'AgroBlock_tagline': 'Equipo fundador - Ecosistema AgTech ganadero',
+        'AgroBlock_context': 'La información del campo está repartida entre cuadernos, planillas y la memoria de cada persona: lo que el veterinario hace en la manga no llega al productor, las carencias se controlan de memoria y en campos sin señal la mayoría de las herramientas no sirven.',
+        'AgroBlock_solution': 'Como parte del equipo fundador, me encargo del sistema de gestión y de la inteligencia artificial sobre Amazon Bedrock. Cuatro piezas sobre un registro único por animal: Hacienda OS para el productor, Rumio para el veterinario con app que trabaja sin señal, el collar Ternerito por LoRa y un marketplace de hacienda.',
+        'AgroBlock_result': 'Productor y veterinario trabajan sobre la misma ficha: lo cargado en la manga aparece en el sistema del productor, con carencias calculadas según SENASA (más de 6.700 productos), reproducción, costos por lote y mapa del campo con índice satelital.',
+        'AgroBlock_description': 'Ecosistema ganadero con una sola cuenta y un registro único por animal: gestión del establecimiento, gestión veterinaria con trabajo sin conexión, collar para ganado por LoRa y marketplace.',
+
+        'FabriThanos_name': 'FabriThanos',
+        'FabriThanos_tagline': 'ADF - Agent Department Factory',
+        'FabriThanos_context': 'En Thanos Corp detectamos una oportunidad: las empresas necesitan departamentos de agentes de IA para sus procesos reales, pero armarlos implica relevar cómo se trabaja, traducirlo a agentes, reglas y herramientas, y operarlo de forma segura sin perder el control humano.',
+        'FabriThanos_solution': 'Como AI Engineer y desarrollador en Thanos Corp, construí la fábrica y el operador multi-tenant: a partir de una entrevista de levantamiento y los documentos del proceso genera un departamento compatible con Claude Code (agentes, reglas, skills, MCP y memoria), lo valida y lo empaqueta. El departamento generado se puede descargar como .zip para trabajar en local o desplegar en producción, aislado y con recursos asignados. Monorepo con NestJS, Next.js, Claude Agent SDK y una oficina 3D en Three.js con chat al coordinador del departamento.',
+        'FabriThanos_result': 'En producción multi-tenant, con ejecución aislada por empresa (contenedor, red, cuotas y secretos en Vault), aprobación humana y auditoría append-only.',
+        'FabriThanos_description': 'Fábrica y operador multi-tenant de departamentos de agentes compatibles con Claude Code: de una entrevista y documentos a un departamento funcional, desplegado aislado con aprobación humana y auditoría.',
+
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Sistema de Gestión Empresarial',
         'Supermarket POS_context': 'Desarrollo End-to-End de un sistema integral para la gestión completa de supermercados y almacenes.',
@@ -535,6 +549,20 @@ export const translations = {
         'AI Real Estate RAG Agent_solution': 'I built a complete RAG pipeline with n8n, Firecrawl and pgvector on Supabase, with a Telegram chatbot that processes voice and text with native multimedia responses.',
         'AI Real Estate RAG Agent_result': 'Operational real estate assistant that responds to natural language queries with property images and details directly in Telegram.',
         'AI Real Estate RAG Agent_description': 'AI ecosystem for the real estate sector. RAG pipeline with semantic search and conversational chatbot with native multimedia in Telegram.',
+
+        'AgroBlock_name': 'AgroBlock',
+        'AgroBlock_tagline': 'Founding team - Livestock AgTech ecosystem',
+        'AgroBlock_context': "Farm information is scattered across notebooks, spreadsheets and people's memory: what the vet does at the chute never reaches the producer, withdrawal periods are tracked by memory, and most tools are useless on ranches without cell signal.",
+        'AgroBlock_solution': 'As part of the founding team, I own the management system and the AI layer on Amazon Bedrock. Four products on a single record per animal: Hacienda OS for producers, Rumio for vets with an offline-first app, the Ternerito LoRa cattle collar, and a livestock marketplace.',
+        'AgroBlock_result': "Producer and vet work on the same animal record: data entered at the chute shows up in the producer's system, with withdrawal periods computed from SENASA's registry (6,700+ products), reproduction tracking, cost per lot and a field map with satellite vegetation index.",
+        'AgroBlock_description': 'Livestock ecosystem with one account and a single record per animal: farm management, offline-capable veterinary management, LoRa cattle collar and marketplace.',
+
+        'FabriThanos_name': 'FabriThanos',
+        'FabriThanos_tagline': 'ADF - Agent Department Factory',
+        'FabriThanos_context': 'At Thanos Corp we spotted an opportunity: companies need AI agent departments for their real processes, but building them means mapping how work is done, translating it into agents, rules and tools, and running them safely without losing human control.',
+        'FabriThanos_solution': 'As an AI Engineer and developer at Thanos Corp, I built the multi-tenant factory and operator: from a discovery interview and process documents it generates a Claude Code-compatible department (agents, rules, skills, MCP and memory), validates it and packages it. The generated department can be downloaded as a .zip to work locally or deployed to production, isolated and with dedicated resources. Monorepo with NestJS, Next.js, the Claude Agent SDK and a Three.js 3D office with chat to the department coordinator.',
+        'FabriThanos_result': 'Running in multi-tenant production, with isolated execution per company (container, network, quotas and Vault-managed secrets), human approval and append-only auditing.',
+        'FabriThanos_description': 'Multi-tenant factory and operator for Claude Code-compatible agent departments: from an interview and documents to a working department, deployed in isolation with human approval and auditing.',
 
         'Supermarket POS_name': 'Supermarket POS',
         'Supermarket POS_tagline': 'Business Management System',
